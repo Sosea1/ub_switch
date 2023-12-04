@@ -1,26 +1,60 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { memo } from 'react';
+import type { FC } from 'react';
+import { ReactDOM } from 'react';
 
-function App() {
+import classes from './App.module.css';
+import resets from './components/_resets.module.css';
+import { MainMonitoring } from './components/MainMonitoring/MainMonitoring';
+import { Diagnosis } from './components/Diagnosis/Diagnosis'
+import { QoS } from './components/QoS/QoS';
+import { Routing } from './components/Routing/Routing';
+import { Security } from './components/Security/Security';
+import { Switching } from './components/Switching/Switching';
+import { System } from './components/System/System';
+import { useNavigate } from 'react-router-dom';
+
+
+interface Props {
+  className?: string;
+}
+export const App: FC<Props> = memo(function App(props = {}) {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`${resets.storybrainResets} ${classes.root}`}>
+      
     </div>
   );
-}
+});
 
-export default App;
+
+  //   const navigate = useNavigate();
+
+  //   export const navigateToMonitoring = () => {
+    
+  //   navigate('/');
+  //  };
+
+  // export const navigateToRouting = () => {
+    
+  //   navigate('/routing');
+  // };
+  // export const navigateToSwitching = () => {
+    
+  //   navigate('/switching');
+  // };
+  // export const navigateToQoS = () => {
+    
+  //   navigate('/qos');
+  // };
+  // export const navigateToSecurity = () => {
+    
+  //   navigate('/security');
+  // };
+  // export const navigateToSystem = () => {
+    
+  //   navigate('/system');
+  // };
+  // export const navigateToDiagnosis = () => {
+    
+  //   navigate('/diagnosis');
+  // };

@@ -1,0 +1,42 @@
+.root {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 85px;
+  height: 65px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.rectangle2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 65px;
+  background-color: #fff;
+}
+.switch1 {
+  position: absolute;
+  left: 27px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+}
+.icon {
+  width: 100%;
+  height: 100%;
+}
+.switching {
+  color: #000000b2;
+  font-size: 12px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: calc(50% - -0.5px);
+  top: 42px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+  transform: translateX(-50%);
+}

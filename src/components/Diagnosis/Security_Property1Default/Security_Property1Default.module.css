@@ -1,0 +1,43 @@
+.root {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 85px;
+  height: 65px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.rectangle2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 65px;
+  background-color: #fff;
+}
+.security {
+  color: #000000b2;
+  font-size: 12px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 42px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+  transform: translateX(-50%);
+}
+.thenounproject1 {
+  position: absolute;
+  left: calc(50% - -0.5px);
+  top: 2px;
+  width: 44px;
+  height: 44px;
+  background-image:/* webpackIgnore: true */ url('/assets/thenounproject1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateX(-50%);
+}
