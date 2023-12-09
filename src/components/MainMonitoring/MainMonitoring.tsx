@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import type { FC } from 'react';
 
+import { App } from '../../App';
 import resets from '../_resets.module.css';
 import { Diagnose_Property1Default } from './Diagnose_Property1Default/Diagnose_Property1Default';
 import { Extercom_logo11Icon } from './Extercom_logo11Icon.js';
@@ -26,28 +27,7 @@ export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div className={classes.frame14}>
-        <div className={classes._1}></div>
-        <div className={classes._2}>
-          <div className={classes.port1}></div>
-        </div>
-        <div className={classes._6}>
-          <div className={classes.port12}></div>
-        </div>
-        <div className={classes._3}>
-          <div className={classes.dDM1}></div>
-        </div>
-        <div className={classes._4}>
-          <Image3_Property1Default
-            className={classes.image3}
-            hide={{
-              image3: true,
-            }}
-          />
-          <div className={classes.lAG1}></div>
-        </div>
-        <div className={classes._5}>
-          <div className={classes.mAC1}></div>
-        </div>
+        {/* <div className={classes._1}></div> */}
       </div>
       <SideMenu_Property1Monitoring
         className={classes.sideMenu}

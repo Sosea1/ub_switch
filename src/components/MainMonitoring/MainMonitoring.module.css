@@ -47,7 +47,7 @@
 }
 .root {
   position: relative;
-  width: 1440px;
+  width: 1920px;
   height: 1024px;
   align-items: flex-start;
   background-color: #fff;
@@ -57,7 +57,7 @@
   position: absolute;
   left: 250px;
   top: 68px;
-  width: 1189px;
+  width: 1650px;
   height: 956px;
   align-items: flex-start;
   overflow-x: auto;
@@ -174,7 +174,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  width: 1440px;
+  width: 1920px;
   height: 65px;
   align-items: flex-start;
   background-color: #fff;
