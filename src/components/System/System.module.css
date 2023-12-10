@@ -38,11 +38,24 @@
 .sideMenu.sideMenu {
   left: 0;
   top: 73px;
+  animation: fadeInAnimation ease-in-out 0.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+
 }
 .root {
   position: relative;
   width: 1920px;
-  height: 903px;
+  height: 993px;
   align-items: flex-start;
   background-color: #fff;
   overflow: hidden;

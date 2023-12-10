@@ -5,7 +5,12 @@
   left: 0;
   top: 77px;
   overflow: hidden;
+  animation: fadeInAnimation ease-in-out 0.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
 }
+
 .l2functions.l2functions {
   left: 316px;
   top: 0;
@@ -63,115 +68,20 @@
   height: 956px;
   align-items: flex-start;
   overflow-x: auto;
+  animation: fadeInAnimation ease-in-out 0.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
 }
-._1 {
-  position: absolute;
-  left: 2px;
-  top: 10px;
-  width: 1187px;
-  height: 946px;
-  background-color: #fff;
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }
-._2 {
-  position: absolute;
-  left: 1189px;
-  top: -3px;
-  width: 1187px;
-  height: 959px;
-  align-items: flex-start;
-  background-color: #fff;
-}
-.port1 {
-  position: absolute;
-  left: 0;
-  top: -103px;
-  width: 1187px;
-  height: 959px;
-  background-image:/* webpackIgnore: true */ url('/assets/port1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-._6 {
-  position: absolute;
-  left: 5937px;
-  top: -3px;
-  width: 1187px;
-  height: 959px;
-  align-items: flex-start;
-  background-color: #fff;
-}
-.port12 {
-  position: absolute;
-  left: 0;
-  top: -109px;
-  width: 1187px;
-  height: 959px;
-  background-image:/* webpackIgnore: true */ url('/assets/port12.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-._3 {
-  position: absolute;
-  left: 2376px;
-  top: -3px;
-  width: 1187px;
-  height: 959px;
-  align-items: flex-start;
-  background-color: #fff;
-}
-.dDM1 {
-  position: absolute;
-  left: 0;
-  top: -106px;
-  width: 1187px;
-  height: 959px;
-  background-image:/* webpackIgnore: true */ url('/assets/dDM1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-._4 {
-  position: absolute;
-  left: 3563px;
-  top: -3px;
-  width: 1187px;
-  height: 959px;
-  align-items: flex-start;
-  background-color: #fff;
-}
-.lAG1 {
-  position: absolute;
-  left: -4px;
-  top: -106px;
-  width: 1187px;
-  height: 959px;
-  background-image:/* webpackIgnore: true */ url('/assets/lAG1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-._5 {
-  position: absolute;
-  left: 4750px;
-  top: -3px;
-  width: 1187px;
-  height: 959px;
-  align-items: flex-start;
-  background-color: #fff;
-}
-.mAC1 {
-  position: absolute;
-  left: 0;
-  top: -109px;
-  width: 1187px;
-  height: 959px;
-  background-image:/* webpackIgnore: true */ url('/assets/mAC1.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
 .mainMenu {
   position: absolute;
   left: 0;
@@ -195,3 +105,4 @@
   width: 100%;
   height: 100%;
 }
+

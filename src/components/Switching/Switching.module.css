@@ -41,11 +41,15 @@
 .sideMenu.sideMenu {
   left: 0;
   top: 12px;
+  animation: fadeInAnimation ease-in-out 0.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
 }
 .root {
   position: relative;
   width: 1920px;
-  height: 903px;
+  height: 993px;
   align-items: flex-start;
   background-color: #fff;
   overflow: hidden;
@@ -89,6 +93,19 @@
   height: 956px;
   align-items: flex-start;
   overflow-x: auto;
+  animation: fadeInAnimation ease-in-out 0.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+
 }
 ._1 {
   position: absolute;
