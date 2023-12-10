@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import type { FC } from 'react';
 
 import resets from '../../_resets.module.css';
@@ -9,9 +9,9 @@ interface Props {
 }
 /* @figmaId 187:863 */
 export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Default(props = {}) {
+  const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className={`${resets.storybrainResets} ${classes.root}`}>
-      <div className={classes.systemMonitor}>System Monitor</div>
-    </div>
+    <button className={classes.sidebar_button} onClick={() => setIsOpen((prev)=>!prev)} style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >System Monitor
+        </button>
   );
 });

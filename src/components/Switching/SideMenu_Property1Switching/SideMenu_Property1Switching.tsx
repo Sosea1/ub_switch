@@ -16,16 +16,12 @@ interface Props {
   classes?: {
     root?: string;
   };
-  swap?: {
-    basic?: ReactNode;
-  };
 }
-/* @figmaId 112:914 */
 export const SideMenu_Property1Switching: FC<Props> = memo(function SideMenu_Property1Switching(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
       <div className={classes.frame8}>
-        {props.swap?.basic || <Basic_Property1Default />}
+        <Basic_Property1Default />
         <VLAN_Property1Default />
         <Multicast_Property1Default />
         <SpanningTree_Property1Default />

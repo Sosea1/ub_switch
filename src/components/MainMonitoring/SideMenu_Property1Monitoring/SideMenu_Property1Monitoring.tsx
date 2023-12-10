@@ -23,9 +23,10 @@ export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Pr
   return (
     <div className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
       <div className={classes.frame8}>
+      
         <SystemMonitor_Default />
         <TraficMonitor_Default />
-        {props.swap?.sNMP || <SNMP_Property1Default />}
+        <SNMP_Property1Default />
         <SFlow_Property1Default />
         <EthernetOAM_Property1Default />
       </div>
