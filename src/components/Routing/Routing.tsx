@@ -26,22 +26,7 @@ export const Routing: FC<Props> = memo(function Routing(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div className={classes.frame14}>
-        <div className={classes._1}></div>
-        <div className={classes._2}>
-          <div className={classes.port1}></div>
-        </div>
-        <div className={classes._3}>
-          <div className={classes.dDM1}></div>
-        </div>
-        <div className={classes._4}>
-          <Image3_Property1Default
-            className={classes.image3}
-            hide={{
-              image3: true,
-            }}
-          />
-          <div className={classes.lAG1}></div>
-        </div>
+        
       </div>
       <SideMenu_Property1Routing
         className={classes.sideMenu}
