@@ -91,6 +91,24 @@ const ComponentOne =(): React.ReactNode  => {
  
  };
 
+ const ComponentThree = (): React.ReactNode =>  {
+ 
+  return <div >Component Three</div>;
+ 
+ };
+
+ const ComponentFour = (): React.ReactNode =>  {
+ 
+  return <div >Component Four</div>;
+ 
+ };
+
+ const ComponentFive = (): React.ReactNode =>  {
+ 
+  return <div >Component Five</div>;
+ 
+ };
+
 
   const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
 
@@ -104,7 +122,6 @@ const ComponentOne =(): React.ReactNode  => {
     let a = window.getComputedStyle(test);
     if (a.backgroundColor != 'rgb(226, 245, 255)')
     {
-      console.log("if done")
       test.style.backgroundColor = '#E2F5FF';
       setCurrentComponent(null);
     }
@@ -115,9 +132,10 @@ const ComponentOne =(): React.ReactNode  => {
     }
     for (let i = 1; i < 6; i++)
     {
-      if(i != +key)
+      let key_ = "SNMP-"+i
+      if(key_ != key)
       {
-       (document.getElementById(i.toString()) as HTMLElement).style.backgroundColor = '#E2F5FF';
+       (document.getElementById(key_) as HTMLElement).style.backgroundColor = '#E2F5FF';
       }
      
     }
@@ -125,7 +143,6 @@ const ComponentOne =(): React.ReactNode  => {
     }
     
     useEffect(() => {
-      console.log(currentComponent)
       setCurrentComponent(currentComponent)
       var x = document.getElementById('monitoring_frame') as HTMLElement;
       x.innerHTML = ReactDomServer.renderToString(currentComponent as ReactElement);
@@ -143,11 +160,11 @@ const ComponentOne =(): React.ReactNode  => {
         </button>
         {isOpen && (
         <div className={classes.div_bar}>
-          <button id='1' onClick={() => click1("1", ComponentOne)} className={classes.inner_sidebar_button}>•  Global Config</button>
-          <button id='2' onClick={() => click1("2", ComponentOne)}  className={classes.inner_sidebar_button}>•  SNMP v1/v2c</button>
-          <button id='3' onClick={() => click1("3", ComponentTwo)}  className={classes.inner_sidebar_button}>•  SNMP v3</button>
-          <button id='4' onClick={() => click1("4", ComponentOne)}  className={classes.inner_sidebar_button}>•  Notification</button>
-          <button id='5' onClick={() => click1("5", ComponentOne)}  className={classes.inner_sidebar_button}>•  RMON</button>
+          <button id='SNMP-1' onClick={() => click1("SNMP-1", ComponentOne)} className={classes.inner_sidebar_button}>•  Global Config</button>
+          <button id='SNMP-2' onClick={() => click1("SNMP-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  SNMP v1/v2c</button>
+          <button id='SNMP-3' onClick={() => click1("SNMP-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  SNMP v3</button>
+          <button id='SNMP-4' onClick={() => click1("SNMP-4", ComponentFour)}  className={classes.inner_sidebar_button}>•  Notification</button>
+          <button id='SNMP-5' onClick={() => click1("SNMP-5", ComponentFive)}  className={classes.inner_sidebar_button}>•  RMON</button>
           
         </div>)}
         

@@ -18,12 +18,25 @@ interface Props {
     sNMP?: ReactNode;
   };
 }
+
+function SideMenuMonitoringButtonClick (key: string){
+  let element = document.getElementById(key) as HTMLElement;
+  let a = window.getComputedStyle(element);
+  if (a.backgroundColor != '(13, 89, 127)')
+  {
+    element.style.backgroundColor = '#E2F5FF';
+  }
+  else
+  {
+    element.style.backgroundColor = '#5AC3F8';
+  }
+}
+
 /* @figmaId 16:170 */
 export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Property1Monitoring(props = {}) {
   return (
     <div id='sideMenu' className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
       <div className={classes.frame8}>
-      
         <SystemMonitor_Default />
         <TraficMonitor_Default />
         <SNMP_Property1Default />
@@ -33,3 +46,5 @@ export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Pr
     </div>
   );
 });
+
+export default SideMenuMonitoringButtonClick
