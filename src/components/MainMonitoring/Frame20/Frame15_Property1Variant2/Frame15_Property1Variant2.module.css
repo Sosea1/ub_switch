@@ -1,5 +1,5 @@
 .root {
-  width: min-content;
+  width: 108px;
   height: min-content;
 }
 ._1921681 {
@@ -8,7 +8,7 @@
   line-height: 20px;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
-  width: min-content;
+  width: 108px;
   height: min-content;
   white-space: nowrap;
   flex-direction: column;

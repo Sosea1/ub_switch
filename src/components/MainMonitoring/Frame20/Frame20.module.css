@@ -1,14 +1,16 @@
 .unnamed.unnamed {
   left: 164px;
   top: 107px;
+  width: 108px;
 }
 ._1921681 {
+  width: 92px;
   color: #000;
   font-size: 14px;
   line-height: 20px;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
-  width: min-content;
+ 
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
@@ -16,14 +18,15 @@
 .unnamed2.unnamed2 {
   left: 163px;
   top: 58px;
+  width: 108px;
 }
 ._19216812 {
+  width: 92px;
   color: #000;
   font-size: 14px;
   line-height: 20px;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
-  width: min-content;
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
@@ -257,6 +260,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 55px;
+  position: relative;
 }
 .exclude {
   color: #000;
@@ -269,6 +274,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 125px;
+  position: relative;
 }
 ._13616315 {
   color: #000;
@@ -281,6 +288,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 200px;
+  position: relative;
 }
 .frame212 {
   position: absolute;
@@ -316,6 +325,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 55px;
+  position: relative;
 }
 .include {
   color: #000;
@@ -328,6 +339,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 125px;
+  position: relative;
 }
 ._12 {
   color: #000;
@@ -341,6 +354,8 @@
   text-align: center;
   align-items: center;
   flex-direction: column;
+  left: 200px;
+  position: relative;
 }
 .frame22 {
   position: absolute;
@@ -376,6 +391,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 55px;
+  position: relative;
 }
 .exclude2 {
   color: #000;
@@ -388,6 +405,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 125px;
+  position: relative;
 }
 ._13616316 {
   color: #000;
@@ -400,6 +419,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 200px;
+  position: relative;
 }
 .frame213 {
   position: absolute;
@@ -507,6 +528,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 55px;
+  position: relative;
 }
 .exclude3 {
   color: #000;
@@ -519,6 +542,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 125px;
+  position: relative;
 }
 ._13616218 {
   color: #000;
@@ -531,6 +556,8 @@
   height: min-content;
   white-space: nowrap;
   flex-direction: column;
+  left: 200px;
+  position: relative;
 }
 .enable {
   color: #000;
@@ -594,6 +621,81 @@
   top: 240px;
   width: min-content;
   height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.input1
+{
+  
+  font-size: 14px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 170px;
+  top: 18px;
+  flex-direction: column;
+
+}
+.input2
+{
+  font-size: 14px;
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  flex-direction: column;
+}
+.input3
+{
+  font-size: 14px;
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  flex-direction: column;
+}
+.input4
+{
+  font-size: 14px;
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  flex-direction: column;
+}
+.input5
+{
+  font-size: 14px;
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  flex-direction: column;
+}
+.input6
+{
+  font-size: 14px;
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  flex-direction: column;
+}
+.add1 {
+  color: green;
+ 
+  position: absolute;
+  left: 969px;
+  top: 242px;
+ 
+  white-space: nowrap;
+  flex-direction: column;
+}
+.delete1 {
+  
+  
+  width: 20px;
+  height: 20px;
+  color: red;
+  position: absolute;
+  left: 1068px;
+  top: 240px;
+  
   white-space: nowrap;
   flex-direction: column;
 }
