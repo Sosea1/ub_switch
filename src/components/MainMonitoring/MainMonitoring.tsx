@@ -1,7 +1,7 @@
-import { memo } from 'react';
-import type { FC } from 'react';
+import { memo, useState } from 'react';
+import type { FC, JSXElementConstructor, ReactElement, ReactNode } from 'react';
 
-import { App } from '../../App';
+
 import resets from '../_resets.module.css';
 import { Diagnose_Property1Default } from './Diagnose_Property1Default/Diagnose_Property1Default';
 import { Extercom_logo11Icon } from './Extercom_logo11Icon.js';
@@ -16,18 +16,24 @@ import { SideMenu_Property1Monitoring } from './SideMenu_Property1Monitoring/Sid
 import { SNMP_Property1Variant2 } from './SNMP_Property1Variant2/SNMP_Property1Variant2';
 import { System_Property1Default } from './System_Property1Default/System_Property1Default';
 
+
+
 interface Props {
   className?: string;
   hide?: {
     image3?: boolean;
   };
 }
+
+
 /* @figmaId 1:2 */
 export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}) {
+
+ 
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
-      <div className={classes.frame14}>
-        {/* <div className={classes._1}></div> */}
+      <div id='monitoring_frame' className={classes.frame14} >
+        
       </div>
       <SideMenu_Property1Monitoring
         className={classes.sideMenu}
@@ -36,7 +42,7 @@ export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}
         }}
       />
       <div className={classes.mainMenu}>
-        <L2functions_Property1Default className={classes.l2functions} />
+        <L2functions_Property1Default className={classes.l2functions}/>
         <L3functions_Property1Default className={classes.l3functions} />
         <QoS_Property1Default className={classes.qoS} />
         <Security_Property1Default
@@ -56,3 +62,5 @@ export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}
     </div>
   );
 });
+
+

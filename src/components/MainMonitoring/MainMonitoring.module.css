@@ -8,7 +8,6 @@
   animation: fadeInAnimation ease-in-out 0.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  
 }
 
 .l2functions.l2functions {
@@ -71,8 +70,8 @@
   animation: fadeInAnimation ease-in-out 0.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  
 }
+
 @keyframes fadeInAnimation {
   0% {
       opacity: 0;

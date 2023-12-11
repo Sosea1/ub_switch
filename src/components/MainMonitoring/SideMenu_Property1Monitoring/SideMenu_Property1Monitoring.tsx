@@ -21,7 +21,7 @@ interface Props {
 /* @figmaId 16:170 */
 export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Property1Monitoring(props = {}) {
   return (
-    <div className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
+    <div id='sideMenu' className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
       <div className={classes.frame8}>
       
         <SystemMonitor_Default />

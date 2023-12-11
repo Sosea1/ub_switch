@@ -5,6 +5,7 @@ import resets from '../../_resets.module.css';
 import classes from './L2functions_Property1Default.module.css';
 import { Switch1Icon } from './Switch1Icon.js';
 import { useNavigate } from 'react-router-dom';
+import classes1 from './MainMonitoring.module.css';
 
 interface Props {
   className?: string;
@@ -17,7 +18,8 @@ export const L2functions_Property1Default: FC<Props> = memo(function L2functions
   const navigate = useNavigate();
 
   const navigateTo = () => {
- 
+  // var sideMenu = document.getElementById("sideMenu") as HTMLElement;
+  // sideMenu.style.opacity = '0';
   navigate('/switching');
  };
   return (
