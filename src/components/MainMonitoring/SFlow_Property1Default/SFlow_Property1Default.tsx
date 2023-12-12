@@ -72,7 +72,7 @@ export const SFlow_Property1Default: FC<Props> = memo(function SFlow_Property1De
 
   return (
     <>
-    <button className={classes.sidebar_button} onClick={() => setIsOpen((prev)=>!prev)} style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >SFlow
+    <button id ="sFlow" className={classes.sidebar_button} onClick={() => setIsOpen((prev)=>!prev)} style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >SFlow
         {!isOpen ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (

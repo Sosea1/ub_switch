@@ -31,8 +31,9 @@ export const TraficMonitor_Default: FC<Props> = memo(function TraficMonitor_Defa
 
   return (
     <button id = 'TraficMonitor' className={classes.sidebar_button} onClick={() =>{setIsOpen((prev)=>!prev); 
-      const el = document.getElementById('TraficMonitor');
-      if (el?.style.background == 'rgb(13, 89, 127)')
+      const el = document.getElementById('TraficMonitor') as HTMLElement;
+      let a = window.getComputedStyle(el);
+      if (a.background == 'rgb(13, 89, 127)')
         setCurrentComponent(null);
       else
         setCurrentComponent(ComponentOne);

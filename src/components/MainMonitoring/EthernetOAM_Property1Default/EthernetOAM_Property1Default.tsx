@@ -81,7 +81,7 @@ export const EthernetOAM_Property1Default: FC<Props> = memo(function EthernetOAM
 
   return (
     <>
-    <button className={classes.sidebar_button} onClick={() => setIsOpen((prev)=>!prev)} style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >EathernetOAM
+    <button id = "EthernetOAM" className={classes.sidebar_button} onClick={() => setIsOpen((prev)=>!prev)} style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >EathernetOAM
         {!isOpen ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (
