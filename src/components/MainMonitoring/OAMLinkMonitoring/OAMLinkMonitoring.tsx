@@ -57,6 +57,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                               </div>
                               <div className={classes.cell2}>
                                 <div className={classes.port}>Port</div>
+                                <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input3}/>
                               </div>
                               <div className={classes.cell3}>
                                 <div className={classes.thresholdErrorSymbols}>Threshold (Error Symbols)</div>
@@ -86,6 +87,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data2}>
                                   <div className={classes.divContent}>
                                     <div className={classes._11}>1/0/1</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data3}>
@@ -117,6 +119,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data7}>
                                   <div className={classes.divContent5}>
                                     <div className={classes._12}>1/0/2</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data8}>
@@ -148,6 +151,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data12}>
                                   <div className={classes.divContent9}>
                                     <div className={classes._132}>1/0/3</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data13}>
@@ -179,6 +183,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data17}>
                                   <div className={classes.divContent13}>
                                     <div className={classes._142}>1/0/4</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data18}>
@@ -210,6 +215,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data22}>
                                   <div className={classes.divContent17}>
                                     <div className={classes._152}>1/0/5</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data23}>
@@ -241,6 +247,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data27}>
                                   <div className={classes.divContent21}>
                                     <div className={classes._162}>1/0/6</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data28}>
@@ -272,6 +279,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data32}>
                                   <div className={classes.divContent25}>
                                     <div className={classes._172}>1/0/7</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data33}>
@@ -303,6 +311,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data37}>
                                   <div className={classes.divContent29}>
                                     <div className={classes._182}>1/0/8</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data38}>
@@ -334,6 +343,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data42}>
                                   <div className={classes.divContent33}>
                                     <div className={classes._192}>1/0/9</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data43}>
@@ -365,6 +375,7 @@ export const OAMLinkMonitoring: FC<Props> = memo(function OAMLinkMonitoring(prop
                                 <div className={classes.data47}>
                                   <div className={classes.divContent37}>
                                     <div className={classes._1102}>1/0/10</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data48}>

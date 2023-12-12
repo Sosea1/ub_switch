@@ -30,6 +30,7 @@ export const SflowSampler: FC<Props> = memo(function SflowSampler(props = {}) {
                   <div className={classes.cell}></div>
                   <div className={classes.cell2}>
                     <div className={classes.port}>Port</div>
+                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input3}/>
                   </div>
                   <div className={classes.cell3}>
                     <div className={classes.collectorID}>Collector ID</div>
@@ -53,6 +54,7 @@ export const SflowSampler: FC<Props> = memo(function SflowSampler(props = {}) {
                     <div className={classes.data2}>
                       <div className={classes.divContent}>
                         <div className={classes._11}>1/0/1</div>
+                        <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                       </div>
                     </div>
                     <div className={classes.data3}>
@@ -111,6 +113,7 @@ export const SflowSampler: FC<Props> = memo(function SflowSampler(props = {}) {
                     <div className={classes.data14}>
                       <div className={classes.divContent12}>
                         <div className={classes._12}>1/0/2</div>
+                        <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                       </div>
                     </div>
                   </div>
@@ -144,6 +147,7 @@ export const SflowSampler: FC<Props> = memo(function SflowSampler(props = {}) {
                     <div className={classes.data21}>
                       <div className={classes.divContent18}>
                         <div className={classes._13}>1/0/3</div>
+                        <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                       </div>
                     </div>
                   </div>
@@ -177,6 +181,7 @@ export const SflowSampler: FC<Props> = memo(function SflowSampler(props = {}) {
                     <div className={classes.data28}>
                       <div className={classes.divContent24}>
                         <div className={classes._14}>1/0/4</div>
+                        <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                       </div>
                     </div>
                   </div>

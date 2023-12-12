@@ -1265,3 +1265,19 @@
   justify-content: center;
   flex-direction: column;
 }
+.input2
+{
+  font-size: 14px;
+  position: absolute;
+  left: -23px;
+  top: 0px;
+  flex-direction: column;
+}
+.input3
+{
+  font-size: 14px;
+  position: absolute;
+  left: -17px;
+  top: 24px;
+  flex-direction: column;
+}

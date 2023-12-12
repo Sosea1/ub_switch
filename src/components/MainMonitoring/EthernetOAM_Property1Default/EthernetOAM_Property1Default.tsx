@@ -8,6 +8,7 @@ import { SlArrowDown, SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
 import { OAMBasicConfig } from '../OAMBasicConfig/OAMBasicConfig';
 import { OAMLinkMonitoring } from '../OAMLinkMonitoring/OAMLinkMonitoring';
+import { SflowAgent } from '../SflowAgent/SflowAgent';
 
 interface Props {
   className?: string;
@@ -29,13 +30,13 @@ export const EthernetOAM_Property1Default: FC<Props> = memo(function EthernetOAM
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <div >Component Three</div>;
+    return <SflowAgent/>;
    
    };
 
    const ComponentFour = (): React.ReactNode =>  {
    
-    return <div >Component Four</div>;
+    return <SflowAgent/>;
    
    };
 

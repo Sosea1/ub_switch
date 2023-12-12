@@ -54,6 +54,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                               </div>
                               <div className={classes.cell2}>
                                 <div className={classes.port}>Port</div>
+                                <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input3}/>
                               </div>
                               <div className={classes.cell3}>
                                 <div className={classes.mode}>Mode</div>
@@ -80,6 +81,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data2}>
                                   <div className={classes.divContent}>
                                     <div className={classes._11}>1/0/1</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data3}>
@@ -106,6 +108,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data6}>
                                   <div className={classes.divContent4}>
                                     <div className={classes._12}>1/0/2</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data7}>
@@ -132,6 +135,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data10}>
                                   <div className={classes.divContent7}>
                                     <div className={classes._13}>1/0/3</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data11}>
@@ -158,6 +162,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data14}>
                                   <div className={classes.divContent10}>
                                     <div className={classes._14}>1/0/4</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data15}>
@@ -184,6 +189,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data18}>
                                   <div className={classes.divContent13}>
                                     <div className={classes._15}>1/0/5</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data19}>
@@ -210,6 +216,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data22}>
                                   <div className={classes.divContent16}>
                                     <div className={classes._16}>1/0/6</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data23}>
@@ -236,6 +243,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data26}>
                                   <div className={classes.divContent19}>
                                     <div className={classes._17}>1/0/7</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data27}>
@@ -262,6 +270,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data30}>
                                   <div className={classes.divContent22}>
                                     <div className={classes._18}>1/0/8</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data31}>
@@ -288,6 +297,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data34}>
                                   <div className={classes.divContent25}>
                                     <div className={classes._19}>1/0/9</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data35}>
@@ -314,6 +324,7 @@ export const OAMBasicConfig: FC<Props> = memo(function OAMBasicConfig(props = {}
                                 <div className={classes.data38}>
                                   <div className={classes.divContent28}>
                                     <div className={classes._110}>1/0/10</div>
+                                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data39}>

@@ -30,6 +30,7 @@ export const SflowCollector: FC<Props> = memo(function SflowCollector(props = {}
                   <div className={classes.cell}></div>
                   <div className={classes.cell2}>
                     <div className={classes.collectorID}>Collector ID</div>
+                    <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input3}/>
                   </div>
                   <div className={classes.cell3}>
                     <div className={classes.description}>Description</div>
@@ -56,6 +57,7 @@ export const SflowCollector: FC<Props> = memo(function SflowCollector(props = {}
                     <div className={classes.data2}>
                       <div className={classes.divContent}>
                         <div className={classes._1}>1</div>
+                        <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                       </div>
                     </div>
                     <div className={classes.data3}>
@@ -89,6 +91,7 @@ export const SflowCollector: FC<Props> = memo(function SflowCollector(props = {}
                     <div className={classes.data9}>
                       <div className={classes.divContent7}>
                         <div className={classes._2}>2</div>
+                        <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                       </div>
                     </div>
                     <div className={classes.data10}>
@@ -122,6 +125,7 @@ export const SflowCollector: FC<Props> = memo(function SflowCollector(props = {}
                     <div className={classes.data16}>
                       <div className={classes.divContent13}>
                         <div className={classes._3}>3</div>
+                        <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                       </div>
                     </div>
                     <div className={classes.data17}>
@@ -155,6 +159,7 @@ export const SflowCollector: FC<Props> = memo(function SflowCollector(props = {}
                     <div className={classes.data23}>
                       <div className={classes.divContent19}>
                         <div className={classes._4}>4</div>
+                        <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                       </div>
                     </div>
                     <div className={classes.data24}>
