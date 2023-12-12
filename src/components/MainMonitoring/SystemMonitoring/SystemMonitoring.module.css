@@ -1,0 +1,268 @@
+.root {
+  position: relative;
+  width: 1189px;
+  height: 956px;
+  align-items: flex-start;
+  background-color: #fff;
+  overflow: hidden;
+}
+.divPanelHeader {
+  position: absolute;
+  left: 22px;
+  right: 267px;
+  top: 20px;
+  height: 29.8px;
+  align-items: flex-start;
+  box-shadow: inset 0px -0.8px 0px #a6abac;
+}
+.heading3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 25px;
+  align-items: flex-start;
+}
+.panel {
+  color: #333;
+  font-size: 15.25px;
+  line-height: 24px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 146.89px;
+  height: 17.6px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divPanelHeader2 {
+  position: absolute;
+  left: 567px;
+  right: 25px;
+  top: 404px;
+  height: 30px;
+  align-items: flex-start;
+  box-shadow: inset 0px -0.8px 0px #a6abac;
+}
+.heading32 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 25px;
+  align-items: flex-start;
+}
+.systemStatus {
+  color: #333;
+  font-size: 15.25px;
+  line-height: 24px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 146.89px;
+  height: 17.6px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divPanelHeader3 {
+  position: absolute;
+  left: 13px;
+  right: 639px;
+  top: 404px;
+  height: 30px;
+  align-items: flex-start;
+  box-shadow: inset 0px -0.8px 0px #a6abac;
+}
+.heading33 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 25px;
+  align-items: flex-start;
+}
+.systemDescription {
+  color: #333;
+  font-size: 15.25px;
+  line-height: 24px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 146.89px;
+  height: 17.6px;
+  justify-content: center;
+  flex-direction: column;
+}
+.download1 {
+  position: absolute;
+  left: 567px;
+  top: 455px;
+  width: 597px;
+  height: 340px;
+  background-image:/* webpackIgnore: true */ url('/assets/download1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.productModel {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 17px;
+  top: 462px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.xXXXXXXXX {
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 282px;
+  top: 462px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.deviceName {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 17px;
+  top: 510px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.uptime {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 17px;
+  top: 558px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.serialNumber {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 17px;
+  top: 606px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.mAC {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 17px;
+  top: 654px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.device {
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 282px;
+  top: 510px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+._352546DdHhMmSs {
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 282px;
+  top: 558px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.xXXXXXXXXXXX {
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 282px;
+  top: 606px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.xXXXXXXXXXXX2 {
+  color: #000;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 282px;
+  top: 654px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.image4 {
+  position: absolute;
+  left: 65px;
+  top: 67px;
+  width: 889px;
+  height: 307px;
+  background-image:/* webpackIgnore: true */ url('/assets/image4.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

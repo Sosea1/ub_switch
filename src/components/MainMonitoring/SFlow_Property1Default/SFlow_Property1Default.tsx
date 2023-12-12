@@ -3,6 +3,9 @@ import type { FC, ReactElement } from 'react';
 import classes from './SFlow_Property1Default.module.css';
 import { SlArrowDown, SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
+import { SflowAgent } from '../SflowAgent/SflowAgent';
+import { SflowCollector } from '../SflowCollector/SflowCollector';
+import { SflowSampler } from '../SflowSampler/SflowSampler';
 
 interface Props {
   className?: string;
@@ -12,19 +15,19 @@ export const SFlow_Property1Default: FC<Props> = memo(function SFlow_Property1De
 
   const ComponentOne = (): React.ReactNode =>  {
  
-    return <div >Component One</div>;
+    return <SflowAgent/>;
    
    };
   
    const ComponentTwo= (): React.ReactNode =>  {
    
-    return <div >Component Two</div>;
+    return <SflowCollector/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <div >Component Three</div>;
+    return <SflowSampler/>;
    
    };
 

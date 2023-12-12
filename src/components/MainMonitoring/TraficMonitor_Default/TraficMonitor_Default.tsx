@@ -5,6 +5,7 @@ import resets from '../../_resets.module.css';
 import classes from './TraficMonitor_Default.module.css';
 import { SlArrowDown, SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
+import { TraficMonitoring } from '../TraficMonitoring/TraficMonitoring';
 
 interface Props {
   className?: string;
@@ -14,7 +15,7 @@ export const TraficMonitor_Default: FC<Props> = memo(function TraficMonitor_Defa
 
   const ComponentOne = (): React.ReactNode =>  {
  
-    return <div >Component One</div>;
+    return <TraficMonitoring/>;
    
    };
   

@@ -6,6 +6,8 @@ import classes from './EthernetOAM_Property1Default.module.css';
 import { Vector3Icon } from './Vector3Icon.js';
 import { SlArrowDown, SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
+import { OAMBasicConfig } from '../OAMBasicConfig/OAMBasicConfig';
+import { OAMLinkMonitoring } from '../OAMLinkMonitoring/OAMLinkMonitoring';
 
 interface Props {
   className?: string;
@@ -15,13 +17,13 @@ export const EthernetOAM_Property1Default: FC<Props> = memo(function EthernetOAM
   
   const ComponentOne = (): React.ReactNode =>  {
  
-    return <div >Component One</div>;
+    return <OAMBasicConfig/>;
    
    };
   
    const ComponentTwo= (): React.ReactNode =>  {
    
-    return <div >Component Two</div>;
+    return <OAMLinkMonitoring/>;
    
    };
   

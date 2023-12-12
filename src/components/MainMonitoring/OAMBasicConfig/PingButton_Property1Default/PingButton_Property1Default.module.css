@@ -1,0 +1,24 @@
+.root {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 80px;
+  height: min-content;
+  place-content: center;
+  padding: 6px;
+  border-radius: 4px;
+  background-color: #0d597f;
+  overflow: hidden;
+}
+.ping {
+  color: #fafafa;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}

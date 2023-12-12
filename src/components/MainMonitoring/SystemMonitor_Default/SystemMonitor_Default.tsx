@@ -4,6 +4,7 @@ import type { FC, ReactElement } from 'react';
 import resets from '../../_resets.module.css';
 import classes from './SystemMonitor_Default.module.css';
 import ReactDomServer from 'react-dom/server'
+import { SystemMonitoring } from '../SystemMonitoring/SystemMonitoring';
 
 interface Props {
   className?: string;
@@ -16,7 +17,7 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
 
   const ComponentOne = (): React.ReactNode =>  {
  
-    return <div >Component One</div>;
+    return <SystemMonitoring/>;
    
    };
   
