@@ -19,18 +19,28 @@ interface Props {
   };
 }
 
-function SideMenuMonitoringButtonClick (key: string){
-  let element = document.getElementById(key) as HTMLElement;
-  let a = window.getComputedStyle(element);
-  if (a.backgroundColor != '(13, 89, 127)')
-  {
-    element.style.backgroundColor = '#E2F5FF';
-  }
-  else
-  {
-    element.style.backgroundColor = '#5AC3F8';
-  }
-}
+// function SideMenuMonitoringButtonClick (key: string){
+
+//   let list_names = ["SystemMonitor", "TraficMonitor", "SNMP", "sFlow", "EthernetOAM"]
+//   for (let index in list_names)
+//   {
+//     let name = list_names[index]
+//     if(name != key)
+//     {
+//       let element = document.getElementById(name) as HTMLElement;
+//       element.style.backgroundColor = '#f1f1f1';
+//       element.style.color = '#000000b2'
+//       element.style.fontWeight = '400'
+//       let bar = document.getElementById(name+"-bar") as HTMLElement;
+//       if(bar != null)
+//       {
+//         bar.remove();
+//       }
+//     }
+    
+//   }
+  
+// }
 
 /* @figmaId 16:170 */
 export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Property1Monitoring(props = {}) {
@@ -47,4 +57,3 @@ export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Pr
   );
 });
 
-export default SideMenuMonitoringButtonClick

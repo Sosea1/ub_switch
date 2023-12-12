@@ -32,12 +32,15 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
   },[currentComponent])
 
   return (
-    <button id = 'SystemMonitor' className={classes.sidebar_button} onClick={() => {setIsOpen((prev)=>!prev); 
-    const el = document.getElementById('SystemMonitor');
-    if (el?.style.background == 'rgb(13, 89, 127)')
+    <button id = 'SystemMonitor' className={classes.sidebar_button} onClick={() => {
+    setIsOpen((prev)=>!prev); 
+    const el = document.getElementById('SystemMonitor') as HTMLElement;
+    let a = window.getComputedStyle(el);
+    if (a.background == 'rgb(13, 89, 127)')
       setCurrentComponent(null);
     else
       setCurrentComponent(ComponentOne);
+    
     }} 
     style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >System Monitor</button>
   );
