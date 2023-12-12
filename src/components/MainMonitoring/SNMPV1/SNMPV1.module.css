@@ -1,0 +1,280 @@
+.root {
+  position: relative;
+  width: 1189px;
+  height: 956px;
+  align-items: flex-start;
+  background-color: #fff;
+  overflow: hidden;
+  animation: fadeIn 0.15s ease-in-out;  
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.frame16 {
+  position: absolute;
+  left: 26px;
+  top: 0;
+  width: 1145px;
+  height: 956px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.frame22 {
+  position: absolute;
+  left: 0;
+  top: 117px;
+  width: 1145px;
+  height: 120px;
+  align-items: flex-start;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
+  overflow: hidden;
+}
+.noEntriesInThisTable {
+  color: #000;
+  font-size: 14px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 497px;
+  top: 49px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.rectangle4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1145px;
+  height: 40px;
+  background-color: #5ac3f833;
+}
+.rectangle5 {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 1145px;
+  height: 40px;
+  background-color: #5ac3f833;
+}
+.frame17 {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 1145px;
+  height: 40px;
+  background-color: #5ac3f80d;
+  overflow: hidden;
+}
+.frame21 {
+  position: absolute;
+  left: 90px;
+  top: 126px;
+  width: 1017px;
+  height: min-content;
+  place-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.index {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: 86px;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.communityName {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: 142px;
+  height: min-content;
+  flex-direction: column;
+}
+.accessMode {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.mIBView {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.operation {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: 86px;
+  height: min-content;
+  text-align: end;
+  align-items: end;
+  flex-direction: column;
+}
+.total {
+  color: #000;
+  font-size: 14px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 13px;
+  top: 208px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.line3 {
+  transform-origin: bottom left;
+  position: absolute;
+  left: -1px;
+  top: 53px;
+  width: 1149.0005px;
+  max-width: 100%;
+  height: 0;
+  max-height: 100%;
+  outline: solid 1px #0d597f;
+  transform: matrix(1, -0.0009, 0.0009, 1, 0, 0);
+}
+.sNMPCommunityConfig {
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 222px;
+  height: 36px;
+  flex-direction: column;
+}
+.link {
+  position: absolute;
+  right: 82.09px;
+  top: calc(50% - 392px);
+  width: 52.91px;
+  height: 20px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.spanIcon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.add {
+  color: #000;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  right: -0.2px;
+  top: calc(50% - 0.4px);
+  width: 25.11px;
+  height: 16px;
+  text-align: end;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.link2 {
+  position: absolute;
+  left: 1076.9199px;
+  top: 76px;
+  width: 68.47px;
+  height: 20px;
+  align-items: flex-start;
+}
+.spanIcon2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.delete {
+  opacity: 0.3;
+  color: #36444b;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  right: -0.2px;
+  top: calc(50% - 0.4px);
+  width: 40.67px;
+  height: 16px;
+  text-align: end;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+.add1 {
+  color: green;
+  top: 2px;
+  left: 2px;
+  position: absolute;
+ 
+
+ 
+  white-space: nowrap;
+  flex-direction: column;
+}
+.delete1 {
+  
+  
+  width: 20px;
+  height: 20px;
+  color: red;
+ 
+ 
+  
+  white-space: nowrap;
+  flex-direction: column;
+}
+.input2
+{
+  font-size: 14px;
+  position: absolute;
+  left: -40px;
+  top: 6px;
+  flex-direction: column;
+}

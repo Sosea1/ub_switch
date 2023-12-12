@@ -183,18 +183,18 @@
   top: 286px;
   width: 1145px;
   height: 317px;
-  border-radius: 6px;
-  background-color: #f5f5f5;
+  background-color: rgba(90,195,248,0.05);;
   overflow: hidden;
+  border: 1px solid rgba(90,195,248,0.5);
 }
 .rectangle4 {
   position: absolute;
   left: 0;
-  top: 284px;
+  top: 286px;
   width: 1145px;
   height: 40px;
-  border-radius: 6px;
-  background-color: #5ac3f826;
+ 
+  background-color: rgba(90,195,248,0.2);
 }
 .rectangle5 {
   position: absolute;
@@ -202,8 +202,8 @@
   top: 563px;
   width: 1145px;
   height: 40px;
-  border-radius: 6px;
-  background-color: #5ac3f826;
+  
+  background-color: rgba(90,195,248,0.2);
 }
 .total4 {
   color: #000;

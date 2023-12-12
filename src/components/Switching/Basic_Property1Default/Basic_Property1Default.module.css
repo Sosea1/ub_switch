@@ -68,8 +68,8 @@
 }
 .inner_sidebar_button:hover
 {
-  box-shadow: inset 0px -4px 10px -2px #0000000d;
-  background-color: #C9EBFD;
+  box-shadow: 0px 100px 0px rgba(104, 222, 255, 0.138) inset;
+  
   transition: background-color 0.15s ease-in-out;  
 } 
 .div_bar
@@ -79,7 +79,5 @@
   height: min-content;
   align-items: flex-start;
   flex-direction: column;
-  
-
 }
 

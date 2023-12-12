@@ -17,6 +17,18 @@ interface Props {
     root?: string;
   };
 }
+function SideMenuMonitoringButtonClick (key: string){
+  let element = document.getElementById(key) as HTMLElement;
+  let a = window.getComputedStyle(element);
+  if (a.backgroundColor != '(13, 89, 127)')
+  {
+    element.style.backgroundColor = '#E2F5FF';
+  }
+  else
+  {
+    element.style.backgroundColor = '#5AC3F8';
+  }
+}
 export const SideMenu_Property1Switching: FC<Props> = memo(function SideMenu_Property1Switching(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
@@ -32,3 +44,4 @@ export const SideMenu_Property1Switching: FC<Props> = memo(function SideMenu_Pro
     </div>
   );
 });
+export default SideMenuMonitoringButtonClick

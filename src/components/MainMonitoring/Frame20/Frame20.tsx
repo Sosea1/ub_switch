@@ -14,6 +14,7 @@ interface Props {
 }
 
 export const Frame20: FC<Props> = memo(function Frame20(props = {}) {
+  
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div className={classes.globalConfig}>Global Config</div>
@@ -45,17 +46,14 @@ export const Frame20: FC<Props> = memo(function Frame20(props = {}) {
         <div className={classes.frame17}>
         
         </div>
-        <input type="checkbox" className={classes.input2}/>
-        <input type="checkbox" className={classes.input3}/>
-        <input type="checkbox" className={classes.input4}/>
-        <input type="checkbox" className={classes.input5}/>
+        <div>
         <div className={classes.rectangle4}></div>
         <div className={classes.rectangle5}></div>
         <div className={classes.total4}>Total: 4</div>
         <div className={classes.delete}>Delete</div>
         <TiDelete style={{cursor: 'pointer'}} className={classes.delete1}/>
         <div className={classes.frame21}>
-        <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input4}/>
+        <input id='check2' style={{cursor: 'pointer'}} type="checkbox" className={classes.input4}/>
         
           <div className={classes._2}>2</div>
           <div className={classes.viewDefault}>ViewDefault</div>
@@ -69,7 +67,7 @@ export const Frame20: FC<Props> = memo(function Frame20(props = {}) {
   position: 'relative',cursor: 'pointer'}}/>
         </div>
         <div className={classes.frame212}>
-        <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input3}/>
+        <input id='check1' style={{cursor: 'pointer'}} type="checkbox" className={classes.input3}/>
         
           <div className={classes._1}>1</div>
           <div className={classes.viewDefault2}>ViewDefault</div>
@@ -83,7 +81,7 @@ export const Frame20: FC<Props> = memo(function Frame20(props = {}) {
   position: 'relative',cursor: 'pointer'}}/>
         </div>
         <div className={classes.frame22}>
-        <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input5}/>
+        <input id='check3' style={{cursor: 'pointer'}} type="checkbox" className={classes.input5}/>
         
           <div className={classes._3}>3</div>
           <div className={classes.viewDefault3}>ViewDefault</div>
@@ -98,7 +96,7 @@ export const Frame20: FC<Props> = memo(function Frame20(props = {}) {
         </div>
         <div className={classes.frame213}>
           <div className={classes.index}>Index</div>
-        <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
+        <input id='main_check' style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
 
           <div className={classes.viewName}>View Name</div>
           <div className={classes.viewType}>View Type</div>
@@ -106,7 +104,7 @@ export const Frame20: FC<Props> = memo(function Frame20(props = {}) {
           <div className={classes.pingResult}>Operation</div>
         </div>
         <div className={classes.frame23}>
-        <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input6}/>
+        <input id='check4' style={{cursor: 'pointer'}} type="checkbox" className={classes.input6}/>
           <div className={classes._4}>4</div>
           <div className={classes.viewDefault4}>ViewDefault</div>
           <div className={classes.exclude3}>Exclude</div>
@@ -117,6 +115,7 @@ export const Frame20: FC<Props> = memo(function Frame20(props = {}) {
           <RiDeleteBin6Line style={{left: '230px',
   top: '0px',
   position: 'relative',cursor: 'pointer'}}/>
+        </div>
         </div>
         <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input1}/>
         <div  className={classes.enable}>Enable</div>
@@ -132,6 +131,7 @@ export const Frame20: FC<Props> = memo(function Frame20(props = {}) {
         <div className={classes.add}>Add</div>
         <IoMdAddCircle style={{cursor: 'pointer'}} className={classes.add1} />
       </div>
+      
     </div>
   );
 });

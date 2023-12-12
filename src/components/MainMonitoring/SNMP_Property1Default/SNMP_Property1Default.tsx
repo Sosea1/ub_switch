@@ -10,6 +10,12 @@ import { createRoot } from 'react-dom/client';
 import { _Property1Variant4 } from '../../Diagnosis/_Property1Variant4/_Property1Variant4';
 import { PingButton_Property1Default } from '../../Diagnosis/PingButton_Property1Default/PingButton_Property1Default';
 import { Frame20 } from '../Frame20/Frame20';
+import { Frame26 } from '../Frame26/Frame26';
+import { Frame27 } from '../Frame27/Frame27';
+import { SNMPV1 } from '../SNMPV1/SNMPV1';
+import { SNMPV3 } from '../SNMPV3/SNMPV3';
+import { Notification } from '../Notification/Notification';
+import { RMON } from '../RMON/RMON';
 
 interface Props {
   className?: string;
@@ -29,25 +35,24 @@ const ComponentOne =(): React.ReactNode  => {
  
  const ComponentTwo = (): React.ReactNode =>  {
  
-  return <div >Component Two</div>;
+  return <SNMPV1/>;
  
  };
 
  const ComponentThree = (): React.ReactNode =>  {
  
-  return <div >Component Three</div>;
- 
+  return <SNMPV3/>;
  };
 
  const ComponentFour = (): React.ReactNode =>  {
  
-  return <div >Component Four</div>;
+  return <Notification/>;
  
  };
 
  const ComponentFive = (): React.ReactNode =>  {
  
-  return <div >Component Five</div>;
+  return <RMON/>;
  
  };
 
