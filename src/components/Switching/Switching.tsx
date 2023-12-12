@@ -25,6 +25,7 @@ interface Props {
 export const Switching: FC<Props> = memo(function Switching(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
+      <div id='switching_frame' className={classes.frame14} ></div>
       <div className={classes.mainMenu}>
         <Monitoring_Property1Default className={classes.monitoring} />
         <L2functions_Property1Variant3 className={classes.l2functions} />
