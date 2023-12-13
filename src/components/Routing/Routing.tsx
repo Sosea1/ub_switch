@@ -25,9 +25,7 @@ interface Props {
 export const Routing: FC<Props> = memo(function Routing(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
-      <div className={classes.frame14}>
-        
-      </div>
+       <div id='routing_frame' className={classes.frame14} ></div>
       <SideMenu_Property1Routing
         className={classes.sideMenu}
         swap={{

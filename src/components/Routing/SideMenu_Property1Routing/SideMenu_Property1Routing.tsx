@@ -27,7 +27,7 @@ export const SideMenu_Property1Routing: FC<Props> = memo(function SideMenu_Prope
         <ARP_Property1Default />
         <Interface_Default />
         <StaticRouting_Property1Default />
-        {props.swap?.dHCPService || <DHCPService_Property1Default />}
+        <DHCPService_Property1Default />
       </div>
     </div>
   );
