@@ -8,39 +8,47 @@ import { SNMP_Property1Default } from '../SNMP_Property1Default/SNMP_Property1De
 import { SystemMonitor_Default } from '../SystemMonitor_Default/SystemMonitor_Default';
 import { TraficMonitor_Default } from '../TraficMonitor_Default/TraficMonitor_Default';
 import classes from './SideMenu_Property1Monitoring.module.css';
+import { Dispatch } from "redux"
+import { useDispatch } from "react-redux"
+import { closeButton } from '../../../store/actionCreators';
+import React from 'react';
 
 interface Props {
   className?: string;
   classes?: {
     root?: string;
   };
-  swap?: {
-    sNMP?: ReactNode;
-  };
 }
 
-// function SideMenuMonitoringButtonClick (key: string){
+let button: IButton
 
-//   let list_names = ["SystemMonitor", "TraficMonitor", "SNMP", "sFlow", "EthernetOAM"]
-//   for (let index in list_names)
-//   {
-//     let name = list_names[index]
-//     if(name != key)
-//     {
-//       let element = document.getElementById(name) as HTMLElement;
-//       element.style.backgroundColor = '#f1f1f1';
-//       element.style.color = '#000000b2'
-//       element.style.fontWeight = '400'
-//       let bar = document.getElementById(name+"-bar") as HTMLElement;
-//       if(bar != null)
-//       {
-//         bar.remove();
-//       }
-//     }
+const dispatch: Dispatch<any> = useDispatch()
+
+const _closeButton = React.useCallback(
+  (button: IButton) => dispatch(closeButton(button)),
+  [dispatch, closeButton]
+)
+
+function SideMenuMonitoringButtonClick (key: string){
+
+  let list_names = ["SystemMonitor", "TraficMonitor", "SNMP", "sFlow", "EthernetOAM"]
+  for (let index in list_names)
+  {
+    let name = list_names[index]
+    if(name != key)
+    {
+      let element = document.getElementById(name) as HTMLElement;
+      element.style.backgroundColor = '#f1f1f1';
+      element.style.color = '#000000b2'
+      element.style.fontWeight = '400'
+      button.id = element.id;
+      button.isOpen = false
+      _closeButton(button)
+    }
     
-//   }
+  }
   
-// }
+}
 
 /* @figmaId 16:170 */
 export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Property1Monitoring(props = {}) {
@@ -57,3 +65,4 @@ export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Pr
   );
 });
 
+export default SideMenuMonitoringButtonClick

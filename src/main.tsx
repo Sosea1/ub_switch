@@ -12,6 +12,11 @@ import { QoS } from './components/QoS/QoS';
 import { Security } from './components/Security/Security';
 import { System } from './components/System/System';
 import { Diagnosis } from './components/Diagnosis/Diagnosis';
+import { createStore, applyMiddleware, Store } from "redux"
+import { Provider } from "react-redux"
+import thunk from "redux-thunk"
+import reducer from './store/reducer';
+import { configureStore } from '@reduxjs/toolkit'
 
 const router = createBrowserRouter([
   {
@@ -51,8 +56,14 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   
-  
 ]);
+
+const store: Store<ButtonState, ButtonAction> & {
+  dispatch: DispatchType
+} = configureStore({
+  reducer:reducer
+})
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <RouterProvider router={router}/>

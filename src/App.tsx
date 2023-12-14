@@ -12,6 +12,10 @@ import { Security } from './components/Security/Security';
 import { Switching } from './components/Switching/Switching';
 import { System } from './components/System/System';
 import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import { Dispatch } from 'redux';
+import { useDispatch } from 'react-redux';
+import { openButton } from './store/actionCreators';
 
 
 interface Props {

@@ -16,6 +16,10 @@ import { SNMPV1 } from '../SNMPV1/SNMPV1';
 import { SNMPV3 } from '../SNMPV3/SNMPV3';
 import { Notification } from '../Notification/Notification';
 import { RMON } from '../RMON/RMON';
+import { Dispatch } from 'redux';
+import { useDispatch } from 'react-redux';
+import React from 'react';
+import { openButton } from '../../../store/actionCreators';
 
 interface Props {
   className?: string;
@@ -56,9 +60,10 @@ const ComponentOne =(): React.ReactNode  => {
  
  };
 
-
+ const [button, setButton] = useState<IButton | {}>()
   const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
 
+  
 
   const [isOpen, setIsOpen] = useState(false)
 
