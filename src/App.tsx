@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { createContext, memo, useReducer, useState } from 'react';
 import type { FC } from 'react';
 import { ReactDOM } from 'react';
 
@@ -14,18 +14,17 @@ import { System } from './components/System/System';
 import { useNavigate } from 'react-router-dom';
 import React from 'react';
 import { Dispatch } from 'redux';
-import { useDispatch } from 'react-redux';
-import { openButton } from './store/actionCreators';
+
+
 
 
 interface Props {
   className?: string;
 }
 export const App: FC<Props> = memo(function App(props = {}) {
-  
+
   return (
-    <>
-    </>
+    <></>
   );
 });
 

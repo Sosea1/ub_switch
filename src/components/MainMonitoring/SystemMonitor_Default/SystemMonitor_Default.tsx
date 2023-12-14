@@ -1,11 +1,12 @@
-import { memo, useEffect, useState } from 'react';
+import { memo, useContext, useEffect, useState } from 'react';
 import type { FC, ReactElement } from 'react';
 
 import resets from '../../_resets.module.css';
 import classes from './SystemMonitor_Default.module.css';
 import ReactDomServer from 'react-dom/server'
 import { SystemMonitoring } from '../SystemMonitoring/SystemMonitoring';
-import SideMenuMonitoringButtonClick from '../SideMenu_Property1Monitoring/SideMenu_Property1Monitoring';
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterState, update } from '../../../main';
 
 interface Props {
   className?: string;
@@ -16,6 +17,15 @@ interface Props {
 /* @figmaId 187:863 */
 export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Default(props = {}) {
 
+  //-----------------
+  const value = useSelector((state: CounterState) => state.value);
+  const dispatch = useDispatch();
+
+  const handleUpdate = (key: string) => {
+    dispatch(update(key));
+  };
+ //-----------------
+
   const ComponentOne = (): React.ReactNode =>  {
  
     return <SystemMonitoring/>;
@@ -24,7 +34,6 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
   
   const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
 
-  const [isOpen, setIsOpen] = useState(false)
 
   useEffect(() => {
     setCurrentComponent(currentComponent)
@@ -34,8 +43,7 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
 
   return (
     <button id = 'SystemMonitor' className={classes.sidebar_button} onClick={() => {
-    setIsOpen((prev)=>!prev); 
-    SideMenuMonitoringButtonClick("SystemMonitor")
+      handleUpdate('SystemMonitor')      //вставляешь id вот этой баттоны
     const el = document.getElementById('SystemMonitor') as HTMLElement;
     let a = window.getComputedStyle(el);
     if (a.background == 'rgb(13, 89, 127)')
@@ -44,6 +52,7 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
       setCurrentComponent(ComponentOne);
     
     }} 
-    style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >System Monitor</button>
+    //проверяешь value на id вот этой баттоны
+    style={value != 'SystemMonitor' ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >System Monitor</button>
   );
 });

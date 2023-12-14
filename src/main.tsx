@@ -13,10 +13,8 @@ import { Security } from './components/Security/Security';
 import { System } from './components/System/System';
 import { Diagnosis } from './components/Diagnosis/Diagnosis';
 import { createStore, applyMiddleware, Store } from "redux"
-import { Provider } from "react-redux"
-import thunk from "redux-thunk"
-import reducer from './store/reducer';
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
 
 const router = createBrowserRouter([
   {
@@ -58,16 +56,37 @@ const router = createBrowserRouter([
   
 ]);
 
-const store: Store<ButtonState, ButtonAction> & {
-  dispatch: DispatchType
-} = configureStore({
-  reducer:reducer
+export interface CounterState {
+  value: string;
+};
+
+const initialState: CounterState = {
+  value: "null",
+};
+
+const counterSlice = createSlice({
+  name: 'counter',
+  initialState,
+  reducers: {
+    update: (state, action: PayloadAction<string>) => {
+      state.value = action.payload;
+    }
+  },
+});
+
+export const { update } = counterSlice.actions;
+
+const counterReducer = counterSlice.reducer;
+
+const store = configureStore({
+  reducer: counterReducer,
+  preloadedState: initialState,
 })
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+  <Provider store={store}>
     <RouterProvider router={router}/>
     <App />
-  </StrictMode>,
+  </Provider>,
   
 );

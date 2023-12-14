@@ -1,4 +1,4 @@
-import { memo, useEffect, useState } from 'react';
+import { memo, useContext, useEffect, useState } from 'react';
 import type { FC, JSXElementConstructor, ReactElement, ReactNode } from 'react';
 
 
@@ -16,10 +16,9 @@ import { SNMPV1 } from '../SNMPV1/SNMPV1';
 import { SNMPV3 } from '../SNMPV3/SNMPV3';
 import { Notification } from '../Notification/Notification';
 import { RMON } from '../RMON/RMON';
-import { Dispatch } from 'redux';
-import { useDispatch } from 'react-redux';
 import React from 'react';
-import { openButton } from '../../../store/actionCreators';
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterState, update } from '../../../main';
 
 interface Props {
   className?: string;
@@ -60,13 +59,13 @@ const ComponentOne =(): React.ReactNode  => {
  
  };
 
- const [button, setButton] = useState<IButton | {}>()
+ const value = useSelector((state: CounterState) => state.value);
+ const dispatch = useDispatch();
+
+ const handleUpdate = (key: string) => {
+   dispatch(update(key));
+ };
   const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
-
-  
-
-  const [isOpen, setIsOpen] = useState(false)
-
 
   function click1(key:string, newComponent:any):void {
     let test = (document.getElementById(key) as HTMLElement);
@@ -102,15 +101,17 @@ const ComponentOne =(): React.ReactNode  => {
 
   return (
     <>
-    <button id = "SNMP" className={classes.sidebar_button} onClick={() => setIsOpen((prev)=>!prev)} style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >SNMP
-        {!isOpen ? (
+    <button id = "SNMP" className={classes.sidebar_button} onClick={() => {
+      handleUpdate('SNMP')
+    }} style={value != "SNMP" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >SNMP
+        {value != "SNMP" ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (
           <SlArrowRight style = {{transform: 'rotate(90deg)', transition: 'transform 0.15s ease-in-out'}}  stroke="white" strokeWidth={50} color='white' size={16}/>
         )
         }
         </button>
-        {isOpen && (
+        {value == "SNMP" && (
         <div className={classes.div_bar}>
           <button id='SNMP-1' onClick={() => click1("SNMP-1", ComponentOne)} className={classes.inner_sidebar_button}>•  Global Config</button>
           <button id='SNMP-2' onClick={() => click1("SNMP-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  SNMP v1/v2c</button>
