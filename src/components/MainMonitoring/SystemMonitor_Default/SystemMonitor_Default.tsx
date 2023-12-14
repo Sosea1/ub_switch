@@ -5,6 +5,7 @@ import resets from '../../_resets.module.css';
 import classes from './SystemMonitor_Default.module.css';
 import ReactDomServer from 'react-dom/server'
 import { SystemMonitoring } from '../SystemMonitoring/SystemMonitoring';
+import SideMenuMonitoringButtonClick from '../SideMenu_Property1Monitoring/SideMenu_Property1Monitoring';
 
 interface Props {
   className?: string;
@@ -34,6 +35,7 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
   return (
     <button id = 'SystemMonitor' className={classes.sidebar_button} onClick={() => {
     setIsOpen((prev)=>!prev); 
+    SideMenuMonitoringButtonClick("SystemMonitor")
     const el = document.getElementById('SystemMonitor') as HTMLElement;
     let a = window.getComputedStyle(el);
     if (a.background == 'rgb(13, 89, 127)')
