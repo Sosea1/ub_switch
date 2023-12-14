@@ -252,21 +252,13 @@
   top: 2px;
   left: 2px;
   position: absolute;
- 
-
- 
   white-space: nowrap;
   flex-direction: column;
 }
 .delete1 {
-  
-  
   width: 20px;
   height: 20px;
   color: red;
- 
- 
-  
   white-space: nowrap;
   flex-direction: column;
 }
