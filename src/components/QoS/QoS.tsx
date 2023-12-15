@@ -20,6 +20,7 @@ interface Props {
 export const QoS: FC<Props> = memo(function QoS(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
+      <div id='qos_frame' className={classes.frame14} ></div>
       <div className={classes.mainMenu}>
         <L2functions_Property1Default className={classes.l2functions} />
         <L3functions_Property1Default className={classes.l3functions} />
