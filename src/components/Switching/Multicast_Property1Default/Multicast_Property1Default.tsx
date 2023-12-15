@@ -6,6 +6,8 @@ import classes from './Multicast_Property1Default.module.css';
 import { Vector3Icon } from './Vector3Icon.js';
 import ReactDomServer from 'react-dom/server'
 import { SlArrowRight } from 'react-icons/sl';
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterState, update } from '../../../main';
 
 interface Props {
   className?: string;
@@ -46,7 +48,12 @@ export const Multicast_Property1Default: FC<Props> = memo(function Multicast_Pro
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
   
   
-    const [isOpen, setIsOpen] = useState(false)
+    const value = useSelector((state: CounterState) => state.value);
+    const dispatch = useDispatch();
+   
+    const handleUpdate = (key: string) => {
+      dispatch(update(key));
+    };
   
   
     function click1(key:string, newComponent:any):void {
@@ -55,8 +62,6 @@ export const Multicast_Property1Default: FC<Props> = memo(function Multicast_Pro
       let a = window.getComputedStyle(test);
       if (a.backgroundColor != 'rgb(226, 245, 255)')
       {
-        test.style.backgroundColor = '#E2F5FF';
-        setCurrentComponent(null);
       }
       else
       {
@@ -84,17 +89,29 @@ export const Multicast_Property1Default: FC<Props> = memo(function Multicast_Pro
 
   return (
     <>
-    <button id = "Multicast" className={classes.sidebar_button} onClick={() => setIsOpen((prev)=>!prev)} style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >Multicast
-        {!isOpen ? (
+    <button id = "Multicast" className={classes.sidebar_button} onClick={() => {
+      let test = (document.getElementById("Multicast") as HTMLElement);
+      let a = window.getComputedStyle(test);
+      if (a.background == 'rgb(13, 89, 127)')
+    {
+
+    }
+    else
+    {
+      handleUpdate('Multicast')
+      setCurrentComponent(ComponentOne)
+    }
+    }} style={value != "Multicast" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >Multicast
+        {value != "Multicast" ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (
           <SlArrowRight style = {{transform: 'rotate(90deg)', transition: 'transform 0.15s ease-in-out'}}  stroke="white" strokeWidth={50} color='white' size={16}/>
         )
         }
         </button>
-        {isOpen && (
+        {value == "Multicast" && (
         <div className={classes.div_bar}>
-          <button id='Multicast-1' onClick={() => click1("Multicast-1", ComponentOne)} className={classes.inner_sidebar_button}>•  IGMP Snooping</button>
+          <button id='Multicast-1' style={{background:'#5AC3F8'}} onClick={() => click1("Multicast-1", ComponentOne)} className={classes.inner_sidebar_button}>•  IGMP Snooping</button>
           <button id='Multicast-2' onClick={() => click1("Multicast-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  MLD Snooping</button>
           <button id='Multicast-3' onClick={() => click1("Multicast-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  MVR</button>
           <button id='Multicast-4' onClick={() => click1("Multicast-4", ComponentFour)}  className={classes.inner_sidebar_button}>•  Multicast Filtering</button>

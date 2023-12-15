@@ -4,6 +4,8 @@ import type { FC, ReactElement } from 'react';
 import resets from '../../_resets.module.css';
 import classes from './Interface_Default.module.css';
 import ReactDomServer from 'react-dom/server'
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterState, update } from '../../../main';
 
 interface Props {
   className?: string;
@@ -18,7 +20,12 @@ export const Interface_Default: FC<Props> = memo(function Interface_Default(prop
   
   const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
 
-  const [isOpen, setIsOpen] = useState(false)
+  const value = useSelector((state: CounterState) => state.value);
+ const dispatch = useDispatch();
+
+ const handleUpdate = (key: string) => {
+   dispatch(update(key));
+ };
 
   useEffect(() => {
     setCurrentComponent(currentComponent)
@@ -28,15 +35,18 @@ export const Interface_Default: FC<Props> = memo(function Interface_Default(prop
 
   return (
     <button id = 'Interface' className={classes.sidebar_button} onClick={() => {
-    setIsOpen((prev)=>!prev); 
-    const el = document.getElementById('Interface') as HTMLElement;
-    let a = window.getComputedStyle(el);
-    if (a.background == 'rgb(13, 89, 127)')
-      setCurrentComponent(null);
+      let test = (document.getElementById("Interface") as HTMLElement);
+      let a = window.getComputedStyle(test);
+      if (a.background == 'rgb(13, 89, 127)')
+    {
+
+    }
     else
-      setCurrentComponent(ComponentOne);
-    
+    {
+      handleUpdate('Interface')
+      setCurrentComponent(ComponentOne)
+    }
     }} 
-    style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >Interface</button>
+    style={value != "Interface" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >Interface</button>
   );
 });

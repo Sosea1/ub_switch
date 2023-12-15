@@ -37,9 +37,6 @@ export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}
       </div>
       <SideMenu_Property1Monitoring
         className={classes.sideMenu}
-        swap={{
-          sNMP: <SNMP_Property1Variant2 />,
-        }}
       />
       <div className={classes.mainMenu}>
         <L2functions_Property1Default className={classes.l2functions}/>

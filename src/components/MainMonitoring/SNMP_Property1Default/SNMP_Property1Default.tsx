@@ -65,16 +65,15 @@ const ComponentOne =(): React.ReactNode  => {
  const handleUpdate = (key: string) => {
    dispatch(update(key));
  };
+
   const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
 
   function click1(key:string, newComponent:any):void {
     let test = (document.getElementById(key) as HTMLElement);
-    
     let a = window.getComputedStyle(test);
+    console.log(a.backgroundColor)
     if (a.backgroundColor != 'rgb(226, 245, 255)')
     {
-      test.style.backgroundColor = '#E2F5FF';
-      setCurrentComponent(null);
     }
     else
     {
@@ -102,8 +101,19 @@ const ComponentOne =(): React.ReactNode  => {
   return (
     <>
     <button id = "SNMP" className={classes.sidebar_button} onClick={() => {
+      let test = (document.getElementById("SNMP") as HTMLElement);
+      let a = window.getComputedStyle(test);
+      if (a.background == 'rgb(13, 89, 127)')
+    {
+
+    }
+    else
+    {
       handleUpdate('SNMP')
-    }} style={value != "SNMP" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >SNMP
+      setCurrentComponent(ComponentOne)
+    }
+    }
+    } style={value != "SNMP" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >SNMP
         {value != "SNMP" ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (
@@ -113,7 +123,7 @@ const ComponentOne =(): React.ReactNode  => {
         </button>
         {value == "SNMP" && (
         <div className={classes.div_bar}>
-          <button id='SNMP-1' onClick={() => click1("SNMP-1", ComponentOne)} className={classes.inner_sidebar_button}>•  Global Config</button>
+          <button id='SNMP-1' style={{background:'#5AC3F8'}} onClick={() => click1("SNMP-1", ComponentOne)} className={classes.inner_sidebar_button}>•  Global Config</button>
           <button id='SNMP-2' onClick={() => click1("SNMP-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  SNMP v1/v2c</button>
           <button id='SNMP-3' onClick={() => click1("SNMP-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  SNMP v3</button>
           <button id='SNMP-4' onClick={() => click1("SNMP-4", ComponentFour)}  className={classes.inner_sidebar_button}>•  Notification</button>

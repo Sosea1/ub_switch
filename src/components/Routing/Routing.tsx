@@ -28,9 +28,6 @@ export const Routing: FC<Props> = memo(function Routing(props = {}) {
        <div id='routing_frame' className={classes.frame14} ></div>
       <SideMenu_Property1Routing
         className={classes.sideMenu}
-        swap={{
-          dHCPService: <DHCPService_Property1Variant2 />,
-        }}
       />
       <div className={classes.mainMenu}>
         <L2functions_Property1Default className={classes.l2functions} />

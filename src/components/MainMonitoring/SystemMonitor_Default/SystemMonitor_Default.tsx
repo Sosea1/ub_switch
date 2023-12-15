@@ -43,15 +43,22 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
 
   return (
     <button id = 'SystemMonitor' className={classes.sidebar_button} onClick={() => {
-      handleUpdate('SystemMonitor')      //вставляешь id вот этой баттоны
+         //вставляешь id вот этой баттоны
     const el = document.getElementById('SystemMonitor') as HTMLElement;
     let a = window.getComputedStyle(el);
     if (a.background == 'rgb(13, 89, 127)')
-      setCurrentComponent(null);
+      {
+
+      }
+      
     else
-      setCurrentComponent(ComponentOne);
+      {
+        handleUpdate('SystemMonitor') 
+        setCurrentComponent(ComponentOne);
+      }
     
-    }} 
+    }
+  } 
     //проверяешь value на id вот этой баттоны
     style={value != 'SystemMonitor' ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >System Monitor</button>
   );

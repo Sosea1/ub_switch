@@ -14,9 +14,6 @@ interface Props {
   classes?: {
     root?: string;
   };
-  swap?: {
-    dHCPService?: ReactNode;
-  };
 }
 export const SideMenu_Property1Routing: FC<Props> = memo(function SideMenu_Property1Routing(props = {}) {
   return (

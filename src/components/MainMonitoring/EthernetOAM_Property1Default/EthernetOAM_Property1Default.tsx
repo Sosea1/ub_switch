@@ -9,6 +9,8 @@ import ReactDomServer from 'react-dom/server'
 import { OAMBasicConfig } from '../OAMBasicConfig/OAMBasicConfig';
 import { OAMLinkMonitoring } from '../OAMLinkMonitoring/OAMLinkMonitoring';
 import { SflowAgent } from '../SflowAgent/SflowAgent';
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterState, update } from '../../../main';
 
 interface Props {
   className?: string;
@@ -43,7 +45,12 @@ export const EthernetOAM_Property1Default: FC<Props> = memo(function EthernetOAM
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
   
   
-    const [isOpen, setIsOpen] = useState(false)
+    const value = useSelector((state: CounterState) => state.value);
+    const dispatch = useDispatch();
+
+    const handleUpdate = (key: string) => {
+      dispatch(update(key));
+    };
   
   
     function click1(key:string, newComponent:any):void {
@@ -52,8 +59,6 @@ export const EthernetOAM_Property1Default: FC<Props> = memo(function EthernetOAM
       let a = window.getComputedStyle(test);
       if (a.backgroundColor != 'rgb(226, 245, 255)')
       {
-        test.style.backgroundColor = '#E2F5FF';
-        setCurrentComponent(null);
       }
       else
       {
@@ -81,17 +86,30 @@ export const EthernetOAM_Property1Default: FC<Props> = memo(function EthernetOAM
 
   return (
     <>
-    <button id = "EthernetOAM" className={classes.sidebar_button} onClick={() => setIsOpen((prev)=>!prev)} style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >EathernetOAM
-        {!isOpen ? (
+    <button id = "EthernetOAM" className={classes.sidebar_button} onClick={() => {
+      handleUpdate('EthernetOAM')
+      let test = (document.getElementById("EthernetOAM") as HTMLElement);
+      let a = window.getComputedStyle(test);
+      if (a.background == 'rgb(13, 89, 127)')
+    {
+
+    }
+    else
+    {
+      handleUpdate('EthernetOAM')
+      setCurrentComponent(ComponentOne)
+    }
+    }} style={value != 'EthernetOAM' ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >EathernetOAM
+        {value != 'EthernetOAM' ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (
           <SlArrowRight style = {{transform: 'rotate(90deg)', transition: 'transform 0.15s ease-in-out'}}  stroke="white" strokeWidth={50} color='white' size={16}/>
         )
         }
         </button>
-        {isOpen && (
+        {value == 'EthernetOAM' && (
           <div className={classes.div_bar}>
-            <button id='EthernetOAM-1' onClick={() => click1("EthernetOAM-1", ComponentOne)} className={classes.inner_sidebar_button}>•  Basic Config</button>
+            <button id='EthernetOAM-1' style={{background:'#5AC3F8'}} onClick={() => click1("EthernetOAM-1", ComponentOne)} className={classes.inner_sidebar_button}>•  Basic Config</button>
             <button id='EthernetOAM-2' onClick={() => click1("EthernetOAM-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  Link Monitoring</button>
             <button id='EthernetOAM-3' onClick={() => click1("EthernetOAM-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  Remote Failure Indication</button>
             <button id='EthernetOAM-4' onClick={() => click1("EthernetOAM-4", ComponentFour)}  className={classes.inner_sidebar_button}>•  Statistics</button>

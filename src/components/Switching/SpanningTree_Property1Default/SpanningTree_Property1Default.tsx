@@ -6,6 +6,8 @@ import classes from './SpanningTree_Property1Default.module.css';
 import { Vector3Icon } from './Vector3Icon.js';
 import { SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterState, update } from '../../../main';
 
 interface Props {
   className?: string;
@@ -33,7 +35,12 @@ export const SpanningTree_Property1Default: FC<Props> = memo(function SpanningTr
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
   
   
-    const [isOpen, setIsOpen] = useState(false)
+    const value = useSelector((state: CounterState) => state.value);
+    const dispatch = useDispatch();
+   
+    const handleUpdate = (key: string) => {
+      dispatch(update(key));
+    };
   
   
     function click1(key:string, newComponent:any):void {
@@ -42,8 +49,6 @@ export const SpanningTree_Property1Default: FC<Props> = memo(function SpanningTr
       let a = window.getComputedStyle(test);
       if (a.backgroundColor != 'rgb(226, 245, 255)')
       {
-        test.style.backgroundColor = '#E2F5FF';
-        setCurrentComponent(null);
       }
       else
       {
@@ -71,17 +76,29 @@ export const SpanningTree_Property1Default: FC<Props> = memo(function SpanningTr
 
   return (
     <>
-    <button id = "SpanningTree" className={classes.sidebar_button} onClick={() => setIsOpen((prev)=>!prev)} style={!isOpen ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >Spanning Tree
-        {!isOpen ? (
+    <button id = "SpanningTree" className={classes.sidebar_button} onClick={() => {
+      let test = (document.getElementById("SpanningTree") as HTMLElement);
+      let a = window.getComputedStyle(test);
+      if (a.background == 'rgb(13, 89, 127)')
+    {
+
+    }
+    else
+    {
+      handleUpdate('SpanningTree')
+      setCurrentComponent(ComponentOne)
+    }
+    }} style={value != "SpanningTree"  ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >Spanning Tree
+        {value != "SpanningTree"  ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (
           <SlArrowRight style = {{transform: 'rotate(90deg)', transition: 'transform 0.15s ease-in-out'}}  stroke="white" strokeWidth={50} color='white' size={16}/>
         )
         }
         </button>
-        {isOpen && (
+        {value == "SpanningTree" && (
         <div className={classes.div_bar}>
-          <button id='SpanningTree-1' onClick={() => click1("SpanningTree-1", ComponentOne)} className={classes.inner_sidebar_button}>•  STP Config</button>
+          <button id='SpanningTree-1'  style={{background:'#5AC3F8'}} onClick={() => click1("SpanningTree-1", ComponentOne)} className={classes.inner_sidebar_button}>•  STP Config</button>
           <button id='SpanningTree-2' onClick={() => click1("SpanningTree-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  Port Config</button>
           <button id='SpanningTree-3' onClick={() => click1("SpanningTree-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  MSTP Instance</button>
           
