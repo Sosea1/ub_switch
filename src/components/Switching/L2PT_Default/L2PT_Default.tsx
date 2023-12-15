@@ -6,6 +6,7 @@ import classes from './L2PT_Default.module.css';
 import ReactDomServer from 'react-dom/server'
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { L2PTConfig } from '../L2PTConfig/L2PTConfig';
 
 interface Props {
   className?: string;
@@ -14,7 +15,7 @@ interface Props {
 export const L2PT_Default: FC<Props> = memo(function L2PT_Default(props = {}) {
   const ComponentOne = (): React.ReactNode =>  {
  
-    return <div>1</div>;
+    return <L2PTConfig/>;
    
    };
   

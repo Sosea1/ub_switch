@@ -81,7 +81,8 @@
   top: 0;
   height: 29.8px;
   align-items: flex-start;
-  box-shadow: inset 0px -2px 0px #0d597f;
+  border-bottom-color: #0d597f;
+  border-bottom-style: inset;
 }
 .heading3 {
   position: absolute;

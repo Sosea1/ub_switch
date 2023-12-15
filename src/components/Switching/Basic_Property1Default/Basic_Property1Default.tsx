@@ -5,6 +5,10 @@ import { SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { Port } from '../Port/Port';
+import { DDM } from '../DDM/DDM';
+import { LAG } from '../LAG/LAG';
+import { MacAddress } from '../MacAddress/MacAddress';
 
 interface Props {
   className?: string;
@@ -14,24 +18,24 @@ export const Basic_Property1Default: FC<Props> = memo(function Basic_Property1De
    
 const ComponentOne =(): React.ReactNode  => {
 
-  return <></>
+  return <Port/>
  };
  
  
  const ComponentTwo = (): React.ReactNode =>  {
  
-  return <></>;
+  return <DDM/>;
  
  };
 
  const ComponentThree = (): React.ReactNode =>  {
  
-  return <></>;
+  return <LAG/>;
  };
 
  const ComponentFour = (): React.ReactNode =>  {
  
-  return <></>;
+  return <MacAddress/>;
  
  };
 

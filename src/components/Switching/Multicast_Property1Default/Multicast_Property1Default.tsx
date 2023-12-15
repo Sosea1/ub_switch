@@ -8,6 +8,11 @@ import ReactDomServer from 'react-dom/server'
 import { SlArrowRight } from 'react-icons/sl';
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { MulticastIGMPSnooping } from '../MulticastIGMPSnooping/MulticastIGMPSnooping';
+import { MLDSnooping } from '../MLDSnooping/MLDSnooping';
+import { MVR } from '../MVR/MVR';
+import { MulticastFiltering } from '../MulticastFiltering/MulticastFiltering';
+import { MulticastInfo } from '../MulticastInfo/MulticastInfo';
 
 interface Props {
   className?: string;
@@ -17,30 +22,30 @@ export const Multicast_Property1Default: FC<Props> = memo(function Multicast_Pro
   
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <MulticastIGMPSnooping/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <MLDSnooping/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <MVR/>;
    };
   
    const ComponentFour = (): React.ReactNode =>  {
    
-    return <>4</>;
+    return <MulticastFiltering/>;
    
    };
   
    const ComponentFive = (): React.ReactNode =>  {
    
-    return <>5</>;
+    return <MulticastInfo/>;
    
    };
   

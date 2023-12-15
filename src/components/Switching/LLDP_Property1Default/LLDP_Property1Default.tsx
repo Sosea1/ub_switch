@@ -8,6 +8,8 @@ import { SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { LLDPConfig } from '../LLDPConfig/LLDPConfig';
+import { LLDPConfig1 } from '../LLDPConfig1/LLDPConfig1';
 
 interface Props {
   className?: string;
@@ -16,13 +18,13 @@ interface Props {
 export const LLDP_Property1Default: FC<Props> = memo(function LLDP_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <LLDPConfig/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <LLDPConfig1/>;
    
    };
 

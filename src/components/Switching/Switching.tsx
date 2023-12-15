@@ -45,8 +45,7 @@ export const Switching: FC<Props> = memo(function Switching(props = {}) {
         </div>
       </div>
       <div className={classes.mainWindow}>
-        <div id='switching_frame' className={classes.frame13}>
-        </div>
+        
         <SideMenu_Property1Switching
           className={classes.sideMenu}/>
           

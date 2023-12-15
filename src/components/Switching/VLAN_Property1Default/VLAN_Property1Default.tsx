@@ -8,6 +8,11 @@ import { SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { Vlan8021 } from '../Vlan8021/Vlan8021';
+import { MACVLAN } from '../MACVLAN/MACVLAN';
+import { ProtocolVLAN } from '../ProtocolVLAN/ProtocolVLAN';
+import { VLANVPN } from '../VLANVPN/VLANVPN';
+import { GVRP } from '../GVRP/GVRP';
 
 interface Props {
   className?: string;
@@ -18,30 +23,30 @@ export const VLAN_Property1Default: FC<Props> = memo(function VLAN_Property1Defa
   
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <Vlan8021/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <MACVLAN/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <ProtocolVLAN/>;
    };
   
    const ComponentFour = (): React.ReactNode =>  {
    
-    return <>4</>;
+    return <VLANVPN/>;
    
    };
   
    const ComponentFive = (): React.ReactNode =>  {
    
-    return <>5</>;
+    return <GVRP/>;
    
    };
   

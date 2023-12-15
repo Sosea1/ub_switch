@@ -1,0 +1,619 @@
+.pingButton.pingButton {
+  left: 22px;
+  top: 18px;
+  width: 109px;
+  outline: solid 1px #0d597f;
+  outline-offset: -1px;
+  background-color: #fff;
+}
+.ping {
+  color: #0d597f;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.pingButton2.pingButton2 {
+  left: 151px;
+  top: 18px;
+  width: 143px;
+  outline: solid 1px #a7aaaa;
+  outline-offset: -1px;
+  background-color: initial;
+}
+.ping2 {
+  color: #a7aaaa;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.pingButton3.pingButton3 {
+  left: 829px;
+  top: 300px;
+  width: 93px;
+}
+.ping3 {
+  color: #fafafa;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.root {
+  position: relative;
+  width: 1189px;
+  height: 956px;
+  align-items: flex-start;
+  background-color: #fff;
+  overflow: hidden;
+}
+.link {
+  position: absolute;
+  left: 314px;
+  top: 18px;
+  width: 117px;
+  height: 30px;
+  align-items: flex-start;
+  outline: solid 1px #a7aaaa;
+  outline-offset: -1px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.portConfig {
+  color: #a7aaaa;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  z-index: 0;
+  position: absolute;
+  left: calc(50% - -7.5px);
+  top: 7px;
+  width: 86px;
+  height: 16px;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateX(-50%);
+}
+.link2 {
+  position: absolute;
+  left: 451px;
+  top: 18px;
+  width: 186px;
+  height: 30px;
+  align-items: flex-start;
+  outline: solid 1px #a7aaaa;
+  outline-offset: -1px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.staticGroupMembers {
+  color: #a7aaaa;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  z-index: 0;
+  position: absolute;
+  left: calc(50% - -0.5px);
+  top: 7px;
+  width: 155px;
+  height: 16px;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateX(-50%);
+}
+.divPanelHeader {
+  position: absolute;
+  left: 22px;
+  right: 267px;
+  top: 66px;
+  height: 30.6px;
+  align-items: flex-start;
+  box-shadow: inset 0px -2px 0px #0d597f;
+}
+.heading3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 25px;
+  align-items: flex-start;
+}
+.mVRConfig {
+  color: #333;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 103px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divJumbo {
+  position: absolute;
+  left: 22px;
+  top: 116.6001px;
+  width: 900px;
+  height: 27.2px;
+  align-items: flex-start;
+}
+.divWidgetFieldlabelWrap {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0px);
+  width: 144px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.labelJumbo {
+  color: #36444b;
+  font-size: 12.1875px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 2.7998px;
+  width: 95px;
+  height: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divWidgetTips {
+  position: absolute;
+  left: 334px;
+  top: calc(50% - 0px);
+  width: 109.4px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.divContent {
+  position: absolute;
+  left: 12px;
+  right: 0;
+  top: 0;
+  height: 22px;
+  align-items: flex-start;
+}
+.enable {
+  color: #36444b;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 97.6px;
+  height: 14.4px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divJumbo2 {
+  position: absolute;
+  left: 22px;
+  top: 144px;
+  width: 900px;
+  height: 27.2px;
+  align-items: flex-start;
+}
+.divWidgetFieldlabelWrap2 {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0px);
+  width: 144px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.labelJumbo2 {
+  color: #36444b;
+  font-size: 12.1875px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 2.3999px;
+  width: 165px;
+  height: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divWidgetTips2 {
+  position: absolute;
+  left: 334px;
+  top: calc(50% - -0.4px);
+  width: 77px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.divContent2 {
+  position: absolute;
+  left: 12px;
+  right: -0.4px;
+  top: 0;
+  height: 22px;
+  align-items: flex-start;
+}
+.compatible {
+  color: #36444b;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 97.6px;
+  height: 14.4px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divContent3 {
+  position: absolute;
+  left: 450px;
+  right: 352.6px;
+  top: 2px;
+  height: 22px;
+  align-items: flex-start;
+}
+.dynamic {
+  color: #36444b;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 97.6px;
+  height: 14.4px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divJumbo3 {
+  position: absolute;
+  left: 22px;
+  top: 240.5999px;
+  width: 900px;
+  height: 27.2px;
+  align-items: flex-start;
+}
+.divWidgetFieldlabelWrap3 {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0px);
+  width: 144px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.labelJumbo3 {
+  color: #36444b;
+  font-size: 12.1875px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 2.8px;
+  width: 165px;
+  height: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divWidgetTips3 {
+  position: absolute;
+  left: 334px;
+  top: calc(50% - 0px);
+  width: 109.4px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.divContent4 {
+  position: absolute;
+  left: 12px;
+  right: 0;
+  top: 0;
+  height: 22px;
+  align-items: flex-start;
+}
+._511 {
+  color: #36444b;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 97.6px;
+  height: 14.4px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divJumbo4 {
+  position: absolute;
+  left: 22px;
+  top: 267.7998px;
+  width: 900px;
+  height: 27.2px;
+  align-items: flex-start;
+}
+.divWidgetFieldlabelWrap4 {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0px);
+  width: 144px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.labelJumbo4 {
+  color: #36444b;
+  font-size: 12.1875px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.6001px;
+  width: 157px;
+  height: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divWidgetTips4 {
+  position: absolute;
+  left: 334px;
+  top: calc(50% - 0px);
+  width: 109.4px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.divContent5 {
+  position: absolute;
+  left: 12px;
+  right: 0;
+  top: 0;
+  height: 22px;
+  align-items: flex-start;
+}
+.unnamed {
+  color: #36444b;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 97.6px;
+  height: 14.4px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divJumbo5 {
+  position: absolute;
+  left: 22px;
+  top: 176.2px;
+  width: 900px;
+  height: 27.2px;
+  align-items: flex-start;
+}
+.divWidgetFieldlabelWrap5 {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0px);
+  width: 144px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.labelJumbo5 {
+  color: #36444b;
+  font-size: 12.1875px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 153px;
+  height: 14px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divWidgetTips5 {
+  position: absolute;
+  left: 506px;
+  top: calc(50% - -0.0001px);
+  width: 109.4px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.divContent6 {
+  position: absolute;
+  left: 12px;
+  right: 0;
+  top: 0;
+  height: 22px;
+  align-items: flex-start;
+}
+._14096 {
+  color: #a7a9ac;
+  font-size: 11.25px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3.2px;
+  width: 97.6px;
+  height: 14.4px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divWidgetWrap {
+  position: absolute;
+  left: 316px;
+  top: calc(50% - 0px);
+  width: 190px;
+  height: 27.2px;
+  align-items: flex-start;
+  outline: solid 1px #a7a9ac;
+  outline-offset: -1px;
+  border-radius: 4px;
+  transform: translateY(-50%);
+}
+.input {
+  z-index: 0;
+  position: absolute;
+  left: 10.6px;
+  right: 12.6px;
+  top: 6.4px;
+  height: 14.4px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+._1518 {
+  color: #000;
+  font-size: 13px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 29.13px;
+  height: 14.4px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divJumbo6 {
+  position: absolute;
+  left: 22px;
+  top: 208.3999px;
+  width: 900px;
+  height: 27.2px;
+  align-items: flex-start;
+}
+.divWidgetFieldlabelWrap6 {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 0px);
+  width: 144px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.labelJumbo6 {
+  color: #36444b;
+  font-size: 12.1875px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 144px;
+  height: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divWidgetTips6 {
+  position: absolute;
+  left: 506px;
+  top: calc(50% - -0.0001px);
+  width: 109.4px;
+  height: 22px;
+  align-items: flex-start;
+  transform: translateY(-50%);
+}
+.divContent7 {
+  position: absolute;
+  left: 12px;
+  right: 0;
+  top: 0;
+  height: 22px;
+  align-items: flex-start;
+}
+.tenthsOfASecond1100 {
+  color: #a7a9ac;
+  font-size: 11.25px;
+  line-height: 22px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 144px;
+  height: 15px;
+  justify-content: center;
+  flex-direction: column;
+}
+.divWidgetWrap2 {
+  position: absolute;
+  left: 316px;
+  top: calc(50% - 0px);
+  width: 190px;
+  height: 27.2px;
+  align-items: flex-start;
+  outline: solid 1px #a7a9ac;
+  outline-offset: -1px;
+  border-radius: 4px;
+  transform: translateY(-50%);
+}
+.input2 {
+  z-index: 0;
+  position: absolute;
+  left: 10.6px;
+  right: 12.6px;
+  top: 6.4px;
+  height: 14.4px;
+  align-items: flex-start;
+  overflow: hidden;
+}
+._15182 {
+  color: #000;
+  font-size: 13px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 29.13px;
+  height: 14.4px;
+  justify-content: center;
+  flex-direction: column;
+}

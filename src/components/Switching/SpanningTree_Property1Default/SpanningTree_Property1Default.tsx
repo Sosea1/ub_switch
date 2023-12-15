@@ -8,6 +8,10 @@ import { SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { STPConfig } from '../STPConfig/STPConfig';
+import { PortConfig } from '../PortConfig/PortConfig';
+import { MSTPInstance } from '../MSTPInstance/MSTPInstance';
+import { STPSecurity } from '../STPSecurity/STPSecurity';
 
 interface Props {
   className?: string;
@@ -16,19 +20,24 @@ interface Props {
 export const SpanningTree_Property1Default: FC<Props> = memo(function SpanningTree_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <STPConfig/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <PortConfig/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <MSTPInstance/>;
+   };
+
+   const ComponentFour = (): React.ReactNode =>  {
+   
+    return <STPSecurity/>;
    };
   
   
@@ -101,7 +110,7 @@ export const SpanningTree_Property1Default: FC<Props> = memo(function SpanningTr
           <button id='SpanningTree-1'  style={{background:'#5AC3F8'}} onClick={() => click1("SpanningTree-1", ComponentOne)} className={classes.inner_sidebar_button}>•  STP Config</button>
           <button id='SpanningTree-2' onClick={() => click1("SpanningTree-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  Port Config</button>
           <button id='SpanningTree-3' onClick={() => click1("SpanningTree-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  MSTP Instance</button>
-          
+          <button id='SpanningTree-4' onClick={() => click1("SpanningTree-4", ComponentFour)}  className={classes.inner_sidebar_button}>•  STP Security</button>
         </div>)}
         
      </>  
