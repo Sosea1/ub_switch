@@ -31,7 +31,7 @@
   top: 0;
   height: 29.8px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8px 0px #a6abac;
+  box-shadow: inset 0px -2px 0px #0d597f;
 }
 .heading3 {
   position: absolute;
@@ -43,14 +43,15 @@
 }
 .linkEvent {
   color: #333;
-  font-size: 15.25px;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 24px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
   position: absolute;
   left: 0;
   top: 3.2px;
-  width: 74.91px;
+  width: 100px;
   height: 17.6px;
   justify-content: center;
   flex-direction: column;
@@ -148,7 +149,7 @@
   top: 0;
   height: 29.8px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8px 0px #a6abac;
+  box-shadow: inset 0px -2px 0px #0d597f;
 }
 .heading32 {
   position: absolute;
@@ -160,14 +161,15 @@
 }
 .linkMonitoringConfig {
   color: #333;
-  font-size: 14.875px;
+  font-size: 18px;
+  font-weight: 600;
   line-height: 24px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
   position: absolute;
   left: 0;
   top: 3.2px;
-  width: 159.4px;
+  width: 190px;
   height: 17.6px;
   justify-content: center;
   flex-direction: column;

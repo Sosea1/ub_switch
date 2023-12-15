@@ -1,3 +1,22 @@
+.pingButton.pingButton {
+  left: 807px;
+  top: 34.1099px;
+  width: 93px;
+  height: 30px;
+  align-items: center;
+}
+.ping {
+  color: #fafafa;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
 .root {
   position: relative;
   width: 1189px;
@@ -18,8 +37,8 @@
 }
 .divModule {
   position: absolute;
-  left: 40px;
-  right: 40px;
+  left: 22px;
+  right: 58px;
   top: 20px;
   height: 586.22px;
   align-items: flex-start;
@@ -39,7 +58,7 @@
   top: 0;
   height: 29.89px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #a6abac;
+  box-shadow: inset 0px -2px 0px #0d597f;
 }
 .heading3 {
   position: absolute;
@@ -50,16 +69,17 @@
   align-items: flex-start;
 }
 .trafficSummary {
-  color: #333;
-  font-size: 14.875px;
+  color: #000;
+  font-size: 18px;
   line-height: 24px;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+  font-weight: 600;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
   position: absolute;
   left: 0;
-  top: 2.67px;
-  width: 116.67px;
-  height: 17.78px;
+  top: 3px;
+  width: 161px;
+  height: 17px;
   justify-content: center;
   flex-direction: column;
 }
@@ -89,7 +109,7 @@
   transform: translateY(-50%);
 }
 .labelAutoRefresh {
-  color: #36444b;
+  color: #000;
   font-size: 12.3906px;
   line-height: 22px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -152,20 +172,8 @@
   height: 13.33px;
   align-items: flex-start;
 }
-.spanIcon {
-  position: absolute;
-  left: 0;
-  top: -0.94px;
-  width: 16px;
-  height: 16px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
 .enable {
-  color: #36444b;
+  color: #000;
   font-size: 12.6953px;
   line-height: 22px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -175,53 +183,6 @@
   top: calc(50% - -0.555px);
   width: 40.67px;
   height: 14.22px;
-  justify-content: center;
-  flex-direction: column;
-  transform: translateY(-50%);
-}
-.divTrafficMonitorViewApply {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 34px;
-  height: 30px;
-  align-items: flex-start;
-}
-.divWidgetWrap2 {
-  position: absolute;
-  right: 0;
-  top: 50%;
-  width: 100px;
-  height: 30px;
-  align-items: flex-start;
-  transform: translateY(-50%);
-}
-.link {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100px;
-  height: 30px;
-  align-items: flex-start;
-  outline: solid 1px #4acbd6;
-  outline-offset: -1px;
-  border-radius: 6px;
-  background-color: #4acbd6;
-}
-.apply {
-  color: #fff;
-  font-size: 15.8047px;
-  line-height: 25px;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-    'Liberation Sans', sans-serif;
-  z-index: 0;
-  position: absolute;
-  right: 28.55px;
-  top: calc(50% - 0.115px);
-  width: 42.71px;
-  height: 18.67px;
-  text-align: center;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   transform: translateY(-50%);
@@ -274,7 +235,7 @@
   height: 34px;
   align-items: flex-start;
 }
-.link2 {
+.link {
   position: absolute;
   right: 75.46px;
   top: calc(50% - 7px);
@@ -283,20 +244,8 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.spanIcon2 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
 .refresh {
-  color: #36444b;
+  color: #000;
   font-size: 13.5625px;
   line-height: 20px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -312,7 +261,7 @@
   flex-direction: column;
   transform: translateY(-50%);
 }
-.link3 {
+.link2 {
   position: absolute;
   left: 91.03px;
   top: 0;
@@ -320,20 +269,8 @@
   height: 20px;
   align-items: flex-start;
 }
-.spanIcon3 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 20px;
-  height: 20px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-}
 .clear {
-  color: #36444b;
+  color: #000;
   font-size: 13.4531px;
   line-height: 20px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -364,7 +301,8 @@
   top: 0;
   height: 357.78px;
   align-items: flex-start;
-  box-shadow: inset -0.8889px 0px 0px #a7aaaa, inset -0.8889px 0px 0px #a7aaaa;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
 }
 .divScrollXContainer {
   position: absolute;
@@ -382,8 +320,8 @@
   top: 0;
   height: 37.78px;
   align-items: flex-start;
-  background-color: #eaeded;
-  box-shadow: inset 0px 0.8889px 0px #a7aaaa, inset 0px -0.8889px 0px #a7aaaa;
+  background-color: #5ac3f833;
+  box-shadow: inset 0px 0.8889px 0px #5ac3f880, inset 0px -0.8889px 0px #5ac3f880;
 }
 .table {
   position: absolute;
@@ -408,45 +346,6 @@
   top: 50%;
   width: 41px;
   height: 36px;
-  align-items: flex-start;
-  transform: translateY(-50%);
-}
-.divCheckboxGroupContainer {
-  position: absolute;
-  left: 10px;
-  top: 10.44px;
-  width: 25px;
-  height: 13.33px;
-  align-items: flex-start;
-}
-.divWidgetWrap3 {
-  position: absolute;
-  left: 0;
-  top: calc(50% - -0.895px);
-  width: 25px;
-  height: 15px;
-  align-items: flex-start;
-  transform: translateY(-50%);
-}
-.label2 {
-  position: absolute;
-  left: 0;
-  top: -0.06px;
-  width: 25px;
-  height: 13.33px;
-  align-items: flex-start;
-}
-.spanIcon4 {
-  position: absolute;
-  left: 0;
-  top: calc(50% - -0.395px);
-  width: 16px;
-  height: 16px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
   transform: translateY(-50%);
 }
 .cell2 {
@@ -459,7 +358,7 @@
   transform: translateY(-50%);
 }
 .port {
-  color: #36444b;
+  color: #000;
   font-size: 12.9063px;
   line-height: 22px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -484,7 +383,7 @@
   transform: translateY(-50%);
 }
 .packetsRx {
-  color: #36444b;
+  color: #000;
   font-size: 13.5625px;
   line-height: 22px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -509,7 +408,7 @@
   transform: translateY(-50%);
 }
 .packetsTx {
-  color: #36444b;
+  color: #000;
   font-size: 13.4531px;
   line-height: 22px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -534,7 +433,7 @@
   transform: translateY(-50%);
 }
 .octetsRx {
-  color: #36444b;
+  color: #000;
   font-size: 13.3438px;
   line-height: 22px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -559,7 +458,7 @@
   transform: translateY(-50%);
 }
 .octetsTx {
-  color: #36444b;
+  color: #000;
   font-size: 13.125px;
   line-height: 22px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -584,7 +483,7 @@
   transform: translateY(-50%);
 }
 .statistics {
-  color: #36444b;
+  color: #000;
   font-size: 12.7969px;
   line-height: 22px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -632,7 +531,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data {
@@ -644,44 +542,12 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.divCheckboxGroupContainer2 {
+.divCheckboxGroupContainer {
   position: absolute;
   left: 10px;
   right: 6px;
   top: 8.28px;
   height: 15px;
-  align-items: flex-start;
-}
-.divWidgetWrap4 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 25px;
-  height: 15px;
-  align-items: flex-start;
-  transform: translate(-50%, -50%);
-}
-.label3 {
-  position: absolute;
-  left: 50%;
-  top: -0.05px;
-  width: 25px;
-  height: 13.33px;
-  align-items: flex-start;
-  transform: translateX(-50%);
-}
-.spanIcon5 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
- 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data2 {
   position: absolute;
@@ -701,7 +567,7 @@
   align-items: flex-start;
 }
 ._11 {
-  color: #36444b;
+  color: #000;
   font-size: 11.8125px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -709,7 +575,7 @@
   position: absolute;
   left: calc(50% - -0.105px);
   top: 0;
-  width: 30 px;
+  width: 26.89px;
   height: 13.33px;
   text-align: center;
   align-items: center;
@@ -735,7 +601,7 @@
   align-items: flex-start;
 }
 .unnamed {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -769,7 +635,7 @@
   align-items: flex-start;
 }
 .unnamed2 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -803,7 +669,7 @@
   align-items: flex-start;
 }
 .unnamed3 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -837,7 +703,7 @@
   align-items: flex-start;
 }
 .unnamed4 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -871,7 +737,7 @@
   align-items: flex-start;
 }
 .linkStatistics {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -894,7 +760,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data8 {
@@ -906,44 +771,12 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.divCheckboxGroupContainer3 {
+.divCheckboxGroupContainer2 {
   position: absolute;
   left: 10px;
   right: 6px;
   top: 8.5px;
   height: 15px;
-  align-items: flex-start;
-}
-.divWidgetWrap5 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 25px;
-  height: 15px;
-  align-items: flex-start;
-  transform: translate(-50%, -50%);
-}
-.label4 {
-  position: absolute;
-  left: 50%;
-  top: -0.05px;
-  width: 25px;
-  height: 13.33px;
-  align-items: flex-start;
-  transform: translateX(-50%);
-}
-.spanIcon6 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
-  
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data9 {
   position: absolute;
@@ -963,7 +796,7 @@
   align-items: flex-start;
 }
 ._12 {
-  color: #36444b;
+  color: #000;
   font-size: 11.0625px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -971,7 +804,7 @@
   position: absolute;
   left: calc(50% - -0.105px);
   top: 0;
-  width: 30px;
+  width: 26.89px;
   height: 13.33px;
   text-align: center;
   align-items: center;
@@ -997,7 +830,7 @@
   align-items: flex-start;
 }
 .unnamed5 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1031,7 +864,7 @@
   align-items: flex-start;
 }
 .unnamed6 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1065,7 +898,7 @@
   align-items: flex-start;
 }
 .unnamed7 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1099,7 +932,7 @@
   align-items: flex-start;
 }
 .unnamed8 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1133,7 +966,7 @@
   align-items: flex-start;
 }
 .linkStatistics2 {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1156,7 +989,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data15 {
@@ -1168,44 +1000,12 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.divCheckboxGroupContainer4 {
+.divCheckboxGroupContainer3 {
   position: absolute;
   left: 10px;
   right: 6px;
   top: 8.5px;
   height: 15px;
-  align-items: flex-start;
-}
-.divWidgetWrap6 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 25px;
-  height: 15px;
-  align-items: flex-start;
-  transform: translate(-50%, -50%);
-}
-.label5 {
-  position: absolute;
-  left: 50%;
-  top: -0.05px;
-  width: 25px;
-  height: 13.33px;
-  align-items: flex-start;
-  transform: translateX(-50%);
-}
-.spanIcon7 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data16 {
   position: absolute;
@@ -1225,7 +1025,7 @@
   align-items: flex-start;
 }
 ._13 {
-  color: #36444b;
+  color: #000;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1233,7 +1033,7 @@
   position: absolute;
   left: calc(50% - -0.105px);
   top: 0;
-  width: 30px;
+  width: 26.89px;
   height: 13.33px;
   text-align: center;
   align-items: center;
@@ -1259,7 +1059,7 @@
   align-items: flex-start;
 }
 .unnamed9 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1293,7 +1093,7 @@
   align-items: flex-start;
 }
 .unnamed10 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1327,7 +1127,7 @@
   align-items: flex-start;
 }
 .unnamed11 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1361,7 +1161,7 @@
   align-items: flex-start;
 }
 .unnamed12 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1395,7 +1195,7 @@
   align-items: flex-start;
 }
 .linkStatistics3 {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1418,7 +1218,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data22 {
@@ -1427,47 +1226,7 @@
   top: 50%;
   width: 41px;
   height: 32px;
-  align-items: flex-start;
   transform: translateY(-50%);
-}
-.divCheckboxGroupContainer5 {
-  position: absolute;
-  left: 10px;
-  right: 6px;
-  top: 8.5px;
-  height: 15px;
-  align-items: flex-start;
-}
-.divWidgetWrap7 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 25px;
-  height: 15px;
-  align-items: flex-start;
-  transform: translate(-50%, -50%);
-}
-.label6 {
-  position: absolute;
-  left: 50%;
-  top: -0.05px;
-  width: 25px;
-  height: 13.33px;
-  align-items: flex-start;
-  transform: translateX(-50%);
-}
-.spanIcon8 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data23 {
   position: absolute;
@@ -1487,7 +1246,7 @@
   align-items: flex-start;
 }
 ._14 {
-  color: #36444b;
+  color: #000;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1495,7 +1254,7 @@
   position: absolute;
   left: calc(50% - -0.105px);
   top: 0;
-  width: 30px;
+  width: 26.89px;
   height: 13.33px;
   text-align: center;
   align-items: center;
@@ -1521,7 +1280,7 @@
   align-items: flex-start;
 }
 .unnamed13 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1555,7 +1314,7 @@
   align-items: flex-start;
 }
 .unnamed14 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1589,7 +1348,7 @@
   align-items: flex-start;
 }
 .unnamed15 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1623,7 +1382,7 @@
   align-items: flex-start;
 }
 .unnamed16 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1657,7 +1416,7 @@
   align-items: flex-start;
 }
 .linkStatistics4 {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1680,7 +1439,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data29 {
@@ -1692,44 +1450,12 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.divCheckboxGroupContainer6 {
+.divCheckboxGroupContainer4 {
   position: absolute;
   left: 10px;
   right: 6px;
   top: 8.5px;
   height: 15px;
-  align-items: flex-start;
-}
-.divWidgetWrap8 {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 25px;
-  height: 15px;
-  align-items: flex-start;
-  transform: translate(-50%, -50%);
-}
-.label7 {
-  position: absolute;
-  left: 50%;
-  top: -0.05px;
-  width: 25px;
-  height: 13.33px;
-  align-items: flex-start;
-  transform: translateX(-50%);
-}
-.spanIcon9 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data30 {
   position: absolute;
@@ -1749,7 +1475,7 @@
   align-items: flex-start;
 }
 ._15 {
-  color: #36444b;
+  color: #000;
   font-size: 11.0625px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1757,7 +1483,7 @@
   position: absolute;
   left: calc(50% - -0.105px);
   top: 0;
-  width: 30px;
+  width: 26.89px;
   height: 13.33px;
   text-align: center;
   align-items: center;
@@ -1783,7 +1509,7 @@
   align-items: flex-start;
 }
 .unnamed17 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1817,7 +1543,7 @@
   align-items: flex-start;
 }
 .unnamed18 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1851,7 +1577,7 @@
   align-items: flex-start;
 }
 .unnamed19 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1885,7 +1611,7 @@
   align-items: flex-start;
 }
 .unnamed20 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1919,7 +1645,7 @@
   align-items: flex-start;
 }
 .linkStatistics5 {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -1942,7 +1668,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data36 {
@@ -1954,7 +1679,7 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.divCheckboxGroupContainer7 {
+.divCheckboxGroupContainer5 {
   position: absolute;
   left: 10px;
   right: 6px;
@@ -1962,7 +1687,7 @@
   height: 15px;
   align-items: flex-start;
 }
-.divWidgetWrap9 {
+.divWidgetWrap2 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1971,27 +1696,13 @@
   align-items: flex-start;
   transform: translate(-50%, -50%);
 }
-.label8 {
+.label2 {
   position: absolute;
   left: 50%;
   top: -0.05px;
   width: 25px;
   height: 13.33px;
-  align-items: flex-start;
   transform: translateX(-50%);
-}
-.spanIcon10 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data37 {
   position: absolute;
@@ -2011,7 +1722,7 @@
   align-items: flex-start;
 }
 ._16 {
-  color: #36444b;
+  color: #000;
   font-size: 11.0625px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2019,7 +1730,7 @@
   position: absolute;
   left: calc(50% - -0.105px);
   top: 0;
-  width: 30px;
+  width: 26.89px;
   height: 13.33px;
   text-align: center;
   align-items: center;
@@ -2045,7 +1756,7 @@
   align-items: flex-start;
 }
 .unnamed21 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2079,7 +1790,7 @@
   align-items: flex-start;
 }
 .unnamed22 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2113,7 +1824,7 @@
   align-items: flex-start;
 }
 .unnamed23 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2147,7 +1858,7 @@
   align-items: flex-start;
 }
 .unnamed24 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2181,7 +1892,7 @@
   align-items: flex-start;
 }
 .linkStatistics6 {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2204,7 +1915,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data43 {
@@ -2216,7 +1926,7 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.divCheckboxGroupContainer8 {
+.divCheckboxGroupContainer6 {
   position: absolute;
   left: 10px;
   right: 6px;
@@ -2224,7 +1934,7 @@
   height: 15px;
   align-items: flex-start;
 }
-.divWidgetWrap10 {
+.divWidgetWrap3 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2233,27 +1943,13 @@
   align-items: flex-start;
   transform: translate(-50%, -50%);
 }
-.label9 {
+.label3 {
   position: absolute;
   left: 50%;
   top: -0.05px;
   width: 25px;
   height: 13.33px;
-  align-items: flex-start;
   transform: translateX(-50%);
-}
-.spanIcon11 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data44 {
   position: absolute;
@@ -2273,7 +1969,7 @@
   align-items: flex-start;
 }
 ._17 {
-  color: #36444b;
+  color: #000;
   font-size: 11.25px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2281,7 +1977,7 @@
   position: absolute;
   left: calc(50% - -0.105px);
   top: 0;
-  width: 30px;
+  width: 26.89px;
   height: 13.33px;
   text-align: center;
   align-items: center;
@@ -2307,7 +2003,7 @@
   align-items: flex-start;
 }
 .unnamed25 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2341,7 +2037,7 @@
   align-items: flex-start;
 }
 .unnamed26 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2375,7 +2071,7 @@
   align-items: flex-start;
 }
 .unnamed27 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2409,7 +2105,7 @@
   align-items: flex-start;
 }
 .unnamed28 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2443,7 +2139,7 @@
   align-items: flex-start;
 }
 .linkStatistics7 {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2466,7 +2162,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data50 {
@@ -2478,7 +2173,7 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.divCheckboxGroupContainer9 {
+.divCheckboxGroupContainer7 {
   position: absolute;
   left: 10px;
   right: 6px;
@@ -2486,7 +2181,7 @@
   height: 15px;
   align-items: flex-start;
 }
-.divWidgetWrap11 {
+.divWidgetWrap4 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2495,26 +2190,13 @@
   align-items: flex-start;
   transform: translate(-50%, -50%);
 }
-.label10 {
+.label4 {
   position: absolute;
   left: 50%;
   top: -0.05px;
   width: 25px;
   height: 13.33px;
-  align-items: flex-start;
   transform: translateX(-50%);
-}
-.spanIcon12 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data51 {
   position: absolute;
@@ -2534,7 +2216,7 @@
   align-items: flex-start;
 }
 ._18 {
-  color: #36444b;
+  color: #000;
   font-size: 11.0625px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2542,7 +2224,7 @@
   position: absolute;
   left: calc(50% - -0.105px);
   top: 0;
-  width: 30px;
+  width: 26.89px;
   height: 13.33px;
   text-align: center;
   align-items: center;
@@ -2568,7 +2250,7 @@
   align-items: flex-start;
 }
 .unnamed29 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2602,7 +2284,7 @@
   align-items: flex-start;
 }
 .unnamed30 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2636,7 +2318,7 @@
   align-items: flex-start;
 }
 .unnamed31 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2670,7 +2352,7 @@
   align-items: flex-start;
 }
 .unnamed32 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2704,7 +2386,7 @@
   align-items: flex-start;
 }
 .linkStatistics8 {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2727,7 +2409,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data57 {
@@ -2739,7 +2420,7 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.divCheckboxGroupContainer10 {
+.divCheckboxGroupContainer8 {
   position: absolute;
   left: 10px;
   right: 6px;
@@ -2747,7 +2428,7 @@
   height: 15px;
   align-items: flex-start;
 }
-.divWidgetWrap12 {
+.divWidgetWrap5 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -2756,27 +2437,13 @@
   align-items: flex-start;
   transform: translate(-50%, -50%);
 }
-.label11 {
+.label5 {
   position: absolute;
   left: 50%;
   top: -0.05px;
   width: 25px;
   height: 13.33px;
-  align-items: flex-start;
   transform: translateX(-50%);
-}
-.spanIcon13 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data58 {
   position: absolute;
@@ -2796,7 +2463,7 @@
   align-items: flex-start;
 }
 ._19 {
-  color: #36444b;
+  color: #000;
   font-size: 11.0625px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2804,7 +2471,7 @@
   position: absolute;
   left: calc(50% - -0.105px);
   top: 0;
-  width: 30px;
+  width: 26.89px;
   height: 13.33px;
   text-align: center;
   align-items: center;
@@ -2830,7 +2497,7 @@
   align-items: flex-start;
 }
 .unnamed33 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2864,7 +2531,7 @@
   align-items: flex-start;
 }
 .unnamed34 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2898,7 +2565,7 @@
   align-items: flex-start;
 }
 .unnamed35 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2932,7 +2599,7 @@
   align-items: flex-start;
 }
 .unnamed36 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2966,7 +2633,7 @@
   align-items: flex-start;
 }
 .linkStatistics9 {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -2989,7 +2656,6 @@
   width: 869.56px;
   height: 32px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8889px 0px #f7f7f7;
   transform: translateY(-50%);
 }
 .data64 {
@@ -3001,7 +2667,7 @@
   align-items: flex-start;
   transform: translateY(-50%);
 }
-.divCheckboxGroupContainer11 {
+.divCheckboxGroupContainer9 {
   position: absolute;
   left: 10px;
   right: 6px;
@@ -3009,7 +2675,7 @@
   height: 15px;
   align-items: flex-start;
 }
-.divWidgetWrap13 {
+.divWidgetWrap6 {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -3018,27 +2684,13 @@
   align-items: flex-start;
   transform: translate(-50%, -50%);
 }
-.label12 {
+.label6 {
   position: absolute;
   left: 50%;
   top: -0.05px;
   width: 25px;
   height: 13.33px;
-  align-items: flex-start;
   transform: translateX(-50%);
-}
-.spanIcon14 {
-  position: absolute;
-  left: calc(50% - 4.5px);
-  top: calc(50% - -0.385px);
-  width: 16px;
-  height: 16px;
- 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
 }
 .data65 {
   position: absolute;
@@ -3058,7 +2710,7 @@
   align-items: flex-start;
 }
 ._110 {
-  color: #36444b;
+  color: #000;
   font-size: 11.4375px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -3092,7 +2744,7 @@
   align-items: flex-start;
 }
 .unnamed37 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -3126,7 +2778,7 @@
   align-items: flex-start;
 }
 .unnamed38 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -3160,7 +2812,7 @@
   align-items: flex-start;
 }
 .unnamed39 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -3194,7 +2846,7 @@
   align-items: flex-start;
 }
 .unnamed40 {
-  color: #36444b;
+  color: #000;
   font-size: 12px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -3228,7 +2880,7 @@
   align-items: flex-start;
 }
 .linkStatistics10 {
-  color: #4acbd6;
+  color: #5ac3f8;
   font-size: 10.875px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -3251,8 +2903,9 @@
   top: 357.77px;
   height: 28.89px;
   align-items: flex-start;
-  background-color: #eaeded;
-  box-shadow: inset 0px 0.8889px 0px #a7aaaa, inset -0.8889px 0px 0px #a7aaaa, inset -0.8889px 0px 0px #a7aaaa;
+  background-color: #5ac3f833;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
 }
 .table3 {
   position: absolute;
@@ -3280,7 +2933,7 @@
   align-items: flex-start;
 }
 .total52 {
-  color: #36444b;
+  color: #000;
   font-size: 11.0625px;
   line-height: 15px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -3304,9 +2957,9 @@
   max-width: 100%;
   height: 1px;
   max-height: 100%;
-  border-bottom: solid NaNpx #a7aaaa;
+  border-bottom: solid NaNpx #5ac3f880;
   margin-bottom: NaNpx;
-  background-color: #e6e6e6;
+  background-color: #5ac3f880;
 }
 .divTab {
   position: absolute;
@@ -3325,7 +2978,7 @@
   align-items: flex-start;
   transform: translateX(-50%);
 }
-.divWidgetWrap14 {
+.divWidgetWrap7 {
   position: absolute;
   left: 0;
   top: calc(50% - 0px);
@@ -3356,7 +3009,7 @@
   right: 1px;
   top: 36px;
   height: 2px;
-  background-color: #eaeded;
+  background-color: #5ac3f833;
 }
 .spanSubNavigatorText {
   position: absolute;
@@ -3365,7 +3018,7 @@
   width: 116.78px;
   height: 36.78px;
   align-items: flex-start;
-  outline: solid 1px #a7aaaa;
+  outline: solid 1px #5ac3f880;
   outline-offset: -1px;
   border-radius: 8px 0 0;
   background-color: #fff;
@@ -3401,7 +3054,7 @@
   right: 1px;
   top: 36px;
   height: 2px;
-  background-color: #eaeded;
+  background-color: #5ac3f833;
 }
 .spanSubNavigatorText2 {
   position: absolute;
@@ -3410,10 +3063,10 @@
   width: 116.78px;
   height: 36.78px;
   align-items: flex-start;
-  outline: solid 1px #a7aaaa;
+  outline: solid 1px #5ac3f880;
   outline-offset: -1px;
   border-radius: 0 8px 0 0;
-  background-color: #eaeded;
+  background-color: #5ac3f833;
 }
 .lAGS {
   color: #005564;
@@ -3430,21 +3083,5 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-.input2
-{
-  font-size: 14px;
-  position: absolute;
-  left: -30px;
-  top: 2px;
-  flex-direction: column;
-}
-.input3
-{
-  font-size: 14px;
-  position: absolute;
-  left: -23px;
-  top: 10px;
   flex-direction: column;
 }

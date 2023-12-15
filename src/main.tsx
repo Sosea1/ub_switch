@@ -15,10 +15,17 @@ import { Diagnosis } from './components/Diagnosis/Diagnosis';
 import { createStore, applyMiddleware, Store } from "redux"
 import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
+import { EnterPassword } from './components/EnterPassword/EnterPassword';
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <EnterPassword key={0}/>,
+    errorElement: <ErrorPage />,
+    
+  },
+  {
+    path: "/monitoring",
     element: <MainMonitoring key={1}/>,
     errorElement: <ErrorPage />,
     

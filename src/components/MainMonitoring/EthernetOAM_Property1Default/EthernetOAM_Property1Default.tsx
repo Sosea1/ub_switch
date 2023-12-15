@@ -11,6 +11,8 @@ import { OAMLinkMonitoring } from '../OAMLinkMonitoring/OAMLinkMonitoring';
 import { SflowAgent } from '../SflowAgent/SflowAgent';
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { OAMRemoteFailureIndication } from '../OAMRemoteFailureIndication/OAMRemoteFailureIndication';
+import { OAMStatistics } from '../OAMStatistics/OAMStatistics';
 
 interface Props {
   className?: string;
@@ -32,13 +34,13 @@ export const EthernetOAM_Property1Default: FC<Props> = memo(function EthernetOAM
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <SflowAgent/>;
+    return <OAMRemoteFailureIndication/>;
    
    };
 
    const ComponentFour = (): React.ReactNode =>  {
    
-    return <SflowAgent/>;
+    return <OAMStatistics/>;
    
    };
 

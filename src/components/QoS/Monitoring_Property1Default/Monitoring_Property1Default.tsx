@@ -18,7 +18,7 @@ export const Monitoring_Property1Default: FC<Props> = memo(function Monitoring_P
 
   const navigateTo = () => {
  
-  navigate('/');
+  navigate('/monitoring');
  };
   return (
     <div className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>

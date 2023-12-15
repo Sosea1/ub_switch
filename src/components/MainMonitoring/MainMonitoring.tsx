@@ -31,6 +31,7 @@ export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}
 
  
   return (
+    
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div id='monitoring_frame' className={classes.frame14} >
         

@@ -2,6 +2,7 @@ import { memo } from 'react';
 import type { FC } from 'react';
 
 import resets from '../_resets.module.css';
+import { PingButton_Property1Default } from './PingButton_Property1Default/PingButton_Property1Default';
 import classes from './TraficMonitoring.module.css';
 
 interface Props {
@@ -30,9 +31,7 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                       <div className={classes.item}>
                         <div className={classes.divWidgetWrap}>
                           <div className={classes.label}>
-                            <div className={classes.spanIcon}></div>
                             <div className={classes.enable}>Enable</div>
-                            <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                           </div>
                         </div>
                       </div>
@@ -40,13 +39,12 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                   </div>
                 </div>
               </div>
-              <div className={classes.divTrafficMonitorViewApply}>
-                <div className={classes.divWidgetWrap2}>
-                  <div className={classes.link}>
-                    <div className={classes.apply}>Apply</div>
-                  </div>
-                </div>
-              </div>
+              <PingButton_Property1Default
+                className={classes.pingButton}
+                text={{
+                  ping: <div className={classes.ping}>Apply</div>,
+                }}
+              />
             </div>
           </div>
           <div className={classes.divBlockSeparate}>
@@ -55,13 +53,11 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                 <div className={classes.divGridPanelContent}>
                   <div className={classes.divGridPanelTbarContainer}>
                     <div className={classes.divTrafficMonitorCfgGrid_bar}>
-                      <div className={classes.link2}>
-                        <div className={classes.spanIcon2}></div>
-                        <div className={classes.refresh}></div>
+                      <div className={classes.link}>
+                        <div className={classes.refresh}>Refresh</div>
                       </div>
-                      <div className={classes.link3}>
-                        <div className={classes.spanIcon3}></div>
-                        <div className={classes.clear}></div>
+                      <div className={classes.link2}>
+                        <div className={classes.clear}>Clear</div>
                       </div>
                     </div>
                   </div>
@@ -71,18 +67,9 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                         <div className={classes.divContainer2}>
                           <div className={classes.table}>
                             <div className={classes.bodyRow}>
-                              <div className={classes.cell}>
-                                <div className={classes.divCheckboxGroupContainer}>
-                                  <div className={classes.divWidgetWrap3}>
-                                    <div className={classes.label2}>
-                                      <div className={classes.spanIcon4}></div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
+                              <div className={classes.cell}></div>
                               <div className={classes.cell2}>
                                 <div className={classes.port}>Port</div>
-                                <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input3}/>
                               </div>
                               <div className={classes.cell3}>
                                 <div className={classes.packetsRx}>Packets Rx</div>
@@ -107,18 +94,11 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                             <div className={classes.body}>
                               <div className={classes.row}>
                                 <div className={classes.data}>
-                                  <div className={classes.divCheckboxGroupContainer2}>
-                                    <div className={classes.divWidgetWrap4}>
-                                      <div className={classes.label3}>
-                                        <div className={classes.spanIcon5}></div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <div className={classes.divCheckboxGroupContainer}></div>
                                 </div>
                                 <div className={classes.data2}>
                                   <div className={classes.divContent}>
                                     <div className={classes._11}>1/0/1</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data3}>
@@ -149,18 +129,11 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                               </div>
                               <div className={classes.row2}>
                                 <div className={classes.data8}>
-                                  <div className={classes.divCheckboxGroupContainer3}>
-                                    <div className={classes.divWidgetWrap5}>
-                                      <div className={classes.label4}>
-                                        <div className={classes.spanIcon6}></div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <div className={classes.divCheckboxGroupContainer2}></div>
                                 </div>
                                 <div className={classes.data9}>
                                   <div className={classes.divContent6}>
                                     <div className={classes._12}>1/0/2</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data10}>
@@ -191,18 +164,11 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                               </div>
                               <div className={classes.row3}>
                                 <div className={classes.data15}>
-                                  <div className={classes.divCheckboxGroupContainer4}>
-                                    <div className={classes.divWidgetWrap6}>
-                                      <div className={classes.label5}>
-                                        <div className={classes.spanIcon7}></div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <div className={classes.divCheckboxGroupContainer3}></div>
                                 </div>
                                 <div className={classes.data16}>
                                   <div className={classes.divContent11}>
                                     <div className={classes._13}>1/0/3</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data17}>
@@ -232,19 +198,10 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                                 </div>
                               </div>
                               <div className={classes.row4}>
-                                <div className={classes.data22}>
-                                  <div className={classes.divCheckboxGroupContainer5}>
-                                    <div className={classes.divWidgetWrap7}>
-                                      <div className={classes.label6}>
-                                        <div className={classes.spanIcon8}></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                                <div className={classes.data22}></div>
                                 <div className={classes.data23}>
                                   <div className={classes.divContent16}>
                                     <div className={classes._14}>1/0/4</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data24}>
@@ -275,18 +232,11 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                               </div>
                               <div className={classes.row5}>
                                 <div className={classes.data29}>
-                                  <div className={classes.divCheckboxGroupContainer6}>
-                                    <div className={classes.divWidgetWrap8}>
-                                      <div className={classes.label7}>
-                                        <div className={classes.spanIcon9}></div>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <div className={classes.divCheckboxGroupContainer4}></div>
                                 </div>
                                 <div className={classes.data30}>
                                   <div className={classes.divContent21}>
                                     <div className={classes._15}>1/0/5</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data31}>
@@ -317,18 +267,15 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                               </div>
                               <div className={classes.row6}>
                                 <div className={classes.data36}>
-                                  <div className={classes.divCheckboxGroupContainer7}>
-                                    <div className={classes.divWidgetWrap9}>
-                                      <div className={classes.label8}>
-                                        <div className={classes.spanIcon10}></div>
-                                      </div>
+                                  <div className={classes.divCheckboxGroupContainer5}>
+                                    <div className={classes.divWidgetWrap2}>
+                                      <div className={classes.label2}></div>
                                     </div>
                                   </div>
                                 </div>
                                 <div className={classes.data37}>
                                   <div className={classes.divContent26}>
                                     <div className={classes._16}>1/0/6</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data38}>
@@ -359,18 +306,15 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                               </div>
                               <div className={classes.row7}>
                                 <div className={classes.data43}>
-                                  <div className={classes.divCheckboxGroupContainer8}>
-                                    <div className={classes.divWidgetWrap10}>
-                                      <div className={classes.label9}>
-                                        <div className={classes.spanIcon11}></div>
-                                      </div>
+                                  <div className={classes.divCheckboxGroupContainer6}>
+                                    <div className={classes.divWidgetWrap3}>
+                                      <div className={classes.label3}></div>
                                     </div>
                                   </div>
                                 </div>
                                 <div className={classes.data44}>
                                   <div className={classes.divContent31}>
                                     <div className={classes._17}>1/0/7</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data45}>
@@ -401,18 +345,15 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                               </div>
                               <div className={classes.row8}>
                                 <div className={classes.data50}>
-                                  <div className={classes.divCheckboxGroupContainer9}>
-                                    <div className={classes.divWidgetWrap11}>
-                                      <div className={classes.label10}>
-                                        <div className={classes.spanIcon12}></div>
-                                      </div>
+                                  <div className={classes.divCheckboxGroupContainer7}>
+                                    <div className={classes.divWidgetWrap4}>
+                                      <div className={classes.label4}></div>
                                     </div>
                                   </div>
                                 </div>
                                 <div className={classes.data51}>
                                   <div className={classes.divContent36}>
                                     <div className={classes._18}>1/0/8</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data52}>
@@ -443,18 +384,15 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                               </div>
                               <div className={classes.row9}>
                                 <div className={classes.data57}>
-                                  <div className={classes.divCheckboxGroupContainer10}>
-                                    <div className={classes.divWidgetWrap12}>
-                                      <div className={classes.label11}>
-                                        <div className={classes.spanIcon13}></div>
-                                      </div>
+                                  <div className={classes.divCheckboxGroupContainer8}>
+                                    <div className={classes.divWidgetWrap5}>
+                                      <div className={classes.label5}></div>
                                     </div>
                                   </div>
                                 </div>
                                 <div className={classes.data58}>
                                   <div className={classes.divContent41}>
                                     <div className={classes._19}>1/0/9</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data59}>
@@ -485,18 +423,15 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                               </div>
                               <div className={classes.row10}>
                                 <div className={classes.data64}>
-                                  <div className={classes.divCheckboxGroupContainer11}>
-                                    <div className={classes.divWidgetWrap13}>
-                                      <div className={classes.label12}>
-                                        <div className={classes.spanIcon14}></div>
-                                      </div>
+                                  <div className={classes.divCheckboxGroupContainer9}>
+                                    <div className={classes.divWidgetWrap6}>
+                                      <div className={classes.label6}></div>
                                     </div>
                                   </div>
                                 </div>
                                 <div className={classes.data65}>
                                   <div className={classes.divContent46}>
                                     <div className={classes._110}>1/0/10</div>
-                                    <input style={{cursor: 'pointer'}} type="checkbox" className={classes.input2}/>
                                   </div>
                                 </div>
                                 <div className={classes.data66}>
@@ -540,13 +475,13 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                       </div>
                     </div>
                   </div>
-                  <div className={classes.divGridPanelFbarContainer}></div>
+                  
                 </div>
               </div>
             </div>
             <div className={classes.divTab}>
               <div className={classes.divWidgetWrapOuter2}>
-                <div className={classes.divWidgetWrap14}>
+                <div className={classes.divWidgetWrap7}>
                   <div className={classes.list2}>
                     <div className={classes.itemLink}>
                       <div className={classes.After}></div>

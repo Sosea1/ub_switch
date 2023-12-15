@@ -1,0 +1,14 @@
+.frame15.frame15 {
+  z-index: 0;
+}
+.root {
+  width: 124px;
+  height: min-content;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px 8px;
+  outline: solid 1px #929292;
+  outline-offset: -1px;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
