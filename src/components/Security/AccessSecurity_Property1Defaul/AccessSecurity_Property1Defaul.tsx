@@ -71,7 +71,7 @@ export const AccessSecurity_Property1Defaul: FC<Props> = memo(function AccessSec
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 7; i++)
       {
         let key_ = "AccessSecurity-"+i
         if(key_ != key)
