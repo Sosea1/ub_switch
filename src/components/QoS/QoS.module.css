@@ -52,6 +52,20 @@
    }
 
 }
+.frame14 {
+  position: absolute;
+  left: 250px;
+  top: 68px;
+  width: 1650px;
+  height: 956px;
+  align-items: flex-start;
+  overflow-x: auto;
+  animation: fadeInAnimation ease-in-out 0.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+
 .root {
   position: relative;
   width: 1920px;
