@@ -1,5 +1,5 @@
-import { memo } from 'react';
-import type { FC } from 'react';
+import { memo, useEffect, useState } from 'react';
+import type { FC, ReactElement } from 'react';
 
 import resets from '../_resets.module.css';
 import { Basic_Property1Variant2 } from './Basic_Property1Variant2/Basic_Property1Variant2';
@@ -14,6 +14,10 @@ import { Security_Property1Default } from './Security_Property1Default/Security_
 import { SideMenu_Property1Switching } from './SideMenu_Property1Switching/SideMenu_Property1Switching';
 import classes from './Switching.module.css';
 import { System_Property1Default } from './System_Property1Default/System_Property1Default';
+import { useDispatch } from 'react-redux';
+import { update } from '../../main';
+import ReactDomServer from 'react-dom/server'
+import { Port } from './Port/Port';
 
 interface Props {
   className?: string;
@@ -23,6 +27,36 @@ interface Props {
 }
 /* @figmaId 66:641 */
 export const Switching: FC<Props> = memo(function Switching(props = {}) {
+
+  
+  const ComponentOne = (): React.ReactNode =>  {
+ 
+    return <Port/>
+   
+   };
+
+    const dispatch = useDispatch();
+
+    const handleUpdate = (key: string) => {
+      dispatch(update(key));
+    };
+
+    const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
+
+    useEffect(() => {
+      setCurrentComponent(currentComponent)
+      var x = document.getElementById('switching_frame') as HTMLElement;
+      x.innerHTML = ReactDomServer.renderToString(currentComponent as ReactElement);
+    },[currentComponent])
+ 
+
+    const [isLoaded, setIsLoaded] = useState(false);
+    useEffect(() => {
+      setIsLoaded(true);
+      handleUpdate('Basic') 
+      setCurrentComponent(ComponentOne)
+   }, []);
+
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div id='switching_frame' className={classes.frame14} ></div>

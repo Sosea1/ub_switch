@@ -1,5 +1,5 @@
-import { memo } from 'react';
-import type { FC } from 'react';
+import { memo, useEffect, useState } from 'react';
+import type { FC, ReactElement } from 'react';
 
 import resets from '../_resets.module.css';
 import { DHCPService_Property1Variant2 } from './DHCPService_Property1Variant2/DHCPService_Property1Variant2';
@@ -14,6 +14,10 @@ import classes from './Routing.module.css';
 import { Security_Property1Default } from './Security_Property1Default/Security_Property1Default';
 import { SideMenu_Property1Routing } from './SideMenu_Property1Routing/SideMenu_Property1Routing';
 import { System_Property1Default } from './System_Property1Default/System_Property1Default';
+import ReactDomServer from 'react-dom/server'
+import { useDispatch } from 'react-redux';
+import { update } from '../../main';
+import { IPv4Table } from './IPv4Table/IPv4Table';
 
 interface Props {
   className?: string;
@@ -23,6 +27,34 @@ interface Props {
 }
 /* @figmaId 66:709 */
 export const Routing: FC<Props> = memo(function Routing(props = {}) {
+  const ComponentOne = (): React.ReactNode =>  {
+ 
+    return <IPv4Table/>;
+   
+   };
+
+    const dispatch = useDispatch();
+
+    const handleUpdate = (key: string) => {
+      dispatch(update(key));
+    };
+
+    const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
+
+    useEffect(() => {
+      setCurrentComponent(currentComponent)
+      var x = document.getElementById('routing_frame') as HTMLElement;
+      x.innerHTML = ReactDomServer.renderToString(currentComponent as ReactElement);
+    },[currentComponent])
+ 
+
+    const [isLoaded, setIsLoaded] = useState(false);
+    useEffect(() => {
+      setIsLoaded(true);
+      handleUpdate('RoutingTable') 
+      setCurrentComponent(ComponentOne)
+   }, []);
+
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
        <div id='routing_frame' className={classes.frame14} ></div>

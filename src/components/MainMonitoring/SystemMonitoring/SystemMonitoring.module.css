@@ -13,7 +13,7 @@
   top: 20px;
   height: 29.8px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8px 0px #a6abac;
+  box-shadow: inset 0px -2px 0px #0d597f;
 }
 .heading3 {
   position: absolute;
@@ -25,14 +25,14 @@
 }
 .panel {
   color: #333;
-  font-size: 15.25px;
+  font-size: 18px;
   line-height: 24px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
   position: absolute;
   left: 0;
   top: 3.2px;
-  width: 146.89px;
+  width: 200px;
   height: 17.6px;
   justify-content: center;
   flex-direction: column;
@@ -44,7 +44,7 @@
   top: 404px;
   height: 30px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8px 0px #a6abac;
+  box-shadow: inset 0px -2px 0px #0d597f;
 }
 .heading32 {
   position: absolute;
@@ -56,7 +56,7 @@
 }
 .systemStatus {
   color: #333;
-  font-size: 15.25px;
+  font-size: 18px;
   line-height: 24px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
@@ -75,7 +75,7 @@
   top: 404px;
   height: 30px;
   align-items: flex-start;
-  box-shadow: inset 0px -0.8px 0px #a6abac;
+  box-shadow: inset 0px -2px 0px #0d597f;
 }
 .heading33 {
   position: absolute;
@@ -87,14 +87,14 @@
 }
 .systemDescription {
   color: #333;
-  font-size: 15.25px;
+  font-size: 18px;
   line-height: 24px;
   font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
   position: absolute;
   left: 0;
   top: 3.2px;
-  width: 146.89px;
+  width: 200px;
   height: 17.6px;
   justify-content: center;
   flex-direction: column;
@@ -112,7 +112,7 @@
 }
 .productModel {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 600;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -127,7 +127,7 @@
 }
 .xXXXXXXXX {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
@@ -141,7 +141,7 @@
 }
 .deviceName {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 600;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -156,7 +156,7 @@
 }
 .uptime {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 600;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -171,7 +171,7 @@
 }
 .serialNumber {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 600;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -186,7 +186,7 @@
 }
 .mAC {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   font-weight: 600;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
@@ -201,7 +201,7 @@
 }
 .device {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
@@ -215,7 +215,7 @@
 }
 ._352546DdHhMmSs {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
@@ -229,7 +229,7 @@
 }
 .xXXXXXXXXXXX {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
@@ -243,7 +243,7 @@
 }
 .xXXXXXXXXXXX2 {
   color: #000;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 16px;
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;

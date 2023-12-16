@@ -1,5 +1,5 @@
-import { memo } from 'react';
-import type { FC } from 'react';
+import { memo, useEffect, useState } from 'react';
+import type { FC, ReactElement } from 'react';
 
 import resets from '../_resets.module.css';
 import { Diagnose_Property1Default } from './Diagnose_Property1Default/Diagnose_Property1Default';
@@ -12,12 +12,45 @@ import { Security_Property1Default } from './Security_Property1Default/Security_
 import { SideMenu_Property1System } from './SideMenu_Property1System/SideMenu_Property1System';
 import classes from './System.module.css';
 import { System_Property1Variant3 } from './System_Property1Variant3/System_Property1Variant3';
+import { useDispatch } from 'react-redux';
+import { update } from '../../main';
+import ReactDomServer from 'react-dom/server'
 
 interface Props {
   className?: string;
 }
 /* @figmaId 66:913 */
 export const System: FC<Props> = memo(function System(props = {}) {
+
+  const ComponentOne = (): React.ReactNode =>  {
+ 
+    return <>1</>;
+   
+   };
+
+    const dispatch = useDispatch();
+
+    const handleUpdate = (key: string) => {
+      dispatch(update(key));
+    };
+
+    const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
+
+    useEffect(() => {
+      setCurrentComponent(currentComponent)
+      var x = document.getElementById('system_frame') as HTMLElement;
+      x.innerHTML = ReactDomServer.renderToString(currentComponent as ReactElement);
+    },[currentComponent])
+ 
+
+    const [isLoaded, setIsLoaded] = useState(false);
+    useEffect(() => {
+      setIsLoaded(true);
+      handleUpdate('UserManagment') 
+      setCurrentComponent(ComponentOne)
+   }, []);
+
+
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div id='system_frame' className={classes.frame14} ></div>
