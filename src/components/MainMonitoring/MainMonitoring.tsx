@@ -37,11 +37,14 @@ export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}
     const handleUpdate = (key: string) => {
       dispatch(update(key));
     };
-  
+
+    window.onload = () => {
+      handleUpdate("SystemMonitor")
+    }
  
   return (
     
-    <div className={`${resets.storybrainResets} ${classes.root}`} onLoad={() => {console.log("loud"); handleUpdate("SystemMonitor")}}>
+    <div id="monitoring_main" className={`${resets.storybrainResets} ${classes.root}`}>
       <div id='monitoring_frame' className={classes.frame14} >
       </div>
       <SideMenu_Property1Monitoring
