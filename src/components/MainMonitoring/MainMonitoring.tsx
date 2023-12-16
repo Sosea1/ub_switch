@@ -1,4 +1,4 @@
-import { memo, useState } from 'react';
+import { memo, useEffect, useState } from 'react';
 import type { FC, JSXElementConstructor, ReactElement, ReactNode } from 'react';
 
 
@@ -17,6 +17,8 @@ import { SNMP_Property1Variant2 } from './SNMP_Property1Variant2/SNMP_Property1V
 import { System_Property1Default } from './System_Property1Default/System_Property1Default';
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../main';
+import { SystemMonitoring } from './SystemMonitoring/SystemMonitoring';
+import ReactDomServer from 'react-dom/server'
 
 
 
@@ -31,17 +33,34 @@ interface Props {
 /* @figmaId 1:2 */
 export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}) {
 
-  const value = useSelector((state: CounterState) => state.value);
+  const ComponentOne = (): React.ReactNode =>  {
+ 
+    return <SystemMonitoring/>;
+   
+   };
+
     const dispatch = useDispatch();
 
     const handleUpdate = (key: string) => {
       dispatch(update(key));
     };
 
-    window.onload = () => {
-      handleUpdate("SystemMonitor")
-    }
+    const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
+
+    useEffect(() => {
+      setCurrentComponent(currentComponent)
+      var x = document.getElementById('monitoring_frame') as HTMLElement;
+      x.innerHTML = ReactDomServer.renderToString(currentComponent as ReactElement);
+    },[currentComponent])
  
+
+    const [isLoaded, setIsLoaded] = useState(false);
+    useEffect(() => {
+      setIsLoaded(true);
+      handleUpdate('SystemMonitor') 
+      setCurrentComponent(ComponentOne)
+   }, []);
+
   return (
     
     <div id="monitoring_main" className={`${resets.storybrainResets} ${classes.root}`}>

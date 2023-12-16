@@ -8,6 +8,8 @@ import { SNMP_Property1Default } from '../SNMP_Property1Default/SNMP_Property1De
 import { SystemMonitor_Default } from '../SystemMonitor_Default/SystemMonitor_Default';
 import { TraficMonitor_Default } from '../TraficMonitor_Default/TraficMonitor_Default';
 import classes from './SideMenu_Property1Monitoring.module.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterState, update } from '../../../main';
 
 interface Props {
   className?: string;
@@ -18,6 +20,7 @@ interface Props {
 
 /* @figmaId 16:170 */
 export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Property1Monitoring(props = {}) {
+  
   return (
     <div id='sideMenu' className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
       <div className={classes.frame8}>

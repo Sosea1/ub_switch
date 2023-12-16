@@ -34,7 +34,6 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
   
   const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
 
-
   useEffect(() => {
     setCurrentComponent(currentComponent)
     var x = document.getElementById('monitoring_frame') as HTMLElement;
@@ -60,6 +59,6 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
     }
   } 
     //проверяешь value на id вот этой баттоны
-    style={value != 'SystemMonitor' ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >System Monitor</button>
+    style={value != 'SystemMonitor' ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} }>System Monitor</button>
   );
 });
