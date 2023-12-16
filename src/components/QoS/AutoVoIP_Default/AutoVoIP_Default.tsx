@@ -6,6 +6,7 @@ import classes from './AutoVoIP_Default.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
 import ReactDomServer from 'react-dom/server'
+import { AutoVoIPGlobalConfig } from '../AutoVoIPGlobalConfig/AutoVoIPGlobalConfig';
 
 interface Props {
   className?: string;
@@ -14,7 +15,7 @@ interface Props {
 export const AutoVoIP_Default: FC<Props> = memo(function AutoVoIP_Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <AutoVoIPGlobalConfig/>
    };
    
   

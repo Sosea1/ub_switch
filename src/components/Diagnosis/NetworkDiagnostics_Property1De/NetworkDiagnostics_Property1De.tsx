@@ -8,6 +8,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
 import ReactDomServer from 'react-dom/server'
 import { SlArrowRight } from 'react-icons/sl';
+import { Ping } from '../Ping/Ping';
+import { Tracert } from '../Tracert/Tracert';
 
 interface Props {
   className?: string;
@@ -15,17 +17,17 @@ interface Props {
     root?: string;
   };
 }
-/* @figmaId 260:1341 */
+
 export const NetworkDiagnostics_Property1De: FC<Props> = memo(function NetworkDiagnostics_Property1De(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <Ping/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <Tracert/>;
    
    };
   

@@ -8,6 +8,9 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { PoEConfig } from '../PoEConfig/PoEConfig';
+import { PoEProfileConfig } from '../PoEProfileConfig/PoEProfileConfig';
+import { GlobalConfig } from '../GlobalConfig/GlobalConfig';
 
 interface Props {
   className?: string;
@@ -16,19 +19,19 @@ interface Props {
 export const PoE_Property1Default: FC<Props> = memo(function PoE_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <PoEConfig/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <PoEProfileConfig/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <GlobalConfig/>;
    };
   
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);

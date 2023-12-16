@@ -8,6 +8,9 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { VoiceVLANGlobal } from '../VoiceVLANGlobal/VoiceVLANGlobal';
+import { VoiceVLANGlobal2 } from '../VoiceVLANGlobal2/VoiceVLANGlobal2';
+import { OUIConfig } from '../OUIConfig/OUIConfig';
 
 interface Props {
   className?: string;
@@ -16,19 +19,19 @@ interface Props {
 export const VioceVLAN_Property1Default: FC<Props> = memo(function VioceVLAN_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <VoiceVLANGlobal/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <VoiceVLANGlobal2/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <OUIConfig/>;
    };
   
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);

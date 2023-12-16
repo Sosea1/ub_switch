@@ -41,6 +41,8 @@ export const SystemMonitor_Default: FC<Props> = memo(function SystemMonitor_Defa
     x.innerHTML = ReactDomServer.renderToString(currentComponent as ReactElement);
   },[currentComponent])
 
+
+
   return (
     <button id = 'SystemMonitor' className={classes.sidebar_button} onClick={() => {
          //вставляешь id вот этой баттоны

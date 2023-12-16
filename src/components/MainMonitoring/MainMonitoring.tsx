@@ -18,6 +18,8 @@ import { System_Property1Default } from './System_Property1Default/System_Proper
 
 
 
+
+
 interface Props {
   className?: string;
   hide?: {
@@ -25,10 +27,7 @@ interface Props {
   };
 }
 
-
-/* @figmaId 1:2 */
 export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}) {
-
  
   return (
     
@@ -36,8 +35,8 @@ export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}
       <div id='monitoring_frame' className={classes.frame14} >
         
       </div>
-      <SideMenu_Property1Monitoring
-        className={classes.sideMenu}
+      <SideMenu_Property1Monitoring 
+        className={classes.sideMenu} 
       />
       <div className={classes.mainMenu}>
         <L2functions_Property1Default className={classes.l2functions}/>

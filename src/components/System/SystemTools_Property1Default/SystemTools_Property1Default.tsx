@@ -8,6 +8,13 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { BootConfig } from '../BootConfig/BootConfig';
+import { RestoreConfig } from '../RestoreConfig/RestoreConfig';
+import { BackupConfig } from '../BackupConfig/BackupConfig';
+import { FirmwareUpgrade } from '../FirmwareUpgrade/FirmwareUpgrade';
+import { DHCPAutoInstall } from '../DHCPAutoInstall/DHCPAutoInstall';
+import { SystemReboot } from '../SystemReboot/SystemReboot';
+import { SystemReset } from '../SystemReset/SystemReset';
 
 interface Props {
   className?: string;
@@ -16,39 +23,39 @@ interface Props {
 export const SystemTools_Property1Default: FC<Props> = memo(function SystemTools_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <BootConfig/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <RestoreConfig/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <BackupConfig/>;
    };
 
    const ComponentFour = (): React.ReactNode =>  {
    
-    return <>4</>;
+    return <FirmwareUpgrade/>;
    };
 
    const ComponentFive = (): React.ReactNode =>  {
    
-    return <>5</>;
+    return <DHCPAutoInstall/>;
    };
 
    const ComponentSix = (): React.ReactNode =>  {
    
-    return <>6</>;
+    return <SystemReboot/>;
    };
 
    const ComponentSeven = (): React.ReactNode =>  {
    
-    return <>7</>;
+    return <SystemReset/>;
    };
   
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);

@@ -75,6 +75,12 @@ export const Tracert: FC<Props> = memo(function Tracert(props = {}) {
         <div className={classes.tracertResult}>Tracert Result</div>
         <div className={classes.oK}>OK</div>
       </div>
+      <div className={classes.tracingRouteTo192168100OverAMa}>
+        <div className={classes.textBlock}>Tracing route to [192.168.0.100] over a maximum of 4 hops</div>
+        <div className={classes.textBlock2}>
+          <p></p>
+        </div>
+      </div>
     </div>
   );
 });

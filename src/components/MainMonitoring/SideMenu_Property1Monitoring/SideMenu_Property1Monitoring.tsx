@@ -8,6 +8,8 @@ import { SNMP_Property1Default } from '../SNMP_Property1Default/SNMP_Property1De
 import { SystemMonitor_Default } from '../SystemMonitor_Default/SystemMonitor_Default';
 import { TraficMonitor_Default } from '../TraficMonitor_Default/TraficMonitor_Default';
 import classes from './SideMenu_Property1Monitoring.module.css';
+import { useDispatch } from 'react-redux';
+import { update } from '../../../main';
 
 interface Props {
   className?: string;
@@ -30,3 +32,11 @@ export const SideMenu_Property1Monitoring: FC<Props> = memo(function SideMenu_Pr
     </div>
   );
 });
+function handleUpdate(arg0: string) {
+  throw new Error('Function not implemented.');
+}
+
+function setCurrentComponent(ComponentOne: any) {
+  throw new Error('Function not implemented.');
+}
+

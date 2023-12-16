@@ -8,6 +8,10 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { QOSPortPriority } from '../QOSPortPriority/QOSPortPriority';
+import { _8021pPriority } from '../_8021pPriority/_8021pPriority';
+import { DSCPPriority } from '../DSCPPriority/DSCPPriority';
+import { SchedulerConfig } from '../SchedulerConfig/SchedulerConfig';
 
 interface Props {
   className?: string;
@@ -16,24 +20,24 @@ interface Props {
 export const ClassOfService_Property1Defaul: FC<Props> = memo(function ClassOfService_Property1Defaul(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <QOSPortPriority/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <_8021pPriority/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <DSCPPriority/>;
    };
 
    const ComponentFour = (): React.ReactNode =>  {
    
-    return <>4</>;
+    return <SchedulerConfig/>;
    };
   
   

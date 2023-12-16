@@ -7,6 +7,7 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { EEE } from '../EEE/EEE';
 
 interface Props {
   className?: string;
@@ -15,7 +16,7 @@ interface Props {
 export const EEE_Default: FC<Props> = memo(function EEE_Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <EEE/>
    };
 
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);

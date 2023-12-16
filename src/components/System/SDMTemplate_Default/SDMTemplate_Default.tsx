@@ -7,6 +7,7 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { SDMTemplate } from '../SDMTemplate/SDMTemplate';
 
 interface Props {
   className?: string;
@@ -15,7 +16,7 @@ interface Props {
 export const SDMTemplate_Default: FC<Props> = memo(function SDMTemplate_Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <SDMTemplate/>
    };
   
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);

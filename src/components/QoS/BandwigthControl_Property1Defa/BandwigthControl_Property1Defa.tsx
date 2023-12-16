@@ -8,6 +8,8 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { RateLimitConfig } from '../RateLimitConfig/RateLimitConfig';
+import { StormControlConfig } from '../StormControlConfig/StormControlConfig';
 
 interface Props {
   className?: string;
@@ -16,13 +18,13 @@ interface Props {
 export const BandwigthControl_Property1Defa: FC<Props> = memo(function BandwigthControl_Property1Defa(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <RateLimitConfig/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <StormControlConfig/>;
    
    };
   
