@@ -30,22 +30,6 @@ export const _8021x_Property1Default: FC<Props> = memo(function _8021x_Property1
    
     return <>3</>;
    };
-
-   const ComponentFour = (): React.ReactNode =>  {
-   
-    return <>4</>;
-   };
-
-   const ComponentFive = (): React.ReactNode =>  {
-   
-    return <>5</>;
-   };
-
-   const ComponentSix = (): React.ReactNode =>  {
-   
-    return <>6</>;
-   };
-  
   
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
   
@@ -71,7 +55,7 @@ export const _8021x_Property1Default: FC<Props> = memo(function _8021x_Property1
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 7; i++)
+      for (let i = 1; i < 4; i++)
       {
         let key_ = "8021x-"+i
         if(key_ != key)

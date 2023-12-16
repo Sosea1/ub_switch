@@ -51,7 +51,7 @@ export const PortSecurity_Default: FC<Props> = memo(function PortSecurity_Defaul
       handleUpdate('PortSecurity')
       setCurrentComponent(ComponentOne)
     }
-    }} style={value != "PortSecurity" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >Access Security
+    }} style={value != "PortSecurity" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >Port Security
         </button>
      </> 
   );

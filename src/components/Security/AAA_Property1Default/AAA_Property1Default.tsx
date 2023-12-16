@@ -121,7 +121,6 @@ export const AAA_Property1Default: FC<Props> = memo(function AAA_Property1Defaul
           <button id='AAA-5' onClick={() => click1("AAA-5", ComponentFive)}  className={classes.inner_sidebar_button}>•  RADIUS Config</button>
           <button id='AAA-6' onClick={() => click1("AAA-6", ComponentSix)}  className={classes.inner_sidebar_button}>•  TACACS+ Config</button>
         </div>)}
-        
      </> 
   );
 });

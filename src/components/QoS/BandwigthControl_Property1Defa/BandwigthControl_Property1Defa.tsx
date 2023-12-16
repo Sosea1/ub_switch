@@ -51,7 +51,7 @@ export const BandwigthControl_Property1Defa: FC<Props> = memo(function Bandwigth
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 3; i++)
       {
         let key_ = "BandwidthControl-"+i
         if(key_ != key)

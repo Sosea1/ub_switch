@@ -51,7 +51,7 @@ export const LLDP_Property1Default: FC<Props> = memo(function LLDP_Property1Defa
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 3; i++)
       {
         let key_ = "LLDP-"+i
         if(key_ != key)
