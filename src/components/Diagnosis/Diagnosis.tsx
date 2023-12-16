@@ -18,6 +18,7 @@ import { System_Property1Default } from './System_Property1Default/System_Proper
 import ReactDomServer from 'react-dom/server'
 import { useDispatch } from 'react-redux';
 import { update } from '../../main';
+import { Ping } from './Ping/Ping';
 
 interface Props {
   className?: string;
@@ -27,7 +28,7 @@ export const Diagnosis: FC<Props> = memo(function Diagnosis(props = {}) {
 
   const ComponentOne = (): React.ReactNode =>  {
  
-    return <>1</>;
+    return <Ping/>;
    
    };
 

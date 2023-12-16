@@ -55,7 +55,7 @@ export const NetworkDiagnostics_Property1De: FC<Props> = memo(function NetworkDi
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 8; i++)
+      for (let i = 1; i < 3; i++)
       {
         let key_ = "NetworkD-"+i
         if(key_ != key)

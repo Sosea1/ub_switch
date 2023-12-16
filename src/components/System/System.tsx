@@ -15,16 +15,17 @@ import { System_Property1Variant3 } from './System_Property1Variant3/System_Prop
 import { useDispatch } from 'react-redux';
 import { update } from '../../main';
 import ReactDomServer from 'react-dom/server'
+import { UserManagment } from './UserManagment/UserManagment';
 
 interface Props {
   className?: string;
 }
-/* @figmaId 66:913 */
+
 export const System: FC<Props> = memo(function System(props = {}) {
 
   const ComponentOne = (): React.ReactNode =>  {
  
-    return <>1</>;
+    return <UserManagment/>;
    
    };
 
