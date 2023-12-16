@@ -56,7 +56,7 @@ export const DHCPService_Property1Default: FC<Props> = memo(function DHCPService
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 4; i++)
       {
         let key_ = "DHCPService-"+i
         if(key_ != key)

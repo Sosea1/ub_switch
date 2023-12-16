@@ -55,7 +55,7 @@ export const VioceVLAN_Property1Default: FC<Props> = memo(function VioceVLAN_Pro
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 4; i++)
       {
         let key_ = "VoiceVLAN-"+i
         if(key_ != key)

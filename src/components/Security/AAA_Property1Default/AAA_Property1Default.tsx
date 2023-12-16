@@ -71,9 +71,9 @@ export const AAA_Property1Default: FC<Props> = memo(function AAA_Property1Defaul
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 7; i++)
       {
-        let key_ = "AccessSecurity-"+i
+        let key_ = "AAA-"+i
         if(key_ != key)
         {
          (document.getElementById(key_) as HTMLElement).style.backgroundColor = '#E2F5FF';
@@ -92,8 +92,8 @@ export const AAA_Property1Default: FC<Props> = memo(function AAA_Property1Defaul
 
   return (
     <>
-    <button id = "AccessSecurity" className={classes.sidebar_button} onClick={() => {
-      let test = (document.getElementById("AccessSecurity") as HTMLElement);
+    <button id = "AAA" className={classes.sidebar_button} onClick={() => {
+      let test = (document.getElementById("AAA") as HTMLElement);
       let a = window.getComputedStyle(test);
       if (a.background == 'rgb(13, 89, 127)')
     {
@@ -101,27 +101,26 @@ export const AAA_Property1Default: FC<Props> = memo(function AAA_Property1Defaul
     }
     else
     {
-      handleUpdate('AccessSecurity')
+      handleUpdate('AAA')
       setCurrentComponent(ComponentOne)
     }
-    }} style={value != "AccessSecurity" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >Access Security
-        {value != "AccessSecurity" ? (
+    }} style={value != "AAA" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >AAA
+        {value != "AAA" ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (
           <SlArrowRight style = {{transform: 'rotate(90deg)', transition: 'transform 0.15s ease-in-out'}}  stroke="white" strokeWidth={50} color='white' size={16}/>
         )
         }
         </button>
-        {value == "AccessSecurity" && (
+        {value == "AAA" && (
         <div className={classes.div_bar}>
-          <button id='AccessSecurity-1' style={{background:'#5AC3F8'}} onClick={() => click1("AccessSecurity-1", ComponentOne)} className={classes.inner_sidebar_button}>•  Access Control</button>
-          <button id='AccessSecurity-2' onClick={() => click1("AccessSecurity-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  HTTP Config</button>
-          <button id='AccessSecurity-3' onClick={() => click1("AccessSecurity-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  HTTPS Config</button>
-          <button id='AccessSecurity-4' onClick={() => click1("AccessSecurity-4", ComponentFour)}  className={classes.inner_sidebar_button}>•  SSH Config</button>
-          <button id='AccessSecurity-5' onClick={() => click1("AccessSecurity-5", ComponentFive)}  className={classes.inner_sidebar_button}>•  Telnet Config</button>
-          <button id='AccessSecurity-6' onClick={() => click1("AccessSecurity-6", ComponentSix)}  className={classes.inner_sidebar_button}>•  Serial Port Config</button>
+          <button id='AAA-1' style={{background:'#5AC3F8'}} onClick={() => click1("AAA-1", ComponentOne)} className={classes.inner_sidebar_button}>•  Global Control </button>
+          <button id='AAA-2' onClick={() => click1("AAA-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  Method Config</button>
+          <button id='AAA-3' onClick={() => click1("AAA-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  Dot1x Config</button>
+          <button id='AAA-4' onClick={() => click1("AAA-4", ComponentFour)}  className={classes.inner_sidebar_button}>•  Server Config</button>
+          <button id='AAA-5' onClick={() => click1("AAA-5", ComponentFive)}  className={classes.inner_sidebar_button}>•  RADIUS Config</button>
+          <button id='AAA-6' onClick={() => click1("AAA-6", ComponentSix)}  className={classes.inner_sidebar_button}>•  TACACS+ Config</button>
         </div>)}
-        
      </> 
   );
 });

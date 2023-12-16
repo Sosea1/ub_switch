@@ -26,11 +26,6 @@ export const StaticRouting_Property1Default: FC<Props> = memo(function StaticRou
    
    };
   
-   const ComponentThree = (): React.ReactNode =>  {
-   
-    return <>3</>;
-   };
-  
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
   
   
@@ -56,7 +51,7 @@ export const StaticRouting_Property1Default: FC<Props> = memo(function StaticRou
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 3; i++)
       {
         let key_ = "StaticRouting-"+i
         if(key_ != key)

@@ -61,7 +61,7 @@ export const ClassOfService_Property1Defaul: FC<Props> = memo(function ClassOfSe
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 5; i++)
       {
         let key_ = "ClassService-"+i
         if(key_ != key)

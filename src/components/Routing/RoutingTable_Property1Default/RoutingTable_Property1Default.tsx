@@ -8,6 +8,8 @@ import ReactDomServer from 'react-dom/server'
 import { SlArrowRight } from 'react-icons/sl';
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { IPv4Table } from '../IPv4Table/IPv4Table';
+import { IPv6Table } from '../IPv6Table/IPv6Table';
 
 interface Props {
   className?: string;
@@ -16,13 +18,13 @@ interface Props {
 export const RoutingTable_Property1Default: FC<Props> = memo(function RoutingTable_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return  <IPv4Table/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <IPv6Table/>;
    
    };
   
@@ -50,7 +52,7 @@ export const RoutingTable_Property1Default: FC<Props> = memo(function RoutingTab
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 3; i++)
       {
         let key_ = "RoutingTable-"+i
         if(key_ != key)

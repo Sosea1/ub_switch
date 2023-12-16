@@ -64,7 +64,7 @@ export const SpanningTree_Property1Default: FC<Props> = memo(function SpanningTr
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 5; i++)
       {
         let key_ = "SpanningTree-"+i
         if(key_ != key)

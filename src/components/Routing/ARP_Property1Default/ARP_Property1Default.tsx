@@ -61,7 +61,7 @@ export const ARP_Property1Default: FC<Props> = memo(function ARP_Property1Defaul
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 6; i++)
+      for (let i = 1; i < 5; i++)
       {
         let key_ = "ARP-"+i
         if(key_ != key)
