@@ -15,6 +15,8 @@ import { Security_Property1Default } from './Security_Property1Default/Security_
 import { SideMenu_Property1Monitoring } from './SideMenu_Property1Monitoring/SideMenu_Property1Monitoring';
 import { SNMP_Property1Variant2 } from './SNMP_Property1Variant2/SNMP_Property1Variant2';
 import { System_Property1Default } from './System_Property1Default/System_Property1Default';
+import { useDispatch, useSelector } from 'react-redux';
+import { CounterState, update } from '../../main';
 
 
 
@@ -29,12 +31,18 @@ interface Props {
 /* @figmaId 1:2 */
 export const MainMonitoring: FC<Props> = memo(function MainMonitoring(props = {}) {
 
+  const value = useSelector((state: CounterState) => state.value);
+    const dispatch = useDispatch();
+
+    const handleUpdate = (key: string) => {
+      dispatch(update(key));
+    };
+  
  
   return (
     
-    <div className={`${resets.storybrainResets} ${classes.root}`}>
+    <div className={`${resets.storybrainResets} ${classes.root}`} onLoad={() => {console.log("loud"); handleUpdate("SystemMonitor")}}>
       <div id='monitoring_frame' className={classes.frame14} >
-        
       </div>
       <SideMenu_Property1Monitoring
         className={classes.sideMenu}
