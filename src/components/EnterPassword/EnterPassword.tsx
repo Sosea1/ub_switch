@@ -1,4 +1,4 @@
-import { memo } from 'react';
+import { memo, useState } from 'react';
 import type { FC } from 'react';
 
 import resets from '../_resets.module.css';
@@ -14,16 +14,34 @@ interface Props {
 
 export const EnterPassword: FC<Props> = memo(function EnterPassword(props = {}) {
   const navigate = useNavigate();
-
+  const [text, setText] = useState('');
+  const handleKeyDown = (e: any) => {
+    if (e.code == "Enter") {
+      navigateTo();
+    }
+  };
   const navigateTo = () => {
- 
-  navigate('/monitoring');
+    const username_input = document.getElementById('username') as HTMLInputElement | null;
+    const username_value = username_input?.value;
+    const password_input = document.getElementById('password') as HTMLInputElement | null;
+    const password_value = password_input?.value;
+    console.log(username_value) 
+    console.log(password_value)
+    if (username_value == "admin"  && password_value == "admin")
+    {
+      navigate('/monitoring');
+    }
+    else
+    {
+      setText('Wrong username or password!');
+    }
  };
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div className={classes.frame33}>
         <div className={classes.frame29}>
           <div className={classes.login}>Login</div>
+          <div id="message_div" className={classes.message_div}>{text}</div>
           <PingButton_Property1Default
             className={classes.pingButton}
             text={{
@@ -35,7 +53,9 @@ export const EnterPassword: FC<Props> = memo(function EnterPassword(props = {}) 
             <_Property1Variant4
               className={classes.unnamed}
               text={{
-                _1921681: <div className={classes._1921681}>64</div>,
+
+                _1921681: <input id="username" onKeyDown={handleKeyDown} className={classes._1921681}/>,
+
               }}
             />
           </div>
@@ -44,7 +64,9 @@ export const EnterPassword: FC<Props> = memo(function EnterPassword(props = {}) 
             <_Property1Variant4
               className={classes.unnamed2}
               text={{
-                _1921681: <div className={classes._19216812}>1000</div>,
+
+                _1921681: <input id="password" onKeyDown={handleKeyDown} className={classes._19216812}/>,
+
               }}
             />
           </div>
