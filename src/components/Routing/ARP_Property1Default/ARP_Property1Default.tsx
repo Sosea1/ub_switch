@@ -8,6 +8,10 @@ import { SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { ARPTable } from '../ARPTable/ARPTable';
+import { StaticARPConfig } from '../StaticARPConfig/StaticARPConfig';
+import { GratuitousARP } from '../GratuitousARP/GratuitousARP';
+import { ProxyARPConfig } from '../ProxyARPConfig/ProxyARPConfig';
 
 interface Props {
   className?: string;
@@ -16,24 +20,24 @@ interface Props {
 export const ARP_Property1Default: FC<Props> = memo(function ARP_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <ARPTable/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <StaticARPConfig/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <GratuitousARP/>;
    };
   
    const ComponentFour = (): React.ReactNode =>  {
    
-    return <>4</>;
+    return <ProxyARPConfig/>;
    
    };
 
@@ -61,7 +65,7 @@ export const ARP_Property1Default: FC<Props> = memo(function ARP_Property1Defaul
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 5; i++)
+      for (let i = 1; i < 6; i++)
       {
         let key_ = "ARP-"+i
         if(key_ != key)

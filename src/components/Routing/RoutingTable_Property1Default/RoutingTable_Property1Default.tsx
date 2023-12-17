@@ -52,7 +52,7 @@ export const RoutingTable_Property1Default: FC<Props> = memo(function RoutingTab
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 3; i++)
+      for (let i = 1; i < 6; i++)
       {
         let key_ = "RoutingTable-"+i
         if(key_ != key)

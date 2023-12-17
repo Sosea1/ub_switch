@@ -8,6 +8,9 @@ import { SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { DHCPServer } from '../DHCPServer/DHCPServer';
+import { DHCPRelay } from '../DHCPRelay/DHCPRelay';
+import { DHCPL2Relay } from '../DHCPL2Relay/DHCPL2Relay';
 
 interface Props {
   className?: string;
@@ -16,19 +19,19 @@ interface Props {
 export const DHCPService_Property1Default: FC<Props> = memo(function DHCPService_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <DHCPServer/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <DHCPRelay/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <DHCPL2Relay/>;
    };
   
   
@@ -56,7 +59,7 @@ export const DHCPService_Property1Default: FC<Props> = memo(function DHCPService
         test.style.backgroundColor = '#5AC3F8';
         setCurrentComponent(newComponent);
       }
-      for (let i = 1; i < 4; i++)
+      for (let i = 1; i < 6; i++)
       {
         let key_ = "DHCPService-"+i
         if(key_ != key)

@@ -4,12 +4,7 @@
   height: 956px;
   align-items: flex-start;
   background-color: #fff;
-  overflow: hidden;  
-  animation: fadeIn 0.15s ease-in-out;  
-}
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  overflow: hidden;
 }
 .frame16 {
   position: absolute;
@@ -164,7 +159,7 @@
 .line3 {
   transform-origin: bottom left;
   position: absolute;
-  left: 0px;
+  left: -1px;
   top: 53px;
   width: 1149.0005px;
   max-width: 100%;

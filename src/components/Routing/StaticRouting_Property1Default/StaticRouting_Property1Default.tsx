@@ -8,6 +8,8 @@ import { SlArrowRight } from 'react-icons/sl';
 import ReactDomServer from 'react-dom/server'
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { IPv4StaticRouting } from '../IPv4StaticRouting/IPv4StaticRouting';
+import { IPv6StaticRouting } from '../IPv6StaticRouting/IPv6StaticRouting';
 
 interface Props {
   className?: string;
@@ -16,13 +18,13 @@ interface Props {
 export const StaticRouting_Property1Default: FC<Props> = memo(function StaticRouting_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <IPv4StaticRouting/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <IPv6StaticRouting/>;
    
    };
   

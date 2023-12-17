@@ -6,6 +6,7 @@ import classes from './Interface_Default.module.css';
 import ReactDomServer from 'react-dom/server'
 import { useDispatch, useSelector } from 'react-redux';
 import { CounterState, update } from '../../../main';
+import { Interface } from '../Interface/Interface';
 
 interface Props {
   className?: string;
@@ -14,7 +15,7 @@ interface Props {
 export const Interface_Default: FC<Props> = memo(function Interface_Default(props = {}) {
   const ComponentOne = (): React.ReactNode =>  {
  
-    return <div>1</div>;
+    return <Interface/>;
    
    };
   
