@@ -28,6 +28,7 @@ export const SflowAgent: FC<Props> = memo(function SflowAgent(props = {}) {
                 <div className={classes.divWidgetWrap}>
                   <div className={classes.label}>
                     <div className={classes.enable}>Enable</div>
+                    <input id='main_check' style={{cursor: 'pointer', position:'absolute'}} type="checkbox" />
                   </div>
                 </div>
               </div>

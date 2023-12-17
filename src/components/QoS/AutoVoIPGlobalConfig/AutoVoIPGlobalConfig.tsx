@@ -46,6 +46,7 @@ export const AutoVoIPGlobalConfig: FC<Props> = memo(function AutoVoIPGlobalConfi
           <div className={classes.divWidgetTips2}>
             <div className={classes.divContent}>
               <div className={classes.enable}>Enable</div>
+              <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
             </div>
           </div>
         </div>

@@ -61,7 +61,12 @@
   height: 956px;
   align-items: flex-start;
   background-color: #fff;
-  overflow: hidden;
+  overflow: hidden;  
+  animation: fadeIn 0.15s ease-in-out;  
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .link {
   position: absolute;
@@ -278,7 +283,8 @@
   height: 40px;
   align-items: flex-start;
   background-color: #5ac3f833;
-  box-shadow: inset -1px 0px 0px #5ac3f880, inset 0px -1px 0px #5ac3f880, inset -1px 0px 0px #5ac3f880;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
 }
 .bodyRowData {
   position: absolute;
@@ -319,18 +325,18 @@
   position: absolute;
   left: 22px;
   right: 24px;
-  top: 359px;
-  height: 40px;
+  top: 358px;
+  height: 42px;
   align-items: flex-start;
   overflow: auto;
-  box-shadow: inset -1px 0px 0px #5ac3f880, inset -1px 0px 0px #5ac3f880;
-}
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;}
 .table2 {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
-  height: 40px;
+  height: 47px;
   align-items: flex-start;
   background-color: #5ac3f80d;
   overflow: hidden;
@@ -501,7 +507,8 @@
   height: 60px;
   align-items: flex-start;
   background-color: #5ac3f833;
-  box-shadow: inset 0px 1px 0px #5ac3f880, inset -1px 0px 0px #5ac3f880, inset -1px 0px 0px #5ac3f880;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
 }
 .table3 {
   position: absolute;

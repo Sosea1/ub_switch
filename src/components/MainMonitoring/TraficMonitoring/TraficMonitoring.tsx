@@ -32,6 +32,7 @@ export const TraficMonitoring: FC<Props> = memo(function TraficMonitoring(props 
                         <div className={classes.divWidgetWrap}>
                           <div className={classes.label}>
                             <div className={classes.enable}>Enable</div>
+                            <input id='main_check' style={{cursor: 'pointer', position:'absolute'}} type="checkbox" />
                           </div>
                         </div>
                       </div>

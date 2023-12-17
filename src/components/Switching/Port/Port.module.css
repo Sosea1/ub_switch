@@ -21,7 +21,12 @@
   height: 956px;
   align-items: flex-start;
   background-color: #fff;
-  overflow: hidden;
+  overflow: hidden;  
+  animation: fadeIn 0.15s ease-in-out;  
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .link {
   position: absolute;
@@ -310,16 +315,17 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
+  top: 2px;
   height: 359.2px;
   align-items: flex-start;
-  box-shadow: inset -1.6px 0px 0px #5ac3f880, inset -1.6px 0px 0px #5ac3f880;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
 }
 .divScrollXContainer {
   position: absolute;
   left: 1.6px;
   right: 1.6px;
-  top: 0;
+  top: -2px;
   height: 359.2px;
   align-items: flex-start;
   overflow: auto;

@@ -4,7 +4,12 @@
   height: 956px;
   align-items: flex-start;
   background-color: #fff;
-  overflow: hidden;
+  overflow: hidden;  
+  animation: fadeIn 0.15s ease-in-out;  
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .emulatorTpLinkComByHtmlToDesig {
   position: absolute;
@@ -103,7 +108,8 @@
   top: 0;
   height: 76px;
   align-items: flex-start;
-  box-shadow: inset -1px 0px 0px #5ac3f880, inset -1px 0px 0px #5ac3f880;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
 }
 .divScrollXContainer {
   position: absolute;
@@ -113,7 +119,7 @@
   height: 76px;
   align-items: flex-start;
   background-color: #5ac3f80d;
-  overflow: auto;
+  overflow: hidden;
 }
 .divContainer2 {
   position: absolute;
@@ -153,7 +159,7 @@
 }
 .cell {
   position: relative;
-  width: 77px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -176,7 +182,7 @@
 }
 .cell2 {
   position: relative;
-  width: 81px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -199,7 +205,7 @@
 }
 .cell3 {
   position: relative;
-  width: 86px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -222,7 +228,7 @@
 }
 .cell4 {
   position: relative;
-  width: 111px;
+  width: 80px;
   height: 36px;
   align-items: flex-start;
 }
@@ -245,7 +251,7 @@
 }
 .cell5 {
   position: relative;
-  width: 106px;
+  width: 80px;
   height: 36px;
   align-items: flex-start;
 }
@@ -268,7 +274,7 @@
 }
 .cell6 {
   position: relative;
-  width: 109px;
+  width: 80px;
   height: 36px;
   align-items: flex-start;
 }
@@ -291,7 +297,7 @@
 }
 .cell7 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -314,7 +320,7 @@
 }
 .cell8 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -337,7 +343,7 @@
 }
 .cell9 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -360,7 +366,7 @@
 }
 .cell10 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -383,7 +389,7 @@
 }
 .cell11 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -406,7 +412,7 @@
 }
 .cell12 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -464,7 +470,7 @@
 }
 .cell13 {
   position: relative;
-  width: 77px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -487,7 +493,7 @@
 }
 .cell14 {
   position: relative;
-  width: 81px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -510,7 +516,7 @@
 }
 .cell15 {
   position: relative;
-  width: 86px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -533,7 +539,7 @@
 }
 .cell16 {
   position: relative;
-  width: 111px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -556,7 +562,7 @@
 }
 .cell17 {
   position: relative;
-  width: 106px;
+  width: 80px;
   height: 36px;
   align-items: flex-start;
 }
@@ -579,7 +585,7 @@
 }
 .cell18 {
   position: relative;
-  width: 109px;
+  width: 80px;
   height: 36px;
   align-items: flex-start;
 }
@@ -602,7 +608,7 @@
 }
 .cell19 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -625,7 +631,7 @@
 }
 .cell20 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -648,7 +654,7 @@
 }
 .cell21 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -671,7 +677,7 @@
 }
 .cell22 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -694,7 +700,7 @@
 }
 .cell23 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }
@@ -717,7 +723,7 @@
 }
 .cell24 {
   position: relative;
-  width: 90px;
+  width: 60px;
   height: 36px;
   align-items: flex-start;
 }

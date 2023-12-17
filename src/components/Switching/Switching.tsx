@@ -60,7 +60,10 @@ export const Switching: FC<Props> = memo(function Switching(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div id='switching_frame' className={classes.frame14} ></div>
+      <SideMenu_Property1Switching
+          className={classes.sideMenu}/>
       <div className={classes.mainMenu}>
+        
         <Monitoring_Property1Default className={classes.monitoring} />
         <L2functions_Property1Variant3 className={classes.l2functions} />
         <L3functions_Property1Default className={classes.l3functions} />
@@ -77,13 +80,6 @@ export const Switching: FC<Props> = memo(function Switching(props = {}) {
         <div className={classes.exterCom_logo11}>
           <Extercom_logo11Icon className={classes.icon} />
         </div>
-      </div>
-      <div className={classes.mainWindow}>
-        
-        <SideMenu_Property1Switching
-          className={classes.sideMenu}/>
-          
-        
       </div>
     </div>
   );

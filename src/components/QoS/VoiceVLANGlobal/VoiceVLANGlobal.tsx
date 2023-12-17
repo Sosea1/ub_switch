@@ -55,6 +55,7 @@ export const VoiceVLANGlobal: FC<Props> = memo(function VoiceVLANGlobal(props = 
           <div className={classes.divWidgetWrap3}>
             <div className={classes.label}>
               <div className={classes.enable}>Enable</div>
+              <input style={{cursor: 'pointer', position:'absolute', left:'10px',top:'2px'}} type="checkbox" />
             </div>
           </div>
         </div>

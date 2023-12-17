@@ -47,6 +47,7 @@ export const MulticastIGMPSnooping: FC<Props> = memo(function MulticastIGMPSnoop
         <div className={classes.divWidgetTips}>
           <div className={classes.divContent}>
             <div className={classes.enable}>Enable</div>
+            <input id='main_check' style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
           </div>
         </div>
       </div>
@@ -57,10 +58,12 @@ export const MulticastIGMPSnooping: FC<Props> = memo(function MulticastIGMPSnoop
         <div className={classes.divWidgetTips2}>
           <div className={classes.divContent2}>
             <div className={classes.forward}>Forward</div>
+            <input type="radio" checked style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} name="Multicast" />
           </div>
         </div>
         <div className={classes.divContent3}>
           <div className={classes.discard}>Discard</div>
+          <input type="radio" style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} name="Multicast" />
         </div>
       </div>
       <div className={classes.divJumbo3}>
@@ -70,6 +73,7 @@ export const MulticastIGMPSnooping: FC<Props> = memo(function MulticastIGMPSnoop
         <div className={classes.divWidgetTips3}>
           <div className={classes.divContent4}>
             <div className={classes.enable2}>Enable</div>
+            <input id='main_check1' style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
           </div>
         </div>
       </div>
@@ -80,16 +84,19 @@ export const MulticastIGMPSnooping: FC<Props> = memo(function MulticastIGMPSnoop
         <div className={classes.divWidgetTips4}>
           <div className={classes.divContent5}>
             <div className={classes.v1}>v1</div>
+            <input type="radio" checked style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} name="IGMP" />
           </div>
         </div>
         <div className={classes.divWidgetTips5}>
           <div className={classes.divContent6}>
             <div className={classes.v2}>v2</div>
+            <input type="radio" style={{cursor: 'pointer', position:'absolute', left:'-20px',top:'5px'}} name="IGMP" />
           </div>
         </div>
         <div className={classes.divWidgetTips6}>
           <div className={classes.divContent7}>
             <div className={classes.v3}>v3</div>
+            <input type="radio" style={{cursor: 'pointer', position:'absolute', left:'-20px',top:'5px'}} name="IGMP" />
           </div>
         </div>
       </div>

@@ -153,16 +153,16 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 46.2px;
-  height: 76px;
+  top: 46px;
+  height: 74px;
   align-items: flex-start;
 }
 .divLinkGridPanel {
   position: absolute;
   left: 0;
-  top: -0.2px;
+  top: -0.2002px;
   width: 1061px;
-  height: 76px;
+  height: 78px;
   align-items: flex-start;
 }
 .divGridPanelContent {
@@ -177,8 +177,8 @@
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
-  height: 76px;
+  top: 0.2002px;
+  height: 89px;
   align-items: flex-start;
 }
 .divContainer {
@@ -186,16 +186,17 @@
   left: 0;
   right: 0;
   top: 0;
-  height: 76px;
+  height: 100px;
   align-items: flex-start;
-  box-shadow: inset -1px 0px 0px #5ac3f880, inset -1px 0px 0px #5ac3f880;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
 }
 .divScrollXContainer {
   position: absolute;
   left: 0;
   right: 1px;
   top: 0;
-  height: 76px;
+  height: 100px;
   align-items: flex-start;
   background-color: #5ac3f80d;
   overflow: auto;
@@ -423,7 +424,7 @@
 .bodyRow2 {
   position: absolute;
   left: 10px;
-  top: calc(50% - -43px);
+  top: calc(50% - -31px);
   width: 1050px;
   height: 36px;
   align-items: flex-start;

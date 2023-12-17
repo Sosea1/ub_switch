@@ -31,6 +31,7 @@ export const DHCPAutoInstall: FC<Props> = memo(function DHCPAutoInstall(props = 
                 <div className={classes.divWidgetTips}>
                   <div className={classes.divContent}>
                     <div className={classes.enable}>Enable</div>
+                    <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
                   </div>
                 </div>
               </div>
@@ -41,6 +42,7 @@ export const DHCPAutoInstall: FC<Props> = memo(function DHCPAutoInstall(props = 
                 <div className={classes.divWidgetTips2}>
                   <div className={classes.divContent2}>
                     <div className={classes.enable2}>Enable</div>
+                    <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
                   </div>
                 </div>
               </div>
@@ -51,6 +53,7 @@ export const DHCPAutoInstall: FC<Props> = memo(function DHCPAutoInstall(props = 
                 <div className={classes.divWidgetTips3}>
                   <div className={classes.divContent3}>
                     <div className={classes.enable3}>Enable</div>
+                    <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
                   </div>
                 </div>
               </div>
@@ -81,6 +84,7 @@ export const DHCPAutoInstall: FC<Props> = memo(function DHCPAutoInstall(props = 
                 <div className={classes.divWidgetTips5}>
                   <div className={classes.divContent5}>
                     <div className={classes.enable4}>Enable</div>
+                    <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
                   </div>
                 </div>
               </div>

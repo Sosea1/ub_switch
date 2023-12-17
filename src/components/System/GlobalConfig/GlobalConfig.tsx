@@ -31,6 +31,7 @@ export const GlobalConfig: FC<Props> = memo(function GlobalConfig(props = {}) {
                   </div>
                   <div className={classes.divContent2}>
                     <div className={classes.enable}>Enable</div>
+                    <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
                   </div>
                 </div>
                 <div className={classes.divSflowGlobalSubmit}></div>

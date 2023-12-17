@@ -40,7 +40,12 @@
   height: 956px;
   align-items: flex-start;
   background-color: #fff;
-  overflow: hidden;
+  overflow: hidden;  
+  animation: fadeIn 0.15s ease-in-out;  
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .tracert {
   color: #000;
@@ -283,7 +288,7 @@
   position: absolute;
   left: 18px;
   top: 4px;
-  width: 544px;
+  width: 552px;
   height: min-content;
   place-content: space-between;
   align-items: flex-start;

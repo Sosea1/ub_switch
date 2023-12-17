@@ -71,6 +71,7 @@ export const LLDPConfig: FC<Props> = memo(function LLDPConfig(props = {}) {
           <div className={classes.divWidgetTips}>
             <div className={classes.divContent}>
               <div className={classes.enable}>Enable</div>
+              <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
             </div>
           </div>
         </div>
@@ -138,6 +139,7 @@ export const LLDPConfig: FC<Props> = memo(function LLDPConfig(props = {}) {
           <div className={classes.divWidgetTips6}>
             <div className={classes.divContent6}>
               <div className={classes.enable2}>Enable</div>
+              <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
             </div>
           </div>
         </div>

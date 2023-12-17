@@ -35,6 +35,7 @@ export const PPPoE: FC<Props> = memo(function PPPoE(props = {}) {
           <div className={classes.divWidgetTips2}>
             <div className={classes.divContent}>
               <div className={classes.enable}>Enable</div>
+              <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
             </div>
           </div>
         </div>

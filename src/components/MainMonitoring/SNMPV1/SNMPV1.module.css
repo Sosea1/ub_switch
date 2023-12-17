@@ -151,7 +151,7 @@
 .line3 {
   transform-origin: bottom left;
   position: absolute;
-  left: -1px;
+  left: 0px;
   top: 53px;
   width: 1149.0005px;
   max-width: 100%;

@@ -4,7 +4,12 @@
   height: 956px;
   align-items: flex-start;
   background-color: #fff;
-  overflow: hidden;
+  overflow: hidden;  
+  animation: fadeIn 0.15s ease-in-out;  
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 .emulatorTpLinkComByHtmlToDesig {
   position: absolute;
@@ -162,7 +167,8 @@
   top: 0;
   height: 76px;
   align-items: flex-start;
-  box-shadow: inset -1px 0px 0px #5ac3f880, inset -1px 0px 0px #5ac3f880;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
 }
 .divScrollXContainer {
   position: absolute;

@@ -37,7 +37,7 @@
 }
 .sideMenu.sideMenu {
   left: 0;
-  top: 73px;
+  top: 77px;
   animation: fadeInAnimation ease-in-out 0.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;

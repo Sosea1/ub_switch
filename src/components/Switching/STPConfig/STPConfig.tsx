@@ -110,6 +110,7 @@ export const STPConfig: FC<Props> = memo(function STPConfig(props = {}) {
           <div className={classes.divWidgetTips5}>
             <div className={classes.divContent5}>
               <div className={classes.enable}>Enable</div>
+              <input style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
             </div>
           </div>
         </div>

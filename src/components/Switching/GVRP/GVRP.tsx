@@ -27,6 +27,7 @@ export const GVRP: FC<Props> = memo(function GVRP(props = {}) {
               <div className={classes.divWidgetTips}>
                 <div className={classes.divContent}>
                   <div className={classes.enable}>Enable</div>
+                  <input id='main_check' style={{cursor: 'pointer', position:'absolute', left:'-30px',top:'5px'}} type="checkbox" />
                 </div>
               </div>
             </div>
