@@ -13,6 +13,6 @@ https://nodejs.org/en/download/current
 <br>
 Для завершения процесса **Ctrl+C**
 <br>
-**Данные для входа: ** <br>
+**Данные для входа:** <br>
 Имя пользователя - admin<br>
 Пароль - admin
