@@ -8,6 +8,8 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { DHCPv4Filter } from '../DHCPv4Filter/DHCPv4Filter';
+import { DHCPv6Filter } from '../DHCPv6Filter/DHCPv6Filter';
 
 interface Props {
   className?: string;
@@ -16,37 +18,16 @@ interface Props {
 export const DHCPFilter_Property1Default: FC<Props> = memo(function DHCPFilter_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <DHCPv4Filter/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <DHCPv6Filter/>;
    
    };
-  
-   const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
-   };
-
-   const ComponentFour = (): React.ReactNode =>  {
-   
-    return <>4</>;
-   };
-
-   const ComponentFive = (): React.ReactNode =>  {
-   
-    return <>5</>;
-   };
-
-   const ComponentSix = (): React.ReactNode =>  {
-   
-    return <>6</>;
-   };
-  
-  
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
   
   

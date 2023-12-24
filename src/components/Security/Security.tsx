@@ -15,6 +15,7 @@ import { System_Property1Default } from './System_Property1Default/System_Proper
 import ReactDomServer from 'react-dom/server'
 import { useDispatch } from 'react-redux';
 import { update } from '../../main';
+import { AccessControl } from './AccessControl/AccessControl';
 
 interface Props {
   className?: string;
@@ -24,7 +25,7 @@ export const Security: FC<Props> = memo(function Security(props = {}) {
   
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <AccessControl/>
    };
 
     const dispatch = useDispatch();

@@ -56,7 +56,6 @@ export const RestoreConfig: FC<Props> = memo(function RestoreConfig(props = {}) 
                     ping: <div className={classes.ping}>Browse</div>,
                   }}
                 />
-                <div className={classes.browse}>Browse</div>
               </div>
               <div className={classes.divSflowGlobalSubmit}></div>
             </div>

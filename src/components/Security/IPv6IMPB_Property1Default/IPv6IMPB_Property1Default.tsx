@@ -8,6 +8,9 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { IPMACBinding } from '../IPMACBinding/IPMACBinding';
+import { NDDetection } from '../NDDetection/NDDetection';
+import { IPv6SourceGuard } from '../IPv6SourceGuard/IPv6SourceGuard';
 
 interface Props {
   className?: string;
@@ -16,19 +19,19 @@ interface Props {
 export const IPv6IMPB_Property1Default: FC<Props> = memo(function IPv6IMPB_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <IPMACBinding/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <NDDetection/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <IPv6SourceGuard/>;
    };
   
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);

@@ -8,6 +8,9 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { PortConfig } from '../PortConfig/PortConfig';
+import { GlobalConfig8021x } from '../GlobalConfig8021x/GlobalConfig8021x';
+import { AuthenticatorState } from '../AuthenticatorState/AuthenticatorState';
 
 interface Props {
   className?: string;
@@ -16,19 +19,19 @@ interface Props {
 export const _8021x_Property1Default: FC<Props> = memo(function _8021x_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <GlobalConfig8021x/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <PortConfig/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <AuthenticatorState/>;
    };
   
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);

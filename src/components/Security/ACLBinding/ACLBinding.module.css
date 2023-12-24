@@ -1,0 +1,220 @@
+.root {
+  position: relative;
+  width: 1189px;
+  height: 956px;
+  align-items: flex-start;
+  background-color: #fff;
+  overflow: hidden;
+}
+.emulatorTpLinkComByHtmlToDesig {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1189px;
+  height: 415px;
+  align-items: flex-start;
+  background-color: #fff;
+  overflow: hidden;
+}
+.divH2dE0a38746 {
+  position: absolute;
+  left: 50%;
+  top: 20px;
+  width: 1145px;
+  height: 349.4px;
+  align-items: flex-start;
+  transform: translateX(-50%);
+}
+.divPanelWrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 285.4px;
+  align-items: flex-start;
+}
+.divPanelHeader {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 29.8px;
+  align-items: flex-start;
+  box-shadow: inset 0px -2px 0px #0d597f;
+}
+.heading3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 25px;
+  align-items: flex-start;
+}
+.portBindingConfig {
+  color: #000;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 299px;
+  height: 18px;
+  justify-content: center;
+  flex-direction: column;
+}
+.spanSubNavigatorText {
+  position: absolute;
+  left: 0;
+  top: 51px;
+  width: 116.6px;
+  height: 36px;
+  align-items: flex-start;
+  border-radius: 8px 8px 0 0;
+  background-color: #5ac3f833;
+  box-shadow: inset 0px 1px 0px #5ac3f833, inset -1px 0px 0px #5ac3f833, inset -1px 0px 0px #5ac3f833;
+}
+.uNIT1 {
+  color: #000;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 38.08px;
+  top: 10.2px;
+  width: 40.65px;
+  height: 16px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.frame22 {
+  position: absolute;
+  left: 22px;
+  top: 107px;
+  width: 1145px;
+  height: 120px;
+  align-items: flex-start;
+  outline: solid 1px #5ac3f880;
+  outline-offset: -1px;
+  overflow: hidden;
+}
+.noEntriesInThisTable {
+  color: #000;
+  font-size: 14px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 497px;
+  top: 49px;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.rectangle4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1145px;
+  height: 40px;
+  background-color: #5ac3f833;
+}
+.rectangle5 {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  width: 1145px;
+  height: 40px;
+  background-color: #5ac3f833;
+}
+.frame17 {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  width: 1145px;
+  height: 40px;
+  background-color: #5ac3f80d;
+  overflow: hidden;
+}
+.frame21 {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 1107px;
+  height: min-content;
+  place-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.index {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: 86px;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aCLID {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: 84px;
+  height: min-content;
+  flex-direction: column;
+}
+.aCLName {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.aCLType {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: min-content;
+  height: min-content;
+  white-space: nowrap;
+  flex-direction: column;
+}
+.port {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: 131px;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.direction {
+  color: #000;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  width: 113px;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}

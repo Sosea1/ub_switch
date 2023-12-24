@@ -8,6 +8,12 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { SerialPortSettings } from '../SerialPortSettings/SerialPortSettings';
+import { AccessControl } from '../AccessControl/AccessControl';
+import { HTTPConfig } from '../HTTPConfig/HTTPConfig';
+import { HTTPSConfig } from '../HTTPSConfig/HTTPSConfig';
+import { SSHConfig } from '../SSHConfig/SSHConfig';
+import { TelnetConfig } from '../TelnetConfig/TelnetConfig';
 
 interface Props {
   className?: string;
@@ -16,34 +22,34 @@ interface Props {
 export const AccessSecurity_Property1Defaul: FC<Props> = memo(function AccessSecurity_Property1Defaul(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <AccessControl/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <HTTPConfig/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <HTTPSConfig/>;
    };
 
    const ComponentFour = (): React.ReactNode =>  {
    
-    return <>4</>;
+    return <SSHConfig/>;
    };
 
    const ComponentFive = (): React.ReactNode =>  {
    
-    return <>5</>;
+    return <TelnetConfig/>;
    };
 
    const ComponentSix = (): React.ReactNode =>  {
    
-    return <>6</>;
+    return <SerialPortSettings/>;
    };
   
   

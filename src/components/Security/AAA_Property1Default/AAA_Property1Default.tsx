@@ -8,6 +8,12 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { AAAGlobalConfig } from '../AAAGlobalConfig/AAAGlobalConfig';
+import { MethodConfig } from '../MethodConfig/MethodConfig';
+import { Dot1xConfig } from '../Dot1xConfig/Dot1xConfig';
+import { ServerGroup } from '../ServerGroup/ServerGroup';
+import { RADIUSConfig } from '../RADIUSConfig/RADIUSConfig';
+import { TACACSConfig } from '../TACACSConfig/TACACSConfig';
 
 interface Props {
   className?: string;
@@ -16,34 +22,34 @@ interface Props {
 export const AAA_Property1Default: FC<Props> = memo(function AAA_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <AAAGlobalConfig/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <MethodConfig/>;
    
    };
   
    const ComponentThree = (): React.ReactNode =>  {
    
-    return <>3</>;
+    return <Dot1xConfig/>;
    };
 
    const ComponentFour = (): React.ReactNode =>  {
    
-    return <>4</>;
+    return <ServerGroup/>;
    };
 
    const ComponentFive = (): React.ReactNode =>  {
    
-    return <>5</>;
+    return <RADIUSConfig/>;
    };
 
    const ComponentSix = (): React.ReactNode =>  {
    
-    return <>6</>;
+    return <TACACSConfig/>;
    };
   
   

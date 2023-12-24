@@ -7,6 +7,7 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { DoSDefend } from '../DoSDefend/DoSDefend';
 
 interface Props {
   className?: string;
@@ -16,7 +17,7 @@ export const DoSDefend_Default: FC<Props> = memo(function DoSDefend_Default(prop
   
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <DoSDefend/>
    };
   
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);

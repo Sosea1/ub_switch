@@ -8,6 +8,8 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
+import { ACLConfig } from '../ACLConfig/ACLConfig';
+import { ACLBinding } from '../ACLBinding/ACLBinding';
 
 interface Props {
   className?: string;
@@ -16,13 +18,13 @@ interface Props {
 export const ACL_Property1Default: FC<Props> = memo(function ACL_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <>1</>
+    return <ACLConfig/>
    };
    
    
    const ComponentTwo = (): React.ReactNode =>  {
    
-    return <div>2</div>;
+    return <ACLBinding/>;
    
    };
   
