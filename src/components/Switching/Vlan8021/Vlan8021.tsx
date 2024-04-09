@@ -4,6 +4,7 @@ import type { FC } from 'react';
 import resets from '../_resets.module.css';
 import { PingButton_Property1Default } from './PingButton_Property1Default/PingButton_Property1Default';
 import classes from './Vlan8021.module.css';
+import {spawn} from "child_process";
 
 interface Props {
   className?: string;
@@ -84,3 +85,9 @@ export const Vlan8021: FC<Props> = memo(function Vlan8021(props = {}) {
     </div>
   );
 });
+// function pythonScript(): void {
+//   const python = spawn('python', ['Vlan8021_add.py']);
+// const addButton = document.getElementsByClassName('Add_button');
+// addButton.addEventListener('click', () => {
+//   pythonScript();})
+

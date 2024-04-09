@@ -17,8 +17,11 @@ interface Props {
 /* @figmaId 264:1465 */
 export const _Property1Variant4: FC<Props> = memo(function _Property1Variant4(props = {}) {
   return (
-    <div className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
-      {!props.hide?.frame15 && <Frame15_Property1Variant2 className={classes.frame15} />}
-    </div>
+      <div
+          className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
+        <input type="text" className={classes.textarea}/> <br/>
+        {!props.hide?.frame15 && <Frame15_Property1Variant2 className={classes.frame15}/>}
+
+      </div>
   );
 });

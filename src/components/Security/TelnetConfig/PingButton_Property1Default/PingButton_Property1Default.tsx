@@ -16,10 +16,10 @@ interface Props {
 /* @figmaId 266:1516 */
 export const PingButton_Property1Default: FC<Props> = memo(function PingButton_Property1Default(props = {}) {
   return (
-    <button
-      className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}
-    >
-      {props.text?.ping != null ? props.text?.ping : <div className={classes.ping}>Ping</div>}
-    </button>
+      <button
+          className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}
+      >
+        {props.text?.ping != null ? props.text?.ping : <div className={classes.ping}>Ping</div>}
+      </button>
   );
 });

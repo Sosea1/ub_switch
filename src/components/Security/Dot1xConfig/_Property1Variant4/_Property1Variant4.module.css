@@ -3,8 +3,10 @@
 }
 .root {
   position: absolute;
+}
+.textarea{
+  position: absolute;
   left: 20px;
-  top: 176px;
   width: 124px;
   height: min-content;
   flex-direction: column;

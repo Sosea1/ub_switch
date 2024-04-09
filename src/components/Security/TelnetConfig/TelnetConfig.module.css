@@ -211,6 +211,19 @@
   font-family: Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
     'Liberation Sans', sans-serif;
 }
+.textBlock3{
+  position: absolute;
+  left: 20px;
+  width: 124px;
+  height: min-content;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6px 8px;
+  outline: solid 1px #929292;
+  outline-offset: -1px;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
 .divSflowGlobalNotes {
   position: absolute;
   left: 0;

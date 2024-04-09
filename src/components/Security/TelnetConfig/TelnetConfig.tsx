@@ -38,7 +38,8 @@ export const TelnetConfig: FC<Props> = memo(function TelnetConfig(props = {}) {
               </div>
               <div className={classes.labelAgentAddress}>
                 <div className={classes.textBlock}>Port:</div>
-                <div className={classes.textBlock2}>
+                <div className={classes.textBlock}>
+                  {/*<input type="text" className={classes.textBlock3}/> <br/>*/}
                   <p></p>
                 </div>
               </div>

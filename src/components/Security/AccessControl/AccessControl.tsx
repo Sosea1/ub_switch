@@ -16,6 +16,7 @@ interface Props {
 export const AccessControl: FC<Props> = memo(function AccessControl(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
+      <input type={"text"}/>
       <div className={classes.globalConfig}>Global Config</div>
       <div className={classes.line1}></div>
       <div className={classes.line2}></div>
