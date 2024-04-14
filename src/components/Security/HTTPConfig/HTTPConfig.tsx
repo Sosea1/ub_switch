@@ -60,10 +60,13 @@ export const HTTPConfig: FC<Props> = memo(function HTTPConfig(props = {}) {
             ping: <div className={classes.ping3}>Apply</div>,
           }}
         />
-        <div className={classes.enable}>Enable</div>
-        <div className={classes.sessionConfig}>Session Config</div>
-        <div className={classes._165535}>
-          <div className={classes.textBlock}>(1-65535)</div>
+          <div className={classes.enable}>Enable
+              <input id='main_check' style={{cursor: 'pointer', position: 'absolute', left: '-30px', top: '3px'}}
+                     type="checkbox"/>
+          </div>
+          <div className={classes.sessionConfig}>Session Config</div>
+          <div className={classes._165535}>
+              <div className={classes.textBlock}>(1-65535)</div>
           <div className={classes.textBlock2}>
             <p></p>
           </div>
@@ -71,9 +74,12 @@ export const HTTPConfig: FC<Props> = memo(function HTTPConfig(props = {}) {
         <div className={classes.port2}>Port:</div>
         <div className={classes.numberOfAccessUsers}>Number of Access Users</div>
         <div className={classes.line4}></div>
-        <div className={classes.enable2}>Enable</div>
-        <div className={classes.numberOfAdmins}>Number of Admins:</div>
-        <div className={classes.numberOfOperators}>Number of Operators:</div>
+          <div className={classes.enable2}>Enable
+              <input id='main_check' style={{cursor: 'pointer', position: 'absolute', left: '-30px', top: '3px'}}
+                     type="checkbox"/>
+          </div>
+          <div className={classes.numberOfAdmins}>Number of Admins:</div>
+          <div className={classes.numberOfOperators}>Number of Operators:</div>
         <div className={classes.numberOfPowerUsers}>Number of Power Users:</div>
         <div className={classes.numberOfUsers}>Number of Users:</div>
         <_Property1Variant4

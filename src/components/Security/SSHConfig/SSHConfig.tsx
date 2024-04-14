@@ -76,7 +76,13 @@ export const SSHConfig: FC<Props> = memo(function SSHConfig(props = {}) {
             ping: <div className={classes.ping4}>Apply</div>,
           }}
         />
-        <div className={classes.enable}>Enable</div>
+        <div className={classes.enable}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                     type="checkbox"/></div>
         <div className={classes.sessionConfig}>Session Config</div>
         <div className={classes.sessionTimeout}>
           <div className={classes.textBlock}>Session Timeout:</div>
@@ -88,12 +94,48 @@ export const SSHConfig: FC<Props> = memo(function SSHConfig(props = {}) {
         <div className={classes.line4}>
           <Line4Icon className={classes.icon} />
         </div>
-        <div className={classes.enable2}>Enable</div>
-        <div className={classes.enable3}>Enable</div>
-        <div className={classes.enable4}>Enable</div>
-        <div className={classes.enable5}>Enable</div>
-        <div className={classes.enable6}>Enable</div>
-        <div className={classes.enable7}>Enable</div>
+        <div className={classes.enable2}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable3}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable4}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable5}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable6}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable7}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
         <div className={classes.aES192CBC}>AES192-CBC:</div>
         <div className={classes.aES256CBC}>AES256-CBC:</div>
         <div className={classes.blowfishCBC}>Blowfish-CBC:</div>
@@ -106,13 +148,55 @@ export const SSHConfig: FC<Props> = memo(function SSHConfig(props = {}) {
             frame15: true,
           }}
         />
-        <div className={classes.enable8}>Enable</div>
-        <div className={classes.enable9}>Enable</div>
-        <div className={classes.enable10}>Enable</div>
-        <div className={classes.enable11}>Enable</div>
-        <div className={classes.enable12}>Enable</div>
-        <div className={classes.enable13}>Enable</div>
-        <div className={classes.enable14}>Enable</div>
+        <div className={classes.enable8}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable9}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable10}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                       type="checkbox"/></div>
+        <div className={classes.enable11}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                       type="checkbox"/></div>
+        <div className={classes.enable12}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                       type="checkbox"/></div>
+        <div className={classes.enable13}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                       type="checkbox"/></div>
+        <div className={classes.enable14}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                       type="checkbox"/></div>
         <div className={classes.dataIntegrityAlgorithm}>Data Integrity Algorithm</div>
         <div className={classes.hMACSHA1}>HMAC-SHA1:</div>
         <div className={classes.hMACMD5}>HMAC-MD5:</div>
@@ -148,11 +232,23 @@ export const SSHConfig: FC<Props> = memo(function SSHConfig(props = {}) {
             ping: <div className={classes.ping5}>Apply</div>,
           }}
         />
-        <div className={classes.enable15}>Enable</div>
+        <div className={classes.enable15}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                       type="checkbox"/></div>
         <div className={classes.sessionTimeout2}>Session Timeout:</div>
         <div className={classes.maximumConnections}>Maximum Connections:</div>
         <div className={classes.protocolV2}>Protocol V2:</div>
-        <div className={classes.enable16}>Enable</div>
+        <div className={classes.enable16}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                       type="checkbox"/></div>
       </div>
     </div>
   );

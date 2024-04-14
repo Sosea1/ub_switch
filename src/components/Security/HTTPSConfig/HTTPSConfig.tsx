@@ -78,7 +78,10 @@ export const HTTPSConfig: FC<Props> = memo(function HTTPSConfig(props = {}) {
             ping: <div className={classes.ping5}>Apply</div>,
           }}
         />
-        <div className={classes.enable}>Enable</div>
+        <div className={classes.enable}>Enable
+          <input id='main_check' style={{cursor: 'pointer', position: 'absolute', left: '-30px', top: '3px'}}
+                 type="checkbox"/>
+        </div>
         <div className={classes.sessionConfig}>Session Config</div>
         <div className={classes._165535}>
           <div className={classes.textBlock}>(1-65535)</div>
@@ -96,8 +99,17 @@ export const HTTPSConfig: FC<Props> = memo(function HTTPSConfig(props = {}) {
         <div className={classes.line4}>
           <Line4Icon className={classes.icon} />
         </div>
-        <div className={classes.enable2}>Enable</div>
-        <div className={classes.enable3}>Enable</div>
+        <div className={classes.enable2}>Enable
+          <input id='main_check' style={{cursor: 'pointer', position: 'absolute', left: '-30px', top: '3px'}}
+                 type="checkbox"/>
+        </div>
+        <div className={classes.enable3}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
         <div className={classes.rSA_WITH_RC4_128_SHA}>RSA_WITH_RC4_128_SHA:</div>
         <div className={classes.rSA_WITH_DES_CBC_SHA}>RSA_WITH_DES_CBC_SHA:</div>
         <div className={classes.rSA_WITH_3DES_EDE_CBC_SHA}>RSA_WITH_3DES_EDE_CBC_SHA:</div>
@@ -110,11 +122,41 @@ export const HTTPSConfig: FC<Props> = memo(function HTTPSConfig(props = {}) {
             frame15: true,
           }}
         />
-        <div className={classes.enable4}>Enable</div>
-        <div className={classes.enable5}>Enable</div>
-        <div className={classes.enable6}>Enable</div>
-        <div className={classes.enable7}>Enable</div>
-        <div className={classes.enable8}>Enable</div>
+        <div className={classes.enable4}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable5}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable6}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable7}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
+        <div className={classes.enable8}>Enable<input id='main_check' style={{
+          cursor: 'pointer',
+          position: 'absolute',
+          left: '-30px',
+          top: '3px'
+        }}
+                                                      type="checkbox"/></div>
         <div className={classes.numberOfAccessUsers}>Number of Access Users</div>
         <div className={classes.rSA_WITH_RC4_128_MD52}>RSA_WITH_RC4_128_MD5:</div>
         <div className={classes.rSA_WITH_RC4_128_MD53}>RSA_WITH_RC4_128_MD5:</div>

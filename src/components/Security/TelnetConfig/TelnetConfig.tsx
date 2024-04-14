@@ -27,7 +27,13 @@ export const TelnetConfig: FC<Props> = memo(function TelnetConfig(props = {}) {
                 </div>
                 <div className={classes.divWidgetWrap}>
                   <div className={classes.label}></div>
-                  <div className={classes.enable}>Enable</div>
+                  <div className={classes.enable}>Enable<input id='main_check' style={{
+                    cursor: 'pointer',
+                    position: 'absolute',
+                    left: '-30px',
+                    top: '3px'
+                  }}
+                                                               type="checkbox"/></div>
                 </div>
               </div>
               <div className={classes.divSflowAgentAddr}>

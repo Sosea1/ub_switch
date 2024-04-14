@@ -51,9 +51,13 @@ export const AccessControl: FC<Props> = memo(function AccessControl(props = {}) 
             </div>
           </div>
         </div>
-        <div className={classes.enable}>Enable</div>
-        <div className={classes.entryConfig}>Entry Config</div>
-        <div className={classes.add}>Add</div>
+          <div className={classes.enable}>Enable
+              <input id='main_check' style={{cursor: 'pointer', position: 'absolute', left: '-30px', top: '3px'}}
+                     type="checkbox"/>
+          </div>
+
+          <div className={classes.entryConfig}>Entry Config</div>
+          <div className={classes.add}>Add</div>
       </div>
     </div>
   );

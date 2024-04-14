@@ -35,17 +35,41 @@ export const GlobalConfig8021x: FC<Props> = memo(function GlobalConfig8021x(prop
             ping: <div className={classes.ping}>Apply</div>,
           }}
         />
-        <div className={classes.enable}>Enable</div>
-        <div className={classes.enable2}>Enable</div>
-        <div className={classes.handshake}>Handshake:</div>
-        <div className={classes.vLANAssignment}>
-          <div className={classes.textBlock}>VLAN Assignment:</div>
+          <div className={classes.enable}>Enable<input id='main_check' style={{
+              cursor: 'pointer',
+              position: 'absolute',
+              left: '-30px',
+              top: '3px'
+          }}
+                                                       type="checkbox"/></div>
+          <div className={classes.enable2}>Enable<input id='main_check' style={{
+              cursor: 'pointer',
+              position: 'absolute',
+              left: '-30px',
+              top: '3px'
+          }}
+                                                        type="checkbox"/></div>
+          <div className={classes.handshake}>Handshake:</div>
+          <div className={classes.vLANAssignment}>
+              <div className={classes.textBlock}>VLAN Assignment:</div>
           <div className={classes.textBlock2}>
             <p></p>
           </div>
         </div>
-        <div className={classes.enable3}>Enable</div>
-        <div className={classes.enable4}>Enable</div>
+          <div className={classes.enable3}>Enable<input id='main_check' style={{
+              cursor: 'pointer',
+              position: 'absolute',
+              left: '-30px',
+              top: '3px'
+          }}
+                                                        type="checkbox"/></div>
+          <div className={classes.enable4}>Enable<input id='main_check' style={{
+              cursor: 'pointer',
+              position: 'absolute',
+              left: '-30px',
+              top: '3px'
+          }}
+                                                        type="checkbox"/></div>
       </div>
     </div>
   );
