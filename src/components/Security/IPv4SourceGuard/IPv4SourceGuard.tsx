@@ -33,10 +33,16 @@ export const IPv4SourceGuard: FC<Props> = memo(function IPv4SourceGuard(props = 
           <div className={classes.securityType}>Security Type</div>
           <div className={classes.lAG}>LAG</div>
         </div>
-        <div className={classes.enable}>Enable</div>
-        <div className={classes.portConfig}>
-          <div className={classes.textBlock}>Port Config</div>
-          <div className={classes.textBlock2}>
+          <div className={classes.enable}>Enable <input id='main_check' style={{
+              cursor: 'pointer',
+              position: 'absolute',
+              left: '-30px',
+              top: '3px'
+          }}
+                                                        type="checkbox"/></div>
+          <div className={classes.portConfig}>
+              <div className={classes.textBlock}>Port Config</div>
+              <div className={classes.textBlock2}>
             <p></p>
           </div>
         </div>

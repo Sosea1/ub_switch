@@ -39,9 +39,15 @@ export const DHCPv6Filter: FC<Props> = memo(function DHCPv6Filter(props = {}) {
           <div className={classes.declineProtect}>Decline Protect</div>
           <div className={classes.lAG}>LAG</div>
         </div>
-        <div className={classes.enable}>Enable</div>
-        <div className={classes.portConfig}>Port Config</div>
-        <div className={classes.add}>Add</div>
+          <div className={classes.enable}>Enable <input id='main_check' style={{
+              cursor: 'pointer',
+              position: 'absolute',
+              left: '-30px',
+              top: '3px'
+          }}
+                                                        type="checkbox"/></div>
+          <div className={classes.portConfig}>Port Config</div>
+          <div className={classes.add}>Add</div>
       </div>
     </div>
   );

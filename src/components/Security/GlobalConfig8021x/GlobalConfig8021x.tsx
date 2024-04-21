@@ -15,62 +15,62 @@ interface Props {
 /* @figmaId 615:1543 */
 export const GlobalConfig8021x: FC<Props> = memo(function GlobalConfig8021x(props = {}) {
   return (
-    <div className={`${resets.storybrainResets} ${classes.root}`}>
-      <div className={classes.globalConfig}>Global Config</div>
-      <div className={classes.line1}></div>
-      <div className={classes.line2}></div>
-      <div className={classes.frame16}>
-        <div className={classes._8021x}>802.1x:</div>
-        <div className={classes.accounting}>Accounting:</div>
-        <div className={classes.authenticationProtocol}>Authentication Protocol:</div>
-        <_Property1Variant4
-          className={classes.unnamed}
-          hide={{
-            frame15: true,
-          }}
-        />
-        <PingButton_Property1Default
-          className={classes.pingButton}
-          text={{
-            ping: <div className={classes.ping}>Apply</div>,
-          }}
-        />
-          <div className={classes.enable}>Enable<input id='main_check' style={{
-              cursor: 'pointer',
-              position: 'absolute',
-              left: '-30px',
-              top: '3px'
-          }}
-                                                       type="checkbox"/></div>
-          <div className={classes.enable2}>Enable<input id='main_check' style={{
-              cursor: 'pointer',
-              position: 'absolute',
-              left: '-30px',
-              top: '3px'
-          }}
-                                                        type="checkbox"/></div>
-          <div className={classes.handshake}>Handshake:</div>
-          <div className={classes.vLANAssignment}>
-              <div className={classes.textBlock}>VLAN Assignment:</div>
-          <div className={classes.textBlock2}>
-            <p></p>
+      <div className={`${resets.storybrainResets} ${classes.root}`}>
+          <div className={classes.globalConfig}>Global Config</div>
+          <div className={classes.line1}></div>
+          <div className={classes.line2}></div>
+          <div className={classes.frame16}>
+              <div className={classes._8021x}>802.1x:</div>
+              <div className={classes.accounting}>Accounting:</div>
+              <div className={classes.authenticationProtocol}>Authentication Protocol:</div>
+              <_Property1Variant4
+                  className={classes.unnamed}
+                  hide={{
+                      frame15: true,
+                  }}
+              />
+              <PingButton_Property1Default
+                  className={classes.pingButton}
+                  text={{
+                      ping: <div className={classes.ping}>Apply</div>,
+                  }}
+              />
+              <div className={classes.enable}>Enable<input id='main_check' style={{
+                  cursor: 'pointer',
+                  position: 'absolute',
+                  left: '-30px',
+                  top: '3px'
+              }}
+                                                           type="checkbox"/></div>
+              <div className={classes.enable2}>Enable<input id='main_check' style={{
+                  cursor: 'pointer',
+                  position: 'absolute',
+                  left: '-30px',
+                  top: '3px'
+              }}
+                                                            type="checkbox"/></div>
+              <div className={classes.handshake}>Handshake:</div>
+              <div className={classes.vLANAssignment}>
+                  <div className={classes.textBlock}>VLAN Assignment:</div>
+                  <div className={classes.textBlock2}>
+                      <p></p>
+                  </div>
+              </div>
+              <div className={classes.enable3}>Enable<input id='main_check' style={{
+                  cursor: 'pointer',
+                  position: 'absolute',
+                  left: '-30px',
+                  top: '3px'
+              }}
+                                                            type="checkbox"/></div>
+              <div className={classes.enable4}>Enable<input id='main_check' style={{
+                  cursor: 'pointer',
+                  position: 'absolute',
+                  left: '-30px',
+                  top: '3px'
+              }}
+                                                            type="checkbox"/></div>
           </div>
-        </div>
-          <div className={classes.enable3}>Enable<input id='main_check' style={{
-              cursor: 'pointer',
-              position: 'absolute',
-              left: '-30px',
-              top: '3px'
-          }}
-                                                        type="checkbox"/></div>
-          <div className={classes.enable4}>Enable<input id='main_check' style={{
-              cursor: 'pointer',
-              position: 'absolute',
-              left: '-30px',
-              top: '3px'
-          }}
-                                                        type="checkbox"/></div>
       </div>
-    </div>
   );
 });

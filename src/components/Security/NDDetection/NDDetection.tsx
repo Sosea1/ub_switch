@@ -33,9 +33,15 @@ export const NDDetection: FC<Props> = memo(function NDDetection(props = {}) {
           <div className={classes.status}>Status</div>
           <div className={classes.logStatus}>Log Status</div>
         </div>
-        <div className={classes.enable}>Enable</div>
-        <div className={classes.vLANConfig}>VLAN Config</div>
-        <div className={classes.add}>Add</div>
+          <div className={classes.enable}>Enable <input id='main_check' style={{
+              cursor: 'pointer',
+              position: 'absolute',
+              left: '-30px',
+              top: '3px'
+          }}
+                                                        type="checkbox"/></div>
+          <div className={classes.vLANConfig}>VLAN Config</div>
+          <div className={classes.add}>Add</div>
       </div>
     </div>
   );
