@@ -4,7 +4,6 @@ import type { FC } from 'react';
 import resets from '../_resets.module.css';
 import classes from './PortSecurity.module.css';
 import axios, { AxiosResponse } from 'axios';
-import { buildHtmlTable } from '../../../utils';
 import parse from 'html-react-parser'
 import { addStaticPS, viewPS } from '../queries';
 import { useAsyncError } from 'react-router-dom';
