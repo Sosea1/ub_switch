@@ -1,4 +1,4 @@
-:where(.storybrainResets),
+/* :where(.storybrainResets),
 :where(.storybrainResets) * {
   box-sizing: border-box;
   margin: 0;
@@ -12,7 +12,7 @@
 }
 
 :where(.storybrainResets),
-:where(.storybrainResets) :not(span, a, ul, ol, li, p) {
+:where(.storybrainResets) :not(span, a, ul, ol, li, p, table, tbody, thead, tr, th, td) {
   display: flex;
 }
 
@@ -34,4 +34,4 @@
 :where(.storybrainResets) svg {
   overflow: visible;
 }
-
+ */

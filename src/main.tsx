@@ -16,6 +16,10 @@ import { createStore, applyMiddleware, Store } from "redux"
 import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import { EnterPassword } from './components/EnterPassword/EnterPassword';
+import axios from 'axios';
+
+
+axios.defaults.baseURL = "http://192.168.0.104:5000"
 
 const router = createBrowserRouter([
   {

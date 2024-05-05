@@ -91,16 +91,13 @@
   justify-content: center;
   flex-direction: column;
 }
-.frame22 {
+.tableFrame {
   position: absolute;
   left: 22px;
-  top: 107px;
+  top: 70px;
   width: 1145px;
   height: 120px;
   align-items: flex-start;
-  outline: solid 1px #5ac3f880;
-  outline-offset: -1px;
-  overflow: hidden;
 }
 .noEntriesInThisTable {
   color: #000;

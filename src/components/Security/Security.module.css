@@ -41,6 +41,8 @@
   animation: fadeInAnimation ease-in-out 0.25s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  display: flex;
+  display: inline-block;
   
 }
 @keyframes fadeInAnimation {

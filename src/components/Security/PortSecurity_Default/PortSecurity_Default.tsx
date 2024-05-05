@@ -1,4 +1,4 @@
-import { memo, useEffect, useState } from 'react';
+import { memo, useEffect, useRef, useState } from 'react';
 import type { FC, ReactElement } from 'react';
 
 import resets from '../../_resets.module.css';
@@ -7,34 +7,39 @@ import { SlArrowRight } from 'react-icons/sl';
 import { CounterState, update } from '../../../main';
 import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
-import { PortSecurity } from '../PortSecurity/PortSecurity';
+import  {PortSecurity}  from '../PortSecurity/PortSecurity';
+import ReactDOM, { render } from 'react-dom';
+import { Root, createRoot, hydrateRoot } from 'react-dom/client';
 
 interface Props {
   className?: string;
 }
 /* @figmaId 241:792 */
 export const PortSecurity_Default: FC<Props> = memo(function PortSecurity_Default(props = {}) {
-  const ComponentOne =(): React.ReactNode  => {
+   const ComponentOne =(): React.ReactElement  => {
 
     return <PortSecurity/>
    };
    
   
-    const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
-  
-  
+    const [currentComponent, setCurrentComponent] = useState<React.ReactElement>();
+    const [root, setRoot] = useState<Root>()
+
     const value = useSelector((state: CounterState) => state.value);
- const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
- const handleUpdate = (key: string) => {
-   dispatch(update(key));
- };
+      const handleUpdate = (key: string) => {
+      dispatch(update(key));
+      };
+  
 
-      
       useEffect(() => {
-        setCurrentComponent(currentComponent)
+        console.log("current component")
         var x = document.getElementById('security_frame') as HTMLElement;
-        x.innerHTML = ReactDomServer.renderToString(currentComponent as ReactElement);
+        var root1  = createRoot(x)
+        setRoot(root1)
+        root?.render(currentComponent)
+
       },[currentComponent])
   
 
@@ -57,3 +62,5 @@ export const PortSecurity_Default: FC<Props> = memo(function PortSecurity_Defaul
      </> 
   );
 });
+
+
