@@ -11,11 +11,13 @@
   overflow-wrap: anywhere;
 }
 
+
 :where(.storybrainResets),
 :where(.storybrainResets) :not(span, a, ul, ol, li, p, 
-table, tbody, thead, tr, th, td, .tableFrame) {
+table, tbody, thead, tr, th, td, .tableFrame, .NoEntriesTable, input, select, option) {
   display: flex;
 }
+
 
 :where(.storybrainResets) table {
   width: 100%;

@@ -1,6 +1,6 @@
 type PostPSStatic = {
     interface: string,
-    mac_address: string
+    mac_address: string | null
 }
 
 type GetPS = {
