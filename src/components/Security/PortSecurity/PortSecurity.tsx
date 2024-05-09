@@ -1,12 +1,13 @@
 import { memo, useEffect, useLayoutEffect, useState } from 'react';
 import type { FC, MouseEventHandler } from 'react';
-
 import resets from '../../_resets.module.css';
 import classes from './PortSecurity.module.css';
-import axios, { AxiosResponse } from 'axios';
-import parse from 'html-react-parser'
 import { addStaticPS, deleteStaticPS, viewPS } from '../queries';
-import { useAsyncError } from 'react-router-dom';
+import {useModal} from '../../useModal';
+import {Modal} from '../../modal';
+import React from 'react';
+import  '../../modal_styles.css'
+import { Icon } from 'semantic-ui-react';
 
 interface Props {
   className?: string;
@@ -14,12 +15,39 @@ interface Props {
 /* @figmaId 617:1646 */
 export const PortSecurity: FC<Props> = memo(function PortSecurity_Default(props = {}) {
   
+  const { isShown, toggle } = useModal();
+
   const [entries, setEntries] = useState<[] | GetPS[]>([]);
 
   const [checked, setChecked] = useState<boolean>(false);
+  const [action, setAction] = useState<boolean>();
   const [numberChecked, setNumberChecked] = useState<GetPS[]>([]);
   const [count, setCount] = useState<number>(0);
   const [selected, setSelected] = useState<string>("");
+
+  const [modalOpen, setModalOpen] = useState<boolean>(false);
+
+  const onApply = () => {
+    var mac = document.getElementById("input_mac") as HTMLInputElement
+    var mac_value = mac.value
+    if (mac_value.split(':').length != 6) {
+      return
+    }
+    var port = document.getElementById("input_port") as HTMLInputElement
+    if (action) {
+      addStaticPS({interface: port.value, mac_address: mac.value})
+    }
+    else {
+      deleteStaticPS({interface: port.value, mac_address: mac.value})
+    }
+    toggle();
+    (async () => {
+      const entr = await viewPS();
+      setEntries(entr);
+    })
+  }
+
+
 
   useEffect(() => {
     (async () => {
@@ -29,7 +57,7 @@ export const PortSecurity: FC<Props> = memo(function PortSecurity_Default(props 
   }, [])
   
 
-  const toggle = (e: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
+  const toggle_checkbox = (e: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
     var check = e.currentTarget as HTMLInputElement;
     var flag = false
     if (check.checked == true) {
@@ -59,10 +87,23 @@ export const PortSecurity: FC<Props> = memo(function PortSecurity_Default(props 
         addStaticPS({interface: int.name, mac_address: null})
       }
     }
-    else if (selected == "disabled")
+    else if (selected == "disabled") {
       for (let int of numberChecked) {
         deleteStaticPS({interface: int.name, mac_address: null})
       }
+    } 
+    var checkboxes = document.getElementsByClassName('checkbox_td') as  HTMLCollectionOf<HTMLInputElement>;
+    for (let checkbox of checkboxes) {
+      checkbox.checked = false
+    }
+    while (numberChecked.length > 0) {
+      numberChecked.pop()
+    }
+    (async () => {
+      const entr = await viewPS();
+      setEntries(entr);
+    })
+    setCount(0)
   }
 
   return ( 
@@ -82,7 +123,7 @@ export const PortSecurity: FC<Props> = memo(function PortSecurity_Default(props 
               <thead>
                 <tr>
                 <th className={classes.checkbox_th}><input  id='checkbox_th' type='checkbox'
-                onClick={toggle}></input></th>
+                onClick={toggle_checkbox}></input></th>
                  <th>Port</th>
                  <th>Max Learned Number of MAC</th>
                  <th>Current Learned Number of MAC</th>
@@ -96,17 +137,55 @@ export const PortSecurity: FC<Props> = memo(function PortSecurity_Default(props 
                <tr>
                   <div className={classes.NoEntriesTable}>No entries in this table</div>
                </tr>
+               <div className={classes.footer} >
+                </div>
             </tbody>
           ) : (
               <tbody>
                 <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><select name='status' onChange={(event) => {
+                <td className={classes.header_td}></td>
+                <td className={classes.header_td}></td>
+                <td className={classes.header_td}></td>
+                <td className={classes.header_td_}>
+                  <div>
+                    <button className={classes.addIcon} onClick={() => {
+                      setAction(true)
+                      toggle()
+                    }}></button>
+                    <label className='labelModal' onClick={() => {
+                      setAction(true)
+                      toggle()
+                    }}>Add</label>
+                  </div>
+                  <div>
+                    <button className={classes.deleteIcon} onClick={() => {
+                      setAction(false)
+                      toggle()
+                    }}></button>
+                    <label className='labelModal' onClick={() => {
+                      setAction(false)
+                      toggle()
+                    }}>Delete</label>
+                  </div>
+                  <Modal isShown={isShown} hide={toggle} headerText={
+                    action ? 'Add Static MAC Address' : 'Delete Static MAC Address'
+                  } onApply={onApply} modalContent={
+                    <div>
+                      <div className='modalRow'>
+                        <label className='labelModal'>MAC Address:</label>
+                          <input className='inputModal' id="input_mac" type="text"></input>
+                      </div>
+                      <div className='modalRow'>
+                        <label className='labelModal'>Port:</label>
+                          <input className='inputModal' id="input_port" type="text"></input>
+                      </div>
+                      <div></div>
+                    </div>
+                  } />
+                </td>
+                <td className={classes.header_td}></td>
+                <td className={classes.header_td}></td>
+                <td className={classes.header_td_}><select id='status_select' name='status' onChange={(event) => {
                   setSelected(event.target.value)
                 }}>
                   <option value="" selected></option>

@@ -49,7 +49,6 @@ table, tbody, thead, tr, th, td, .tableFrame, .NoEntriesTable, input, select, op
   font-size: 14px;
 }
 
-
 :where(.storybrainResets) ul,
 :where(.storybrainResets) ol {
   text-indent: 0;

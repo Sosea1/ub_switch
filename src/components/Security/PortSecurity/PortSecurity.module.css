@@ -1,7 +1,24 @@
 
-
 .checkbox_th {
   width: 50px;
+}
+
+.addIcon {
+  background: url(../../../../public/assets/add-icon.png);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  margin-right: 5px;
+}
+
+.deleteIcon {
+  background: url(../../../../public/assets/delete-icon.png);
+  background-size: cover;
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  margin-right: 5px;
 }
 
 .apply_button {
@@ -15,6 +32,7 @@
 
 .footer {
   width: 1145px;
+  height: 40px;
   align-items: center;
   justify-content: space-between;
   flex: auto;
@@ -23,6 +41,39 @@
   text-align: center;
   padding: 8px;
   font-family:Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+}
+
+.header_td {
+  background-color: #5ac3f833;
+  border: 1px solid #5ac3f880;
+}
+
+
+.header_td_ {
+  background-color: #fff;
+  justify-content: space-evenly;
+  padding: 3px;
+  display: flex;
+}
+
+.NoEntriesTable {
+  width: 1145px;
+  background-color: #5ac3f80d;
+  text-align: center;
+  padding: 8px;
+  font-family:Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  font-size: 14px;
+  display: block;
+}
+
+.tableFrame {
+  position: absolute;
+  left: 22px;
+  top: 70px;
+  width: 1145px;
+  height: 120px;
+  align-items: flex-start;
+  display: block;
 }
 
 .root {
@@ -117,26 +168,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-
-.NoEntriesTable {
-  width: 1145px;
-  background-color: #5ac3f80d;
-  text-align: center;
-  padding: 8px;
-  font-family:Open Sans, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
-  font-size: 14px;
-  display: block;
-}
-
-.tableFrame {
-  position: absolute;
-  left: 22px;
-  top: 70px;
-  width: 1145px;
-  height: 120px;
-  align-items: flex-start;
-  display: block;
 }
 
 .rectangle4 {
