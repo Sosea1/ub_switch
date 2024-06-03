@@ -11,12 +11,14 @@ import ReactDomServer from 'react-dom/server'
 import { IPMACBinding } from '../IPMACBinding/IPMACBinding';
 import { ARPDetection } from '../ARPDetection/ARPDetection';
 import { IPv4SourceGuard } from '../IPv4SourceGuard/IPv4SourceGuard';
+import { Root, createRoot } from 'react-dom/client';
 
 interface Props {
   className?: string;
 }
 /* @figmaId 241:861 */
 export const IPv4IMPB_Property1Default: FC<Props> = memo(function IPv4IMPB_Property1Default(props = {}) {
+  const [root, setRoot] = useState<Root>()
   const ComponentOne =(): React.ReactNode  => {
 
     return <IPMACBinding/>
@@ -73,7 +75,9 @@ export const IPv4IMPB_Property1Default: FC<Props> = memo(function IPv4IMPB_Prope
       useEffect(() => {
         setCurrentComponent(currentComponent)
         var x = document.getElementById('security_frame') as HTMLElement;
-        x.innerHTML = ReactDomServer.renderToString(currentComponent as ReactElement);
+        var root1  = createRoot(x)
+        setRoot(root1)
+        root?.render(currentComponent)
       },[currentComponent])
   
 
@@ -91,7 +95,7 @@ export const IPv4IMPB_Property1Default: FC<Props> = memo(function IPv4IMPB_Prope
       handleUpdate('IMPB')
       setCurrentComponent(ComponentOne)
     }
-    }} style={value != "IMPB" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >IPv4 IMPB
+    }} style={value != "IMPB" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >ARP Inspection
         {value != "IMPB" ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (
@@ -103,7 +107,7 @@ export const IPv4IMPB_Property1Default: FC<Props> = memo(function IPv4IMPB_Prope
         <div className={classes.div_bar}>
           <button id='IMPB-1' style={{background:'#5AC3F8'}} onClick={() => click1("IMPB-1", ComponentOne)} className={classes.inner_sidebar_button}>•  IP-MAC Binding </button>
           <button id='IMPB-2' onClick={() => click1("IMPB-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  ARP Detection</button>
-          <button id='IMPB-3' onClick={() => click1("IMPB-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  IPv4 Source Guard</button>
+          {/* <button id='IMPB-3' onClick={() => click1("IMPB-3", ComponentThree)}  className={classes.inner_sidebar_button}>•  IPv4 Source Guard</button> */}
         </div>)}
         
      </> 

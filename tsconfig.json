@@ -17,6 +17,6 @@
     "jsx": "react-jsx",
     "noUnusedLocals": false
   },
-  "include": ["src"],
+  "include": ["src", "react-simple-captcha.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

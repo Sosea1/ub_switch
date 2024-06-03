@@ -1,6 +1,7 @@
 import { memo, useState } from 'react';
 import type { FC } from 'react';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEarDeaf, faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
 import resets from '../_resets.module.css';
 import { _Property1Variant4 } from './_Property1Variant4/_Property1Variant4';
 import classes from './EnterPassword.module.css';
@@ -13,6 +14,7 @@ interface Props {
 }
 
 export const EnterPassword: FC<Props> = memo(function EnterPassword(props = {}) {
+  const [visible, setVisible] = useState<boolean>(false);
   const navigate = useNavigate();
   const [text, setText] = useState('');
   const handleKeyDown = (e: any) => {
@@ -20,6 +22,8 @@ export const EnterPassword: FC<Props> = memo(function EnterPassword(props = {}) 
       navigateTo();
     }
   };
+
+
   const navigateTo = () => {
     const username_input = document.getElementById('username') as HTMLInputElement | null;
     const username_value = username_input?.value;
@@ -40,12 +44,13 @@ export const EnterPassword: FC<Props> = memo(function EnterPassword(props = {}) 
     <div className={`${resets.storybrainResets} ${classes.root}`}>
       <div className={classes.frame33}>
         <div className={classes.frame29}>
+          
           <div className={classes.login}>Login</div>
           <div id="message_div" className={classes.message_div}>{text}</div>
           <PingButton_Property1Default
             className={classes.pingButton}
             text={{
-              ping: <div onClick={navigateTo} className={classes.ping}>Submit</div>,
+              ping: <div onClick={navigateTo} className={classes.ping}>Login</div>,
             }}
           />
           <div className={classes.frame30}>
@@ -64,11 +69,18 @@ export const EnterPassword: FC<Props> = memo(function EnterPassword(props = {}) 
             <_Property1Variant4
               className={classes.unnamed2}
               text={{
-
-                _1921681: <input id="password" onKeyDown={handleKeyDown} className={classes._19216812}/>,
-
+                _1921681:
+                <div>
+                <input type={visible ? "text" : "password"} id="password" onKeyDown={handleKeyDown} className={classes._19216812}/>
+                <FontAwesomeIcon
+                icon={visible ? faEyeSlash : faEye}
+                onClick={() => setVisible(!visible)}
+                />
+                </div>
+                
               }}
             />
+              
           </div>
         </div>
         <div className={classes.exterCom_logo11}>

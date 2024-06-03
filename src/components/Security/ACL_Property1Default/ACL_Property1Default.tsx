@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ReactDomServer from 'react-dom/server'
 import { ACLConfig } from '../ACLConfig/ACLConfig';
 import { ACLBinding } from '../ACLBinding/ACLBinding';
+import { Root, createRoot } from 'react-dom/client';
 
 interface Props {
   className?: string;
@@ -27,17 +28,20 @@ export const ACL_Property1Default: FC<Props> = memo(function ACL_Property1Defaul
     return <ACLBinding/>;
    
    };
-  
-  
+   
+    //-------NEW----------
+    const [root, setRoot] = useState<Root>()
+    //------------
+
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
-  
+
   
     const value = useSelector((state: CounterState) => state.value);
- const dispatch = useDispatch();
+    const dispatch = useDispatch();
 
- const handleUpdate = (key: string) => {
-   dispatch(update(key));
- };
+    const handleUpdate = (key: string) => {
+      dispatch(update(key));
+    };
   
   
     function click1(key:string, newComponent:any):void {
@@ -68,10 +72,13 @@ export const ACL_Property1Default: FC<Props> = memo(function ACL_Property1Defaul
       useEffect(() => {
         setCurrentComponent(currentComponent)
         var x = document.getElementById('security_frame') as HTMLElement;
-        x.innerHTML = ReactDomServer.renderToString(currentComponent as ReactElement);
+        //-------NEW----------
+        var root1  = createRoot(x)
+        setRoot(root1)
+        root?.render(currentComponent)
+        //------------
       },[currentComponent])
   
-
   return (
     <>
     <button id = "ACL" className={classes.sidebar_button} onClick={() => {

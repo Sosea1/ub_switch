@@ -12,21 +12,11 @@ interface Props {
 export const DoSDefend: FC<Props> = memo(function DoSDefend(props = {}) {
   return (
     <div className={`${resets.storybrainResets} ${classes.root}`}>
-      <div className={classes.doSDefend}>DoS Defend</div>
-      <div className={classes.line1}></div>
-      <div className={classes.line2}></div>
       <div className={classes.line3}></div>
       <div className={classes.frame16}>
-        <div className={classes.doSProtection}>DoS Protection:</div>
-        <div className={classes.landAttack}>Land Attack:</div>
+        <div className={classes.landAttack}>:</div>
         <div className={classes.pingFlooding}>Ping Flooding:</div>
         <div className={classes.sYNSYNACKFlooding}>SYN/SYN-ACK Flooding:</div>
-        <PingButton_Property1Default
-          className={classes.pingButton}
-          text={{
-            ping: <div className={classes.ping}>Apply</div>,
-          }}
-        />
         <PingButton_Property1Default
           className={classes.pingButton2}
           text={{

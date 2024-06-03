@@ -24,13 +24,13 @@ export const SideMenu_Property1Security: FC<Props> = memo(function SideMenu_Prop
   return (
     <div className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
       <div className={classes.frame8}>
-        <AccessSecurity_Property1Defaul />
-        <AAA_Property1Default />
-        <_8021x_Property1Default />
+        {/* <AccessSecurity_Property1Defaul /> */}
+        {/* <AAA_Property1Default /> */}
+        {/* <_8021x_Property1Default /> */}
         <PortSecurity_Default />
         <ACL_Property1Default />
         <IPv4IMPB_Property1Default />
-        <IPv6IMPB_Property1Default />
+        {/* <IPv6IMPB_Property1Default /> */}
         <DHCPFilter_Property1Default />
         <DoSDefend_Default />
       </div>
