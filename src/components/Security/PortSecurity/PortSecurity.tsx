@@ -125,10 +125,7 @@ export const PortSecurity: FC<Props> = memo(function PortSecurity_Default(props 
                 <th className={classes.checkbox_th}><input  id='checkbox_th' type='checkbox'
                 onClick={toggle_checkbox}></input></th>
                  <th>Port</th>
-                 <th>Max Learned Number of MAC</th>
                  <th>Current Learned Number of MAC</th>
-                 <th>Exceed Max Learned Trap</th>
-                 <th>Learn Address Mode</th>
                  <th>Status</th>
                 </tr>
               </thead>
@@ -143,7 +140,6 @@ export const PortSecurity: FC<Props> = memo(function PortSecurity_Default(props 
           ) : (
               <tbody>
                 <tr>
-                <td className={classes.header_td}></td>
                 <td className={classes.header_td}></td>
                 <td className={classes.header_td}></td>
                 <td className={classes.header_td_}>
@@ -183,9 +179,7 @@ export const PortSecurity: FC<Props> = memo(function PortSecurity_Default(props 
                     </div>
                   } />
                 </td>
-                <td className={classes.header_td}></td>
-                <td className={classes.header_td}></td>
-                <td className={classes.header_td_}><select id='status_select' name='status' onChange={(event) => {
+                <td className={classes.header_td_2}><select id='status_select' name='status' onChange={(event) => {
                   setSelected(event.target.value)
                 }}>
                   <option value="" selected></option>
@@ -213,10 +207,7 @@ export const PortSecurity: FC<Props> = memo(function PortSecurity_Default(props 
                       }
                     }}></input></td>
                     <td>{row.name}</td>
-                    <td>{row.max_mac}</td>
                     <td>{row.cur_mac}</td>
-                    <td>{row.trap ? 'Active' : 'Disabled'}</td>
-                    <td>{row.address_mode}</td>
                     <td>{ 
                     numberChecked.includes(row) ? (
                     selected == "" ? (row.status ? 'Active' : 'Disabled') :

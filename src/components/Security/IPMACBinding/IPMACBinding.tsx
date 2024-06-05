@@ -108,28 +108,12 @@ export const IPMACBinding: FC<Props> = memo(function IPMACBinding(props = {}) {
                   } onApply={onApply} modalContent={
                     <div>
                       <div className='modalRow'>
-                        {/* <label className='labelModal'>IP Address:</label>
-                          <input className='inputModal' id="input_acl_name" type="text"></input> */}
+                        <label className='labelModal'>IP Address:</label>
+                          <input className='inputModal' id="input_acl_name" type="text"></input>
                       </div>
                       <div className='modalRow'>
-                        {/* <label className='labelModal'>MAC Address:</label>
-                          <input className='inputModal' id="input_port" type="text"></input> */}
-                      </div>
-                      <div className='modalRow'>
-                        {/* <label className='labelModal'>MAC Address:</label>
-                          <input className='inputModal' id="input_port" type="text"></input> */}
-                      </div>
-                      <div className='modalRow'>
-                        {/* <label className='labelModal'>MAC Address:</label>
-                          <input className='inputModal' id="input_port" type="text"></input> */}
-                      </div>
-                      <div className='modalRow'>
-                        {/* <label className='labelModal'>MAC Address:</label>
-                          <input className='inputModal' id="input_port" type="text"></input> */}
-                      </div>
-                      <div className='modalRow'>
-                        {/* <label className='labelModal'>MAC Address:</label>
-                          <input className='inputModal' id="input_port" type="text"></input> */}
+                        <label className='labelModal'>MAC Address:</label>
+                          <input className='inputModal' id="input_port" type="text"></input>
                       </div>
                       <div></div>
                     </div>

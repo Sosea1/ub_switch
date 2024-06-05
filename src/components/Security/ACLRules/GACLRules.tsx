@@ -51,6 +51,7 @@ export const GACLRules: FC<Props> = memo(function GACLRules({ACLName}) {
       var protocol_flag = false
       var p_src_flag = false
       var d_src_flag = false
+      d_src_flag = true
       entr.forEach(function (entry) {
         if (entry.s_ip != null) {
           s_ip_flag = true;
@@ -147,6 +148,30 @@ export const GACLRules: FC<Props> = memo(function GACLRules({ACLName}) {
                     <div>
                       <div className='modalRow'>
                         <label className='labelModal'>ACL Name:</label>
+                        <label className={classes.labelModal2}>{ACLName}</label>
+                      </div>
+                      <div className='modalRow'>
+                        <label className='labelModal'>Operation</label>
+                          <input className='inputModal' id="input_acl_name" type="text"></input>
+                      </div>
+                      <div className='modalRow'>
+                        <label className='labelModal'>S-IP</label>
+                          <input className='inputModal' id="input_acl_name" type="text"></input>
+                      </div>
+                      <div className='modalRow'>
+                        <label className='labelModal'>D-IP</label>
+                          <input className='inputModal' id="input_acl_name" type="text"></input>
+                      </div>
+                      <div className='modalRow'>
+                        <label className='labelModal'>IP Protocol</label>
+                          <input className='inputModal' id="input_acl_name" type="text"></input>
+                      </div>
+                      <div className='modalRow'>
+                        <label className='labelModal'>S-Port</label>
+                          <input className='inputModal' id="input_acl_name" type="text"></input>
+                      </div>
+                      <div className='modalRow'>
+                        <label className='labelModal'>D-Port</label>
                           <input className='inputModal' id="input_acl_name" type="text"></input>
                       </div>
                       <div></div>
@@ -165,7 +190,7 @@ export const GACLRules: FC<Props> = memo(function GACLRules({ACLName}) {
                 {d_ip  == true && <th>Dst IP</th>}
                 {protocol  == true && <th>Protocol</th>}
                 {p_src  == true && <th>Src Port</th>}
-                {d_src  == true && <th>Dst Port</th>}
+                <th>Dst Port</th>
                 </tr>
               </thead>
           {entries.length === 0 ? (
@@ -203,7 +228,7 @@ export const GACLRules: FC<Props> = memo(function GACLRules({ACLName}) {
                     {d_ip  == true && <td>{row.d_ip}</td>}
                     {protocol  == true && <td>{row.protocol}</td>}
                     {p_src  == true && <td>{row.p_src}</td>}
-                    {d_src  == true && <td>{row.d_src}</td>}
+                    <td>{row.d_src}</td>
                  </tr>
                 ))}
                 <div className={classes.footer}>

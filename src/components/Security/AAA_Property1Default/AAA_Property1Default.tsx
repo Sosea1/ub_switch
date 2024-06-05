@@ -22,35 +22,35 @@ interface Props {
 export const AAA_Property1Default: FC<Props> = memo(function AAA_Property1Default(props = {}) {
   const ComponentOne =(): React.ReactNode  => {
 
-    return <AAAGlobalConfig/>
+    return <RADIUSConfig/>
    };
    
    
-   const ComponentTwo = (): React.ReactNode =>  {
+  //  const ComponentTwo = (): React.ReactNode =>  {
    
-    return <MethodConfig/>;
+  //   return <MethodConfig/>;
    
-   };
+  //  };
   
-   const ComponentThree = (): React.ReactNode =>  {
+  //  const ComponentThree = (): React.ReactNode =>  {
    
-    return <Dot1xConfig/>;
-   };
+  //   return <Dot1xConfig/>;
+  //  };
 
-   const ComponentFour = (): React.ReactNode =>  {
+  //  const ComponentFour = (): React.ReactNode =>  {
    
-    return <ServerGroup/>;
-   };
+  //   return <ServerGroup/>;
+  //  };
 
-   const ComponentFive = (): React.ReactNode =>  {
+  //  const ComponentFive = (): React.ReactNode =>  {
    
-    return <RADIUSConfig/>;
-   };
+  //   return <RADIUSConfig/>;
+  //  };
 
-   const ComponentSix = (): React.ReactNode =>  {
+  //  const ComponentSix = (): React.ReactNode =>  {
    
-    return <TACACSConfig/>;
-   };
+  //   return <TACACSConfig/>;
+  //  };
   
   
     const [currentComponent, setCurrentComponent] = useState<React.ReactNode>(null);
@@ -110,15 +110,15 @@ export const AAA_Property1Default: FC<Props> = memo(function AAA_Property1Defaul
       handleUpdate('AAA')
       setCurrentComponent(ComponentOne)
     }
-    }} style={value != "AAA" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >AAA
-        {value != "AAA" ? (
+    }} style={value != "AAA" ? {} : {background: '#0D597F', color: 'white', fontWeight: '700'} } >RADIUS Config
+        {/* {value != "AAA" ? (
           <SlArrowRight style = {{transition: 'transform 0.15s ease-in-out'}} stroke="#c3c3c3" strokeWidth={50} color='#c3c3c3' size={16}/>
         ) : (
           <SlArrowRight style = {{transform: 'rotate(90deg)', transition: 'transform 0.15s ease-in-out'}}  stroke="white" strokeWidth={50} color='white' size={16}/>
         )
-        }
+        } */}
         </button>
-        {value == "AAA" && (
+        {/* {value == "AAA" && (
         <div className={classes.div_bar}>
           <button id='AAA-1' style={{background:'#5AC3F8'}} onClick={() => click1("AAA-1", ComponentOne)} className={classes.inner_sidebar_button}>•  Global Control </button>
           <button id='AAA-2' onClick={() => click1("AAA-2", ComponentTwo)}  className={classes.inner_sidebar_button}>•  Method Config</button>
@@ -126,7 +126,7 @@ export const AAA_Property1Default: FC<Props> = memo(function AAA_Property1Defaul
           <button id='AAA-4' onClick={() => click1("AAA-4", ComponentFour)}  className={classes.inner_sidebar_button}>•  Server Config</button>
           <button id='AAA-5' onClick={() => click1("AAA-5", ComponentFive)}  className={classes.inner_sidebar_button}>•  RADIUS Config</button>
           <button id='AAA-6' onClick={() => click1("AAA-6", ComponentSix)}  className={classes.inner_sidebar_button}>•  TACACS+ Config</button>
-        </div>)}
+        </div>)} */}
      </> 
   );
 });

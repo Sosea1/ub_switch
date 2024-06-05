@@ -25,7 +25,7 @@ export const SideMenu_Property1Security: FC<Props> = memo(function SideMenu_Prop
     <div className={`${resets.storybrainResets} ${props.classes?.root || ''} ${props.className || ''} ${classes.root}`}>
       <div className={classes.frame8}>
         {/* <AccessSecurity_Property1Defaul /> */}
-        {/* <AAA_Property1Default /> */}
+        <AAA_Property1Default />
         {/* <_8021x_Property1Default /> */}
         <PortSecurity_Default />
         <ACL_Property1Default />
